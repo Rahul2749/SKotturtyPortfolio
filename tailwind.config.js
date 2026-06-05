@@ -64,11 +64,11 @@ export default {
       },
       spacing: {
         "unit": "8px",
-        "container-margin": "40px",
+        "container-margin": "clamp(1.5rem, 5vw, 40px)",
         "gutter": "24px",
         "component-padding-x": "24px",
         "component-padding-y": "12px",
-        "section-gap": "120px"
+        "section-gap": "clamp(60px, 10vw, 120px)"
       },
       fontFamily: {
         "display-lg": ["Syne"],
