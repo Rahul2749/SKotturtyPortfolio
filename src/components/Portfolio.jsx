@@ -181,18 +181,9 @@ export default function Portfolio() {
           {/* Section: App Templates */}
           <div className="portfolio-section scroll-mt-48" id="app">
             <h3 className="text-headline-lg font-display-md text-white mb-6 px-2">App Templates</h3>
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-              <div className="glass rounded-3xl p-1 project-card overflow-hidden">
-                <img src="/app_template_1.webp" className="w-full h-auto rounded-[1.3rem] hover:scale-105 transition-transform duration-700" alt="Food App Home"/>
-              </div>
-              <div className="glass rounded-3xl p-1 project-card overflow-hidden">
-                <img src="/app_template_2.webp" className="w-full h-auto rounded-[1.3rem] hover:scale-105 transition-transform duration-700" alt="Food App Details"/>
-              </div>
-              <div className="glass rounded-3xl p-1 project-card overflow-hidden">
-                <img src="/app_template_3.webp" className="w-full h-auto rounded-[1.3rem] hover:scale-105 transition-transform duration-700" alt="Food App Menu"/>
-              </div>
-              <div className="glass rounded-3xl p-1 project-card overflow-hidden">
-                <img src="/app_template_4.webp" className="w-full h-auto rounded-[1.3rem] hover:scale-105 transition-transform duration-700" alt="Food App Cart"/>
+            <div className="glass rounded-[2.5rem] p-1 md:p-2 project-card overflow-hidden w-full max-w-6xl mx-auto">
+              <div className="bg-surface-container rounded-[2.2rem] md:rounded-[2.4rem] flex items-center justify-center relative overflow-hidden group">
+                <img alt="Food Delivery App Mockup" className="w-full h-auto object-cover opacity-100 group-hover:scale-[1.02] transition-transform duration-1000" src="/app_template_full.webp"/>
               </div>
             </div>
           </div>
