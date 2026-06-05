@@ -36,11 +36,11 @@ export default function Hero() {
           <p className="hero-desc font-body-lg text-body-md md:text-body-lg text-on-surface-variant max-w-xl leading-relaxed">
             Bridging the gap between <span className="text-white font-semibold">human intuition</span> and <span className="text-primary font-semibold">technical precision</span>. Designing digital ecosystems that scale and visual identities that resonate.
           </p>
-          <div className="hero-buttons flex flex-row gap-3 pt-4">
-            <a className="bg-white text-black px-4 md:px-10 py-2.5 md:py-5 rounded-full text-[11px] md:text-label-lg font-bold shadow-2xl flex items-center justify-center gap-1.5 hover:translate-y-[-4px] transition-all" href="#works">
-              View Portfolio <span className="material-symbols-outlined text-[16px] md:text-[24px]">arrow_outward</span>
+          <div className="hero-buttons flex flex-row gap-3 pt-4 w-full">
+            <a className="flex-1 bg-white text-black py-3 md:py-5 rounded-full text-[13px] md:text-label-lg font-bold shadow-2xl flex items-center justify-center gap-1.5 hover:translate-y-[-4px] transition-all" href="#works">
+              View Portfolio <span className="material-symbols-outlined text-[18px] md:text-[24px]">arrow_outward</span>
             </a>
-            <button className="glass px-4 md:px-10 py-2.5 md:py-5 rounded-full text-[11px] md:text-label-lg text-on-surface font-semibold hover:bg-white/10 transition-all border border-white/10">
+            <button className="flex-1 glass py-3 md:py-5 rounded-full text-[13px] md:text-label-lg text-on-surface font-semibold hover:bg-white/10 transition-all border border-white/10">
               The Strategy
             </button>
           </div>
