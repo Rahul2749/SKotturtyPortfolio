@@ -75,22 +75,38 @@ export default function App() {
       animateIn('.portfolio-header', { from: { y: 30 }, to: {} });
       animateIn('.portfolio-tabs', { from: { x: 30, y: 0 }, to: {} });
       
-      // Premium 3D reveal animation for portfolio project cards
-      gsap.set('.portfolio-section .project-card', { y: 100, opacity: 0, scale: 0.85, rotationX: 15, transformPerspective: 1000 });
-      ScrollTrigger.batch('.portfolio-section .project-card', {
-        onEnter: (batch) => {
-          gsap.to(batch, {
-            y: 0,
-            opacity: 1,
-            scale: 1,
-            rotationX: 0,
-            duration: 1.4,
-            ease: 'expo.out',
-            stagger: 0.15,
-            overwrite: true
+      // Unique animations per portfolio category
+      const portfolioAnimations = {
+        'uiux': { from: { y: 100, opacity: 0, scale: 0.85, rotationX: 15 }, to: { y: 0, opacity: 1, scale: 1, rotationX: 0, ease: 'expo.out' } },
+        'web': { from: { x: -80, opacity: 0 }, to: { x: 0, opacity: 1, ease: 'back.out(1.4)' } },
+        'templates': { from: { scale: 0.6, opacity: 0, rotationY: 45 }, to: { scale: 1, opacity: 1, rotationY: 0, ease: 'power3.out' } },
+        'animation': { from: { y: -80, opacity: 0, rotationZ: 5 }, to: { y: 0, opacity: 1, rotationZ: 0, ease: 'bounce.out' } },
+        'branding': { from: { opacity: 0, filter: 'blur(15px)', scale: 1.1 }, to: { opacity: 1, filter: 'blur(0px)', scale: 1, ease: 'power2.out' } },
+        'marketing': { from: { x: 80, opacity: 0, rotationY: -30 }, to: { x: 0, opacity: 1, rotationY: 0, ease: 'expo.out' } },
+        'social': { from: { scale: 1.2, opacity: 0 }, to: { scale: 1, opacity: 1, ease: 'circ.out' } },
+        'matte': { from: { y: 100, opacity: 0, scale: 0.9, rotationX: -15 }, to: { y: 0, opacity: 1, scale: 1, rotationX: 0, ease: 'power4.out' } },
+        'default': { from: { y: 50, opacity: 0 }, to: { y: 0, opacity: 1, ease: 'power2.out' } }
+      };
+
+      gsap.utils.toArray('.portfolio-section').forEach(section => {
+        const id = section.id;
+        const animConfig = portfolioAnimations[id] || portfolioAnimations['default'];
+        const cards = section.querySelectorAll('.project-card');
+        
+        if(cards.length > 0) {
+          gsap.set(cards, { ...animConfig.from, transformPerspective: 1000 });
+          ScrollTrigger.batch(cards, {
+            onEnter: (batch) => {
+              gsap.to(batch, {
+                ...animConfig.to,
+                duration: 1.2,
+                stagger: 0.15,
+                overwrite: true
+              });
+            },
+            start: 'top 85%',
           });
-        },
-        start: 'top 85%',
+        }
       });
 
       // ── Case Studies ──
