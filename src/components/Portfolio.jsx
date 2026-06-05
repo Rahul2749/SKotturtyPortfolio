@@ -325,21 +325,11 @@ export default function Portfolio() {
               <div className="glass rounded-[2.5rem] p-4 flex items-center justify-center project-card bg-[#8ebae4] overflow-hidden">
                 <img alt="GRE & GMAT Coaching Ad" className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500 rounded-[1.5rem] shadow-xl" src="/social_1.webp"/>
               </div>
-              <div className="glass rounded-[2.5rem] p-6 flex items-center justify-center project-card bg-surface-container border-2 border-dashed border-white/10 group min-h-[300px] aspect-square md:aspect-auto">
-                <div className="text-center opacity-60 group-hover:opacity-100 transition-opacity">
-                  <div className="w-16 h-16 rounded-full bg-white/5 mx-auto mb-4 flex items-center justify-center">
-                    <span className="material-symbols-outlined text-white text-2xl">add_photo_alternate</span>
-                  </div>
-                  <p className="text-on-surface-variant text-sm font-medium tracking-widest uppercase">Coming Soon</p>
-                </div>
+              <div className="glass rounded-[2.5rem] p-4 flex items-center justify-center project-card bg-[#e5e7eb] overflow-hidden">
+                <img alt="Real Estate Home For Sale Ad" className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500 rounded-[1.5rem] shadow-xl" src="/social_2.webp"/>
               </div>
-              <div className="glass rounded-[2.5rem] p-6 flex items-center justify-center project-card bg-surface-container border-2 border-dashed border-white/10 group min-h-[300px] aspect-square md:aspect-auto">
-                <div className="text-center opacity-60 group-hover:opacity-100 transition-opacity">
-                  <div className="w-16 h-16 rounded-full bg-white/5 mx-auto mb-4 flex items-center justify-center">
-                    <span className="material-symbols-outlined text-white text-2xl">add_photo_alternate</span>
-                  </div>
-                  <p className="text-on-surface-variant text-sm font-medium tracking-widest uppercase">Coming Soon</p>
-                </div>
+              <div className="glass rounded-[2.5rem] p-4 flex items-center justify-center project-card bg-[#0f172a] overflow-hidden">
+                <img alt="Website Services Digital Ad" className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500 rounded-[1.5rem] shadow-xl" src="/social_3.webp"/>
               </div>
             </div>
           </div>
