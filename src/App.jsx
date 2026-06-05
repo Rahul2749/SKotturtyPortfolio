@@ -60,7 +60,7 @@ export default function App() {
       gsap.set('.hero-portrait', { scale: 0.9 });
 
       // ── About section ──
-      animateIn('.about-heading', { from: { x: -40, y: 0 }, to: {} });
+      animateIn('.about-heading', { from: { y: 20 }, to: {} });
       animateIn('.about-bar', { from: { scaleX: 0, y: 0 }, to: { scaleX: 1, transformOrigin: 'left center' } });
       animateIn('.about-text', { from: { y: 25 }, to: { stagger: 0.2 } });
       animateIn('.stat-card', { from: { y: 40, scale: 0.92 }, to: { scale: 1, stagger: 0.12, ease: 'back.out(1.4)' } });

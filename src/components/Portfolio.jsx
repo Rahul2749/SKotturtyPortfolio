@@ -9,29 +9,29 @@ export default function Portfolio() {
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
           <div className="portfolio-header">
             <span className="text-primary font-bold tracking-[0.5em] uppercase text-label-sm">Categorized Hub</span>
-            <h2 className="font-headline-lg text-headline-lg text-white mt-2">Creative <span className="italic font-light text-gradient">Showcase</span></h2>
+            <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-white mt-2">Creative <span className="italic font-light text-gradient">Showcase</span></h2>
           </div>
-          <div className="portfolio-tabs flex flex-wrap gap-2 overflow-x-auto pb-4">
+          <div className="portfolio-tabs flex gap-2 overflow-x-auto pb-4 hide-scrollbar flex-nowrap">
             <button 
-              className={`tab-btn px-6 py-2 rounded-full glass text-label-sm transition-all ${activeTab === 'uiux' ? 'active border-primary/50 text-primary font-bold' : 'border-white/10 text-on-surface-variant hover:text-white'}`}
+              className={`tab-btn px-4 md:px-6 py-1.5 md:py-2 rounded-full glass text-[11px] md:text-label-sm transition-all whitespace-nowrap ${activeTab === 'uiux' ? 'active border-primary/50 text-primary font-bold' : 'border-white/10 text-on-surface-variant hover:text-white'}`}
               onClick={() => setActiveTab('uiux')}
             >
               UI/UX
             </button>
             <button 
-              className={`tab-btn px-6 py-2 rounded-full glass text-label-sm transition-all ${activeTab === 'web' ? 'active border-primary/50 text-primary font-bold' : 'border-white/10 text-on-surface-variant hover:text-white'}`}
+              className={`tab-btn px-4 md:px-6 py-1.5 md:py-2 rounded-full glass text-[11px] md:text-label-sm transition-all whitespace-nowrap ${activeTab === 'web' ? 'active border-primary/50 text-primary font-bold' : 'border-white/10 text-on-surface-variant hover:text-white'}`}
               onClick={() => setActiveTab('web')}
             >
               Web
             </button>
             <button 
-              className={`tab-btn px-6 py-2 rounded-full glass text-label-sm transition-all ${activeTab === 'branding' ? 'active border-primary/50 text-primary font-bold' : 'border-white/10 text-on-surface-variant hover:text-white'}`}
+              className={`tab-btn px-4 md:px-6 py-1.5 md:py-2 rounded-full glass text-[11px] md:text-label-sm transition-all whitespace-nowrap ${activeTab === 'branding' ? 'active border-primary/50 text-primary font-bold' : 'border-white/10 text-on-surface-variant hover:text-white'}`}
               onClick={() => setActiveTab('branding')}
             >
               Branding
             </button>
             <button 
-              className={`tab-btn px-6 py-2 rounded-full glass text-label-sm transition-all ${activeTab === 'marketing' ? 'active border-primary/50 text-primary font-bold' : 'border-white/10 text-on-surface-variant hover:text-white'}`}
+              className={`tab-btn px-4 md:px-6 py-1.5 md:py-2 rounded-full glass text-[11px] md:text-label-sm transition-all whitespace-nowrap ${activeTab === 'marketing' ? 'active border-primary/50 text-primary font-bold' : 'border-white/10 text-on-surface-variant hover:text-white'}`}
               onClick={() => setActiveTab('marketing')}
             >
               Marketing

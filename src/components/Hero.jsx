@@ -36,16 +36,16 @@ export default function Hero() {
           <p className="hero-desc font-body-lg text-body-md md:text-body-lg text-on-surface-variant max-w-xl leading-relaxed">
             Bridging the gap between <span className="text-white font-semibold">human intuition</span> and <span className="text-primary font-semibold">technical precision</span>. Designing digital ecosystems that scale and visual identities that resonate.
           </p>
-          <div className="hero-buttons flex flex-col sm:flex-row gap-4 pt-4">
-            <a className="bg-white text-black px-6 md:px-10 py-4 md:py-5 rounded-full font-label-lg font-bold shadow-2xl flex items-center justify-center gap-3 hover:translate-y-[-4px] transition-all" href="#works">
-              View Portfolio <span className="material-symbols-outlined">arrow_outward</span>
+          <div className="hero-buttons flex flex-row gap-3 pt-4">
+            <a className="bg-white text-black px-5 md:px-10 py-3 md:py-5 rounded-full text-[12px] md:text-label-lg font-bold shadow-2xl flex items-center justify-center gap-2 hover:translate-y-[-4px] transition-all" href="#works">
+              View Portfolio <span className="material-symbols-outlined text-[18px] md:text-[24px]">arrow_outward</span>
             </a>
-            <button className="glass px-6 md:px-10 py-4 md:py-5 rounded-full font-label-lg text-on-surface font-semibold hover:bg-white/10 transition-all border border-white/10">
+            <button className="glass px-5 md:px-10 py-3 md:py-5 rounded-full text-[12px] md:text-label-lg text-on-surface font-semibold hover:bg-white/10 transition-all border border-white/10">
               The Strategy
             </button>
           </div>
         </div>
-        <div className="hero-portrait md:col-span-4 relative mt-12 md:mt-0 max-w-[280px] sm:max-w-md mx-auto md:max-w-none">
+        <div className="hero-portrait md:col-span-4 relative mt-8 md:mt-0 max-w-[220px] sm:max-w-xs mx-auto md:max-w-none">
           <div className="aspect-[4/5] glass rounded-[3rem] overflow-hidden relative group shadow-2xl border border-white/10">
             <img alt="Sahiti Kotturty portrait" className="w-full h-full object-cover grayscale brightness-90 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVKpv9lx7C71-MCDyce9AfUKHjWJJB_Z1qE9IvloUszipwJ9zaEuxSRsTshqHH9q86zBj0jEQ6MhO-Fv6Qs7jSDusYmbuNAnlKbOPW-voDW8M7kDcD5ZZrndJ98nf-5e8JEFcTtpxgl76KY5rvcuLFeN437tput-utx99rau2XBqFoSbBMp-9nA1MdYPJpU1jcPNpdM4qcxdDxfQevh_qBGAHjetPbd4OW9AqvniOoNUfIGbwOCIf5FwmzlQFWNLtNz1hD2D3Gm0L_Odg"/>
             <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-80"></div>

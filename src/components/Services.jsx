@@ -4,7 +4,7 @@ export default function Services() {
       <div className="max-w-7xl mx-auto px-container-margin">
         <div className="services-header text-center mb-20">
           <span className="text-primary font-bold tracking-[0.5em] uppercase text-label-sm">Expertise</span>
-          <h2 className="font-headline-lg text-headline-lg text-white mt-4">Multidisciplinary <span className="italic font-light">Solutions</span></h2>
+          <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-white mt-4">Multidisciplinary <span className="italic font-light">Solutions</span></h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Product Design */}
@@ -13,7 +13,7 @@ export default function Services() {
               <span className="material-symbols-outlined text-6xl text-primary">design_services</span>
             </div>
             <h3 className="font-headline-md text-white mb-6">Product Design</h3>
-            <p className="text-on-surface-variant mb-8 leading-relaxed">Full-cycle UI/UX from research and wireframing to high-fidelity prototyping and design system scaling.</p>
+            <p className="text-on-surface-variant mb-6 md:mb-8 leading-relaxed text-body-sm md:text-body-md">Full-cycle UI/UX from research and wireframing to high-fidelity prototyping and design system scaling.</p>
             <ul className="space-y-3 text-label-sm text-outline uppercase tracking-wider">
               <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 bg-primary rounded-full"></span> SaaS Dashboards</li>
               <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 bg-primary rounded-full"></span> Mobile Applications</li>
