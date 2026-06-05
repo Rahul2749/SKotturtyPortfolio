@@ -74,6 +74,24 @@ export default function App() {
       // ── Portfolio ──
       animateIn('.portfolio-header', { from: { y: 30 }, to: {} });
       animateIn('.portfolio-tabs', { from: { x: 30, y: 0 }, to: {} });
+      
+      // Premium 3D reveal animation for portfolio project cards
+      gsap.set('.portfolio-section .project-card', { y: 100, opacity: 0, scale: 0.85, rotationX: 15, transformPerspective: 1000 });
+      ScrollTrigger.batch('.portfolio-section .project-card', {
+        onEnter: (batch) => {
+          gsap.to(batch, {
+            y: 0,
+            opacity: 1,
+            scale: 1,
+            rotationX: 0,
+            duration: 1.4,
+            ease: 'expo.out',
+            stagger: 0.15,
+            overwrite: true
+          });
+        },
+        start: 'top 85%',
+      });
 
       // ── Case Studies ──
       animateIn('.case-header', { from: { y: 30 }, to: {} });
