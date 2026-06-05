@@ -69,7 +69,7 @@ export default function Portfolio() {
             <h3 className="text-headline-lg font-display-md text-white mb-6 px-2">UI/UX Design</h3>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="glass rounded-[2.5rem] p-1 overflow-hidden project-card">
-              <div className="bg-surface-container rounded-[2.4rem] h-[340px] flex flex-col items-center justify-center relative overflow-hidden group">
+              <div className="bg-surface-container rounded-[2.4rem] aspect-video md:aspect-auto md:h-[340px] flex flex-col items-center justify-center relative overflow-hidden group">
                 <img alt="Healthy Lifestyle App UI" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-110 transition-transform duration-1000" src="/apphome_ui.webp"/>
                 <div className="z-10 text-center p-6 bg-background/50 backdrop-blur-sm rounded-2xl m-4 mt-auto w-11/12 border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <h4 className="text-white font-bold text-headline-sm">FinTech Mobile App</h4>
@@ -78,7 +78,7 @@ export default function Portfolio() {
               </div>
             </div>
             <div className="glass rounded-[2.5rem] p-1 overflow-hidden project-card">
-              <div className="bg-surface-container rounded-[2.4rem] h-[340px] flex flex-col items-center justify-center relative overflow-hidden group">
+              <div className="bg-surface-container rounded-[2.4rem] aspect-video md:aspect-auto md:h-[340px] flex flex-col items-center justify-center relative overflow-hidden group">
                 <img alt="Crypto Website Template" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-110 transition-transform duration-1000" src="/crypto_mockup.webp"/>
                 <div className="z-10 text-center p-6 bg-background/50 backdrop-blur-sm rounded-2xl m-4 mt-auto w-11/12 border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <h4 className="text-white font-bold text-headline-sm">Crypto Platform UI</h4>
@@ -142,7 +142,7 @@ export default function Portfolio() {
             <h3 className="text-headline-lg font-display-md text-white mb-6 px-2">Branding</h3>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="glass rounded-[2.5rem] p-1 overflow-hidden project-card">
-              <div className="bg-surface-container rounded-[2.4rem] h-[340px] flex flex-col items-center justify-center relative overflow-hidden group">
+              <div className="bg-surface-container rounded-[2.4rem] aspect-video md:aspect-auto md:h-[340px] flex flex-col items-center justify-center relative overflow-hidden group">
                 <img alt="Business Card Mockups" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-110 transition-transform duration-1000" src="/branding_mockup.webp"/>
                 <div className="z-10 text-center p-6 bg-background/50 backdrop-blur-sm rounded-2xl m-4 mt-auto w-11/12 border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <h4 className="text-white font-bold text-headline-sm">Business Card Designs</h4>
@@ -151,7 +151,7 @@ export default function Portfolio() {
               </div>
             </div>
             <div className="glass rounded-[2.5rem] p-1 overflow-hidden project-card">
-              <div className="bg-surface-container rounded-[2.4rem] h-[340px] flex flex-col items-center justify-center relative overflow-hidden group">
+              <div className="bg-surface-container rounded-[2.4rem] aspect-video md:aspect-auto md:h-[340px] flex flex-col items-center justify-center relative overflow-hidden group">
                 <img alt="Organic Tea Packaging" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-110 transition-transform duration-1000" src="/packaging_mockup.webp"/>
                 <div className="z-10 text-center p-6 bg-background/50 backdrop-blur-sm rounded-2xl m-4 mt-auto w-11/12 border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <h4 className="text-white font-bold text-headline-sm">Organic Tea Packaging</h4>
@@ -199,7 +199,7 @@ export default function Portfolio() {
                 </div>
               </div>
             </div>
-            <div className="lg:col-span-7 h-full min-h-[400px]">
+            <div className="lg:col-span-7 aspect-video md:aspect-auto md:h-full md:min-h-[400px]">
               <div className="glass rounded-[2.5rem] p-1 overflow-hidden project-card h-full w-full relative group">
                 <img src="/marketing_mockup.webp" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-105 transition-all duration-700" alt="Social Media Ad Creatives" />
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent opacity-90"></div>
