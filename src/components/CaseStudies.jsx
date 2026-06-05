@@ -1,14 +1,14 @@
 export default function CaseStudies() {
   return (
-    <section className="py-section-gap bg-surface-container-low/30 reveal">
+    <section className="py-section-gap bg-surface-container-low/30">
       <div className="max-w-7xl mx-auto px-container-margin">
-        <div className="mb-16">
+        <div className="case-header mb-16">
           <span className="text-primary font-bold tracking-[0.5em] uppercase text-label-sm">Deep Dives</span>
           <h2 className="font-headline-lg text-headline-lg text-white mt-2">Project <span className="italic font-light">Strategies</span></h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Case Study: OmniFlow */}
-          <div className="glass rounded-[3rem] p-12 space-y-8 project-card border border-white/5">
+          <div className="case-card glass rounded-[3rem] p-12 space-y-8 project-card border border-white/5">
             <div className="flex justify-between items-start">
               <span className="text-primary font-bold text-[10px] uppercase border border-primary/30 px-4 py-1 rounded-full">E-Commerce Strategy</span>
               <span className="text-outline text-label-sm">300% Growth</span>
@@ -36,7 +36,7 @@ export default function CaseStudies() {
             </a>
           </div>
           {/* Case Study: Astra */}
-          <div className="glass rounded-[3rem] p-12 space-y-8 project-card border border-white/5">
+          <div className="case-card glass rounded-[3rem] p-12 space-y-8 project-card border border-white/5">
             <div className="flex justify-between items-start">
               <span className="text-secondary font-bold text-[10px] uppercase border border-secondary/30 px-4 py-1 rounded-full">Kinetic Branding</span>
               <span className="text-outline text-label-sm">$2M Seed Raised</span>

@@ -4,14 +4,14 @@ export default function Portfolio() {
   const [activeTab, setActiveTab] = useState('uiux');
 
   return (
-    <section className="py-section-gap px-container-margin reveal" id="works">
+    <section className="py-section-gap px-container-margin" id="works">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
-          <div>
+          <div className="portfolio-header">
             <span className="text-primary font-bold tracking-[0.5em] uppercase text-label-sm">Categorized Hub</span>
             <h2 className="font-headline-lg text-headline-lg text-white mt-2">Creative <span className="italic font-light text-gradient">Showcase</span></h2>
           </div>
-          <div className="flex flex-wrap gap-2 overflow-x-auto pb-4">
+          <div className="portfolio-tabs flex flex-wrap gap-2 overflow-x-auto pb-4">
             <button 
               className={`tab-btn px-6 py-2 rounded-full glass text-label-sm transition-all ${activeTab === 'uiux' ? 'active border-primary/50 text-primary font-bold' : 'border-white/10 text-on-surface-variant hover:text-white'}`}
               onClick={() => setActiveTab('uiux')}

@@ -1,12 +1,12 @@
 export default function Testimonials() {
   return (
-    <section className="py-section-gap bg-surface-container-lowest reveal">
+    <section className="py-section-gap bg-surface-container-lowest">
       <div className="max-w-7xl mx-auto px-container-margin">
-        <div className="text-center mb-16">
+        <div className="testimonial-header text-center mb-16">
           <h2 className="font-headline-lg text-headline-lg text-white">Client <span className="italic font-light">Praise</span></h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="glass p-12 rounded-[2.5rem] relative">
+          <div className="testimonial-card glass p-12 rounded-[2.5rem] relative">
             <span className="material-symbols-outlined text-primary text-6xl opacity-20 absolute top-8 left-8">format_quote</span>
             <p className="text-body-lg text-white italic mb-8 relative z-10">"Sahiti brought a level of strategic thinking we hadn't seen before. Our conversion rates improved by 40% within the first month of the new UI launch."</p>
             <div className="flex items-center gap-4">
@@ -17,7 +17,7 @@ export default function Testimonials() {
               </div>
             </div>
           </div>
-          <div className="glass p-12 rounded-[2.5rem] relative">
+          <div className="testimonial-card glass p-12 rounded-[2.5rem] relative">
             <span className="material-symbols-outlined text-secondary text-6xl opacity-20 absolute top-8 left-8">format_quote</span>
             <p className="text-body-lg text-white italic mb-8 relative z-10">"The rebranding was seamless. She captured our vision perfectly and created a design system that our team can actually use to scale."</p>
             <div className="flex items-center gap-4">

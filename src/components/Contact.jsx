@@ -1,9 +1,9 @@
 export default function Contact() {
   return (
-    <section className="py-section-gap px-container-margin reveal" id="contact">
-      <div className="max-w-5xl mx-auto glass rounded-[4rem] p-12 md:p-24 relative overflow-hidden text-center group border border-white/10 shadow-[0_0_80px_rgba(165,231,255,0.05)]">
+    <section className="py-section-gap px-container-margin" id="contact">
+      <div className="contact-cta max-w-5xl mx-auto glass rounded-[4rem] p-12 md:p-24 relative overflow-hidden text-center group border border-white/10 shadow-[0_0_80px_rgba(165,231,255,0.05)]">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-tertiary/10 opacity-50"></div>
-        <div className="relative z-10 space-y-10">
+        <div className="contact-cta-inner relative z-10 space-y-10">
           <h2 className="font-display-md text-display-md text-white leading-tight">
             Ready to build <br/> something <span className="italic font-light text-gradient">extraordinary?</span>
           </h2>

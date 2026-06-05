@@ -1,14 +1,14 @@
 export default function Services() {
   return (
-    <section className="py-section-gap bg-surface-container-lowest/50 reveal" id="services">
+    <section className="py-section-gap bg-surface-container-lowest/50" id="services">
       <div className="max-w-7xl mx-auto px-container-margin">
-        <div className="text-center mb-20">
+        <div className="services-header text-center mb-20">
           <span className="text-primary font-bold tracking-[0.5em] uppercase text-label-sm">Expertise</span>
           <h2 className="font-headline-lg text-headline-lg text-white mt-4">Multidisciplinary <span className="italic font-light">Solutions</span></h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Product Design */}
-          <div className="glass p-12 rounded-[2.5rem] project-card relative overflow-hidden group">
+          <div className="service-card glass p-12 rounded-[2.5rem] project-card relative overflow-hidden group">
             <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-100 transition-opacity">
               <span className="material-symbols-outlined text-6xl text-primary">design_services</span>
             </div>
@@ -21,7 +21,7 @@ export default function Services() {
             </ul>
           </div>
           {/* Brand Identity */}
-          <div className="glass p-12 rounded-[2.5rem] project-card relative overflow-hidden group">
+          <div className="service-card glass p-12 rounded-[2.5rem] project-card relative overflow-hidden group">
             <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-100 transition-opacity">
               <span className="material-symbols-outlined text-6xl text-secondary">auto_awesome</span>
             </div>
@@ -34,7 +34,7 @@ export default function Services() {
             </ul>
           </div>
           {/* Digital Growth */}
-          <div className="glass p-12 rounded-[2.5rem] project-card relative overflow-hidden group">
+          <div className="service-card glass p-12 rounded-[2.5rem] project-card relative overflow-hidden group">
             <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-100 transition-opacity">
               <span className="material-symbols-outlined text-6xl text-tertiary">trending_up</span>
             </div>
