@@ -11,6 +11,8 @@ import CaseStudies from './components/CaseStudies';
 import Testimonials from './components/Testimonials';
 import Process from './components/Process';
 import Skills from './components/Skills';
+import Experience from './components/Experience';
+import Faq from './components/Faq';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -90,6 +92,14 @@ export default function App() {
       animateIn('.skill-tag', { from: { scale: 0.8, y: 15 }, to: { scale: 1, stagger: 0.06, ease: 'back.out(1.5)' } });
       animateIn('.skill-card', { from: { y: 30, scale: 0.92 }, to: { scale: 1, stagger: 0.08 } });
 
+      // ── Experience ──
+      animateIn('.experience-header', { from: { y: 30 }, to: {} });
+      animateIn('.experience-card', { from: { y: 50, opacity: 0 }, to: { stagger: 0.2 } });
+
+      // ── FAQ ──
+      animateIn('.faq-header', { from: { y: 30 }, to: {} });
+      animateIn('.faq-item', { from: { y: 30, scale: 0.95 }, to: { stagger: 0.1 } });
+
       // ── Contact ──
       animateIn('.contact-cta', { from: { y: 50, scale: 0.97 }, to: { scale: 1, duration: 1 } });
 
@@ -109,15 +119,17 @@ export default function App() {
         <main>
           <Hero />
           <About />
-        <Services />
-        <Portfolio />
-        <CaseStudies />
-        <Testimonials />
-        <Process />
-        <Skills />
-        <Contact />
-      </main>
-      <Footer />
+          <Experience />
+          <Services />
+          <Portfolio />
+          <CaseStudies />
+          <Testimonials />
+          <Process />
+          <Skills />
+          <Faq />
+          <Contact />
+        </main>
+        <Footer />
       </div>
     </>
   );
