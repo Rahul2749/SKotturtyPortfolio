@@ -1,21 +1,16 @@
 export default function Footer() {
   return (
-    <footer className="border-t border-white/5 py-12 px-8 md:px-16 mt-16 max-w-7xl mx-auto w-full">
-      <div className="flex flex-col md:flex-row justify-between items-center gap-8">
-        <div className="flex flex-col">
-          <span className="font-body font-bold text-white uppercase tracking-widest text-sm mb-1">
-            SAHITI KOTTURTY
-          </span>
-          <span className="text-[10px] text-on-surface-variant uppercase tracking-widest">
-            © 2024 SAHITI KOTTURTY — DESIGNED IN THE NOIR
-          </span>
+    <footer className="w-full py-20 border-t border-white/5 bg-background">
+      <div className="flex flex-col md:flex-row justify-between items-center px-container-margin gap-12 max-w-7xl mx-auto">
+        <div className="space-y-4 text-center md:text-left">
+          <span className="font-headline-md text-headline-md font-black text-white tracking-tighter">SAHITI KOTTURTY</span>
+          <p className="text-label-sm text-outline uppercase tracking-widest">© 2024 DESIGNED IN THE NOIR — ALL RIGHTS RESERVED</p>
         </div>
-        
-        <div className="flex gap-6">
-          <a href="#" className="text-[10px] font-bold text-on-surface-variant hover:text-white transition-colors">Dribbble</a>
-          <a href="#" className="text-[10px] font-bold text-on-surface-variant hover:text-white transition-colors">LinkedIn</a>
-          <a href="#" className="text-[10px] font-bold text-on-surface-variant hover:text-white transition-colors">Instagram</a>
-          <a href="#" className="text-[10px] font-bold text-on-surface-variant hover:text-white transition-colors">Email</a>
+        <div className="flex flex-wrap justify-center gap-10">
+          <a className="text-label-sm text-outline hover:text-primary transition-colors uppercase tracking-widest font-bold" href="#">Dribbble</a>
+          <a className="text-label-sm text-outline hover:text-primary transition-colors uppercase tracking-widest font-bold" href="#">LinkedIn</a>
+          <a className="text-label-sm text-outline hover:text-primary transition-colors uppercase tracking-widest font-bold" href="#">Instagram</a>
+          <a className="text-label-sm text-outline hover:text-primary transition-colors uppercase tracking-widest font-bold" href="#">Behance</a>
         </div>
       </div>
     </footer>

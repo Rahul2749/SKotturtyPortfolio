@@ -1,26 +1,24 @@
 export default function Contact() {
   return (
-    <section id="contact" className="px-8 md:px-16 mb-32 max-w-7xl mx-auto">
-      <div className="glass-card rounded-[3rem] py-24 px-8 flex flex-col items-center text-center bg-[#0d121c]/50">
-        <h2 className="flex flex-col md:flex-row items-center gap-3 mb-6">
-          <span className="font-display font-extrabold text-4xl md:text-5xl text-white tracking-tighter">Ready to start</span>
-          <span className="font-display italic font-light text-4xl md:text-5xl text-on-surface-variant tracking-tight">a project together?</span>
-        </h2>
-        
-        <p className="font-body text-sm text-on-surface-variant max-w-xl mx-auto mb-10 leading-relaxed">
-          Currently accepting new creative partnerships for Q4 2024. Let's build something that stands outside the ordinary.
-        </p>
-        
-        <div className="flex flex-wrap items-center justify-center gap-4">
-          <button className="pill-button bg-white text-[#0b0d14] hover:bg-[#a5e7ff] transition-colors">
-            Send an inquiry
-          </button>
-          <button className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-colors group">
-            <span className="material-symbols-outlined text-white text-sm group-hover:scale-110 transition-transform">mail</span>
-          </button>
-          <button className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-colors group">
-            <span className="material-symbols-outlined text-white text-sm group-hover:scale-110 transition-transform">share</span>
-          </button>
+    <section className="py-section-gap px-container-margin reveal" id="contact">
+      <div className="max-w-5xl mx-auto glass rounded-[4rem] p-12 md:p-24 relative overflow-hidden text-center group border border-white/10 shadow-[0_0_80px_rgba(165,231,255,0.05)]">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-tertiary/10 opacity-50"></div>
+        <div className="relative z-10 space-y-10">
+          <h2 className="font-display-md text-display-md text-white leading-tight">
+            Ready to build <br/> something <span className="italic font-light text-gradient">extraordinary?</span>
+          </h2>
+          <p className="font-body-lg text-on-surface-variant max-w-2xl mx-auto">
+            Currently accepting selective partnerships for Q1 2025. Let's discuss how we can elevate your brand's digital footprint.
+          </p>
+          <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
+            <a className="bg-primary text-black px-12 py-6 rounded-full font-label-lg font-bold hover:scale-105 transition-all shadow-2xl flex items-center gap-3" href="mailto:hello@sahiti.com">
+              Start a Conversation <span className="material-symbols-outlined">mail</span>
+            </a>
+            <div className="flex gap-4">
+              <a className="w-16 h-16 glass rounded-full flex items-center justify-center hover:bg-white/10 transition-all border border-white/10" href="#"><span className="material-symbols-outlined text-white">share</span></a>
+              <a className="w-16 h-16 glass rounded-full flex items-center justify-center hover:bg-white/10 transition-all border border-white/10" href="#"><span className="material-symbols-outlined text-white">call</span></a>
+            </div>
+          </div>
         </div>
       </div>
     </section>

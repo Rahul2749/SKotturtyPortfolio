@@ -1,61 +1,55 @@
-import { useEffect, useRef } from 'react';
-import gsap from 'gsap';
+import { useEffect } from 'react';
 
 export default function Hero() {
-  const heroRef = useRef(null);
-
   useEffect(() => {
-    const ctx = gsap.context(() => {
-      gsap.from('.hero-element', {
-        y: 30,
-        opacity: 0,
-        duration: 1,
-        stagger: 0.15,
-        ease: 'power3.out',
+    const handleMouseMove = (e) => {
+      const blobs = document.querySelectorAll('.glow-blob');
+      const x = (e.clientX / window.innerWidth - 0.5) * 40;
+      const y = (e.clientY / window.innerHeight - 0.5) * 40;
+      
+      blobs.forEach((blob, index) => {
+        const factor = (index + 1) * 0.15;
+        blob.style.transform = `translate(${x * factor}px, ${y * factor}px)`;
       });
-    }, heroRef);
-    return () => ctx.revert();
+    };
+
+    document.addEventListener('mousemove', handleMouseMove);
+    return () => {
+      document.removeEventListener('mousemove', handleMouseMove);
+    };
   }, []);
 
   return (
-    <section ref={heroRef} className="px-8 md:px-16 pt-32 pb-20 min-h-screen max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center gap-12 md:gap-16 relative">
-      <div className="absolute top-20 left-0 w-96 h-96 bg-glow-v2 -z-10 blur-3xl"></div>
-      
-      <div className="flex-1 w-full">
-        <p className="hero-element text-[10px] font-bold text-on-surface-variant tracking-[0.2em] uppercase mb-8">
-          Multidisciplinary Designer & Artist
-        </p>
-        <h1 className="hero-element flex flex-col mb-8">
-          <span className="font-display italic font-light text-5xl md:text-7xl text-white tracking-tight -mb-4">Sahiti</span>
-          <span className="font-display font-extrabold text-6xl md:text-8xl tracking-tighter gradient-text-v2">Kotturty</span>
-        </h1>
-        <p className="hero-element font-body text-sm md:text-base text-on-surface-variant max-w-md mb-10 leading-relaxed">
-          Bridging the gap between <span className="text-white font-medium">human intuition</span> and <span className="text-white font-medium">technical precision</span>.<br/>
-          Crafting digital experiences that feel alive.
-        </p>
-        <div className="hero-element flex flex-wrap gap-4">
-          <button className="pill-button pill-button-primary flex items-center gap-2 group">
-            View Folio 
-            <span className="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_outward</span>
-          </button>
-          <button className="pill-button pill-button-secondary">
-            The Process
-          </button>
+    <section className="relative min-h-screen flex items-center pt-24 px-container-margin overflow-hidden">
+      <div className="glow-blob w-[600px] h-[600px] bg-primary/20 top-[-10%] left-[-10%] rounded-full"></div>
+      <div className="glow-blob w-[500px] h-[500px] bg-tertiary/20 bottom-[-10%] right-[-10%] rounded-full" style={{ animationDelay: '-5s' }}></div>
+      <div className="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+        <div className="md:col-span-8 space-y-8 reveal active">
+          <div className="flex items-center gap-4">
+            <span className="w-12 h-px bg-primary"></span>
+            <span className="font-label-lg text-label-lg text-primary tracking-[0.4em] uppercase">Multidisciplinary Designer & Artist</span>
+          </div>
+          <h1 className="font-display-lg text-display-lg md:text-[110px] leading-[0.9] tracking-tighter">
+            <span className="font-light italic text-on-surface-variant opacity-50">Sahiti</span><br/>
+            <span className="font-black text-gradient">Kotturty</span>
+          </h1>
+          <p className="font-body-lg text-body-lg text-on-surface-variant max-w-xl leading-relaxed">
+            Bridging the gap between <span className="text-white font-semibold">human intuition</span> and <span className="text-primary font-semibold">technical precision</span>. Designing digital ecosystems that scale and visual identities that resonate.
+          </p>
+          <div className="flex flex-wrap gap-4 pt-4">
+            <a className="bg-white text-black px-10 py-5 rounded-full font-label-lg font-bold shadow-2xl flex items-center gap-3 hover:translate-y-[-4px] transition-all" href="#works">
+              View Portfolio <span className="material-symbols-outlined">arrow_outward</span>
+            </a>
+            <button className="glass px-10 py-5 rounded-full font-label-lg text-on-surface font-semibold hover:bg-white/10 transition-all border border-white/10">
+              The Strategy
+            </button>
+          </div>
         </div>
-      </div>
-      
-      <div className="flex-1 w-full flex md:justify-end justify-center hero-element mt-12 md:mt-0">
-        <div className="relative w-full max-w-[340px] rounded-3xl overflow-hidden glass-card p-2 aspect-[4/5]">
-           <img 
-             src="/skotturty.jpeg" 
-             alt="Sahiti Kotturty" 
-             className="w-full h-full object-cover rounded-2xl transition-all duration-700"
-             onError={(e) => {
-               // Fallback if image fails
-               e.target.src = "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80";
-             }}
-           />
-           <div className="absolute inset-0 bg-gradient-to-t from-[#0b0d14] via-transparent to-transparent opacity-60"></div>
+        <div className="md:col-span-4 relative hidden md:block reveal active" style={{ transitionDelay: '0.2s' }}>
+          <div className="aspect-[4/5] glass rounded-[3rem] overflow-hidden relative group shadow-2xl border border-white/10">
+            <img alt="Sahiti Kotturty portrait" className="w-full h-full object-cover grayscale brightness-90 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVKpv9lx7C71-MCDyce9AfUKHjWJJB_Z1qE9IvloUszipwJ9zaEuxSRsTshqHH9q86zBj0jEQ6MhO-Fv6Qs7jSDusYmbuNAnlKbOPW-voDW8M7kDcD5ZZrndJ98nf-5e8JEFcTtpxgl76KY5rvcuLFeN437tput-utx99rau2XBqFoSbBMp-9nA1MdYPJpU1jcPNpdM4qcxdDxfQevh_qBGAHjetPbd4OW9AqvniOoNUfIGbwOCIf5FwmzlQFWNLtNz1hD2D3Gm0L_Odg"/>
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-80"></div>
+          </div>
         </div>
       </div>
     </section>

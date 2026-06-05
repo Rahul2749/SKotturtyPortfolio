@@ -1,58 +1,52 @@
-import { useEffect, useRef } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useEffect } from 'react';
 
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import About from './components/About';
 import Services from './components/Services';
 import Portfolio from './components/Portfolio';
+import CaseStudies from './components/CaseStudies';
+import Testimonials from './components/Testimonials';
+import Process from './components/Process';
+import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
-gsap.registerPlugin(ScrollTrigger);
-
 export default function App() {
-  const mainRef = useRef(null);
-
   useEffect(() => {
-    // Scroll to top on refresh
-    window.history.scrollRestoration = 'manual';
-    window.scrollTo(0, 0);
-
-    // Scroll trigger for all glass cards
-    const ctx = gsap.context(() => {
-      const cards = gsap.utils.toArray('.glass-card');
-      cards.forEach((card) => {
-        gsap.fromTo(card, 
-          { opacity: 0, y: 50 },
-          {
-            opacity: 1, 
-            y: 0,
-            duration: 0.8,
-            ease: "power3.out",
-            scrollTrigger: {
-              trigger: card,
-              start: "top 85%",
-              toggleActions: "play none none reverse"
-            }
-          }
-        );
+    // Scroll Reveal Interaction
+    const observerOptions = { threshold: 0.1 };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
       });
-    }, mainRef);
+    }, observerOptions);
+
+    const elements = document.querySelectorAll('.reveal');
+    elements.forEach(el => observer.observe(el));
 
     return () => {
-      ctx.revert();
+      elements.forEach(el => observer.unobserve(el));
     };
   }, []);
 
   return (
-    <div ref={mainRef} className="bg-[#0b0d14] text-on-surface min-h-screen font-body overflow-x-hidden selection:bg-[#00d2ff]/30">
+    <>
       <Navbar />
-      <Hero />
-      <Portfolio />
-      <Services />
-      <Contact />
+      <main>
+        <Hero />
+        <About />
+        <Services />
+        <Portfolio />
+        <CaseStudies />
+        <Testimonials />
+        <Process />
+        <Skills />
+        <Contact />
+      </main>
       <Footer />
-    </div>
+    </>
   );
 }
