@@ -120,8 +120,8 @@ export default function App() {
           <Hero />
           <About />
           <Experience />
-          <Services />
           <Portfolio />
+          <Services />
           <CaseStudies />
           <Testimonials />
           <Process />
