@@ -45,7 +45,7 @@ export default function Hero() {
             </button>
           </div>
         </div>
-        <div className="md:col-span-4 relative reveal active mt-12 md:mt-0" style={{ transitionDelay: '0.2s' }}>
+        <div className="md:col-span-4 relative reveal active mt-12 md:mt-0 max-w-[280px] sm:max-w-md mx-auto md:max-w-none" style={{ transitionDelay: '0.2s' }}>
           <div className="aspect-[4/5] glass rounded-[3rem] overflow-hidden relative group shadow-2xl border border-white/10">
             <img alt="Sahiti Kotturty portrait" className="w-full h-full object-cover grayscale brightness-90 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVKpv9lx7C71-MCDyce9AfUKHjWJJB_Z1qE9IvloUszipwJ9zaEuxSRsTshqHH9q86zBj0jEQ6MhO-Fv6Qs7jSDusYmbuNAnlKbOPW-voDW8M7kDcD5ZZrndJ98nf-5e8JEFcTtpxgl76KY5rvcuLFeN437tput-utx99rau2XBqFoSbBMp-9nA1MdYPJpU1jcPNpdM4qcxdDxfQevh_qBGAHjetPbd4OW9AqvniOoNUfIGbwOCIf5FwmzlQFWNLtNz1hD2D3Gm0L_Odg"/>
             <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-80"></div>
