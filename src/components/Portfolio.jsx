@@ -153,18 +153,21 @@ export default function Portfolio() {
           {/* Section: Website Templates */}
           <div className="portfolio-section scroll-mt-48" id="templates">
             <h3 className="text-headline-lg font-display-md text-white mb-6 px-2">Website Templates</h3>
-            <div className="glass rounded-[2.5rem] p-2 md:p-6 lg:p-8 project-card max-w-5xl mx-auto">
-              <div className="w-full bg-[#111111] rounded-t-2xl px-4 py-3 flex items-center gap-2 border-b border-white/10">
-                <div className="w-3 h-3 rounded-full bg-[#ff5f56]"></div>
-                <div className="w-3 h-3 rounded-full bg-[#ffbd2e]"></div>
-                <div className="w-3 h-3 rounded-full bg-[#27c93f]"></div>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
+              <div className="glass rounded-3xl p-1 project-card overflow-hidden">
+                <img src="/template_part_1.webp" className="w-full h-auto rounded-[1.3rem] hover:scale-105 transition-transform duration-700" alt="Casino Template Header"/>
               </div>
-              <div className="bg-background w-full rounded-b-2xl overflow-hidden shadow-2xl">
-                <img src="/template_part_1.webp" className="w-full h-auto block" alt="Casino Template Header"/>
-                <img src="/template_part_2.webp" className="w-full h-auto block" alt="Casino Template Games"/>
-                <img src="/template_part_3.webp" className="w-full h-auto block" alt="Casino Template History"/>
-                <img src="/template_part_4.webp" className="w-full h-auto block" alt="Casino Template FAQ"/>
-                <img src="/template_part_5.webp" className="w-full h-auto block" alt="Casino Template Footer"/>
+              <div className="glass rounded-3xl p-1 project-card overflow-hidden">
+                <img src="/template_part_2.webp" className="w-full h-auto rounded-[1.3rem] hover:scale-105 transition-transform duration-700" alt="Casino Template Games"/>
+              </div>
+              <div className="glass rounded-3xl p-1 project-card overflow-hidden">
+                <img src="/template_part_3.webp" className="w-full h-auto rounded-[1.3rem] hover:scale-105 transition-transform duration-700" alt="Casino Template History"/>
+              </div>
+              <div className="glass rounded-3xl p-1 project-card overflow-hidden">
+                <img src="/template_part_4.webp" className="w-full h-auto rounded-[1.3rem] hover:scale-105 transition-transform duration-700" alt="Casino Template FAQ"/>
+              </div>
+              <div className="glass rounded-3xl p-1 project-card overflow-hidden">
+                <img src="/template_part_5.webp" className="w-full h-auto rounded-[1.3rem] hover:scale-105 transition-transform duration-700" alt="Casino Template Footer"/>
               </div>
             </div>
           </div>
