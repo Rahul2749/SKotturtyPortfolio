@@ -146,19 +146,19 @@ export default function Portfolio() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="glass rounded-[2.5rem] p-1 overflow-hidden project-card">
               <div className="bg-surface-container rounded-[2.4rem] aspect-video md:aspect-auto md:h-[340px] flex flex-col items-center justify-center relative overflow-hidden group">
-                <img alt="3D Product Animation" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-110 transition-transform duration-1000" src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&auto=format&fit=crop&q=80"/>
+                <img alt="Kids Animation" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-110 transition-transform duration-1000" src="/animation_2.webp"/>
                 <div className="z-10 text-center p-6 bg-background/50 backdrop-blur-sm rounded-2xl m-4 mt-auto w-11/12 border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <h4 className="text-white font-bold text-headline-sm">3D Product Animation</h4>
-                  <p className="text-on-surface-variant mt-1 text-xs">High-end product reveals and motion.</p>
+                  <h4 className="text-white font-bold text-headline-sm">Kids Animation</h4>
+                  <p className="text-on-surface-variant mt-1 text-xs">Vibrant environments and character storytelling.</p>
                 </div>
               </div>
             </div>
             <div className="glass rounded-[2.5rem] p-1 overflow-hidden project-card">
               <div className="bg-surface-container rounded-[2.4rem] aspect-video md:aspect-auto md:h-[340px] flex flex-col items-center justify-center relative overflow-hidden group">
-                <img alt="Motion Graphics" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-110 transition-transform duration-1000" src="https://images.unsplash.com/photo-1614850523459-c2f4c699c52e?w=800&auto=format&fit=crop&q=80"/>
+                <img alt="Character Animation" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-110 transition-transform duration-1000" src="/animation_1.webp"/>
                 <div className="z-10 text-center p-6 bg-background/50 backdrop-blur-sm rounded-2xl m-4 mt-auto w-11/12 border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <h4 className="text-white font-bold text-headline-sm">Motion Graphics</h4>
-                  <p className="text-on-surface-variant mt-1 text-xs">Dynamic UI interactions and brand videos.</p>
+                  <h4 className="text-white font-bold text-headline-sm">Character Animation</h4>
+                  <p className="text-on-surface-variant mt-1 text-xs">Classic cartoon recreations and concept art.</p>
                 </div>
               </div>
             </div>
