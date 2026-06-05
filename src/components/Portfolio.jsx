@@ -47,7 +47,7 @@ export default function Portfolio() {
             <span className="text-primary font-bold tracking-[0.3em] md:tracking-[0.5em] uppercase text-label-sm">Categorized Hub</span>
             <h2 className="font-headline-lg text-[26px] md:text-headline-lg text-white mt-2 leading-tight">Creative <span className="italic font-light text-gradient">Showcase</span></h2>
           </div>
-          <div className="portfolio-tabs flex gap-2 overflow-x-auto pb-2 hide-scrollbar flex-nowrap">
+          <div className="portfolio-tabs flex gap-2 overflow-x-auto pb-2 hide-scrollbar flex-nowrap w-full max-w-[calc(100vw-2rem)] md:max-w-full">
             <a href="#uiux" className="tab-btn px-4 md:px-6 py-1.5 md:py-2 rounded-full glass text-[11px] md:text-label-sm transition-all whitespace-nowrap active border-primary/50 text-primary font-bold">
               UI/UX
             </a>
@@ -251,13 +251,13 @@ export default function Portfolio() {
           <div className="portfolio-section scroll-mt-48" id="logo">
             <h3 className="text-headline-lg font-display-md text-white mb-6 px-2">Logo Design</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="glass rounded-[2.5rem] p-6 flex items-center justify-center project-card bg-white h-[300px]">
+              <div className="glass rounded-[2.5rem] p-6 flex items-center justify-center project-card bg-white h-48 md:h-[300px]">
                 <img alt="Unique Art Studio Logo" className="max-w-full max-h-full object-contain hover:scale-105 transition-transform duration-500" src="/logo_1.webp"/>
               </div>
-              <div className="glass rounded-[2.5rem] p-6 flex items-center justify-center project-card bg-[#0b132b] h-[300px]">
+              <div className="glass rounded-[2.5rem] p-6 flex items-center justify-center project-card bg-[#0b132b] h-48 md:h-[300px]">
                 <img alt="Pawan Jewellers Logo" className="max-w-full max-h-full object-contain hover:scale-105 transition-transform duration-500" src="/logo_2.webp"/>
               </div>
-              <div className="glass rounded-[2.5rem] p-6 flex items-center justify-center project-card bg-surface-container h-[300px] border-2 border-dashed border-white/10 group">
+              <div className="glass rounded-[2.5rem] p-6 flex items-center justify-center project-card bg-surface-container h-48 md:h-[300px] border-2 border-dashed border-white/10 group">
                 <div className="text-center opacity-60 group-hover:opacity-100 transition-opacity">
                   <div className="w-16 h-16 rounded-full bg-white/5 mx-auto mb-4 flex items-center justify-center">
                     <span className="material-symbols-outlined text-white text-2xl">add_photo_alternate</span>
