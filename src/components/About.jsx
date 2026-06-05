@@ -15,7 +15,7 @@ export default function About() {
           </div>
           <div className="grid grid-cols-2 gap-6">
             <div className="stat-card glass p-8 rounded-3xl border-l-4 border-primary">
-              <h4 className="text-display-md text-white font-bold">5+</h4>
+              <h4 className="text-display-md text-white font-bold">3+</h4>
               <p className="text-label-sm uppercase tracking-widest text-outline">Years Experience</p>
             </div>
             <div className="stat-card glass p-8 rounded-3xl border-l-4 border-secondary">
