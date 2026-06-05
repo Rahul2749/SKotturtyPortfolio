@@ -303,8 +303,8 @@ export default function Portfolio() {
               <div className="glass rounded-[2.5rem] p-4 flex items-center justify-center project-card bg-[#8ebae4] overflow-hidden">
                 <img alt="GRE & GMAT Coaching Ad" className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500 rounded-[1.5rem] shadow-xl" src="/social_1.webp"/>
               </div>
-              <div className="glass rounded-[2.5rem] p-4 flex items-center justify-center project-card bg-[#e5e7eb] overflow-hidden">
-                <img alt="Real Estate Home For Sale Ad" className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500 rounded-[1.5rem] shadow-xl" src="/social_2.webp"/>
+              <div className="glass rounded-[2.5rem] p-4 flex items-center justify-center project-card bg-white overflow-hidden">
+                <img alt="Grow Your Business Meta Ads Graphic" className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500 rounded-[1.5rem] shadow-xl" src="/social_2.webp"/>
               </div>
               <div className="glass rounded-[2.5rem] p-4 flex items-center justify-center project-card bg-[#0f172a] overflow-hidden">
                 <img alt="Website Services Digital Ad" className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500 rounded-[1.5rem] shadow-xl" src="/social_3.webp"/>
