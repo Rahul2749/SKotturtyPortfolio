@@ -1,10 +1,8 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-import Preloader from './components/Preloader';
 import CustomCursor from './components/CustomCursor';
-import Marquee from './components/Marquee';
 
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -41,11 +39,8 @@ function animateIn(selector, vars, triggerEl) {
 
 export default function App() {
   const mainRef = useRef(null);
-  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Only run main animations after preloader finishes
-    if (isLoading) return;
     const ctx = gsap.context(() => {
 
       // ── Hero: immediate entrance (no scroll needed) ──
@@ -106,18 +101,16 @@ export default function App() {
     }, mainRef);
 
     return () => ctx.revert();
-  }, [isLoading]);
+  }, []);
 
   return (
     <>
-      {isLoading && <Preloader onComplete={() => setIsLoading(false)} />}
       <CustomCursor />
       <div className="noise-bg"></div>
-      <div ref={mainRef} className={isLoading ? 'opacity-0' : 'opacity-100 transition-opacity duration-1000 delay-500'}>
+      <div ref={mainRef}>
         <Navbar />
         <main>
           <Hero />
-          <Marquee />
           <About />
         <Services />
         <Portfolio />
