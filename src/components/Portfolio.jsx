@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Portfolio() {
   useEffect(() => {
     // Setup ScrollTrigger for scroll spy on tabs
-    const sections = ['uiux', 'web', 'animation', 'branding', 'logo', 'marketing', 'matte'];
+    const sections = ['uiux', 'web', 'templates', 'animation', 'branding', 'logo', 'marketing', 'matte'];
     
     sections.forEach((id) => {
       ScrollTrigger.create({
@@ -53,6 +53,9 @@ export default function Portfolio() {
             </a>
             <a href="#web" className="tab-btn px-4 md:px-6 py-1.5 md:py-2 rounded-full glass text-[11px] md:text-label-sm transition-all whitespace-nowrap border-white/10 text-on-surface-variant hover:text-white">
               Web
+            </a>
+            <a href="#templates" className="tab-btn px-4 md:px-6 py-1.5 md:py-2 rounded-full glass text-[11px] md:text-label-sm transition-all whitespace-nowrap border-white/10 text-on-surface-variant hover:text-white">
+              Website Templates
             </a>
             <a href="#animation" className="tab-btn px-4 md:px-6 py-1.5 md:py-2 rounded-full glass text-[11px] md:text-label-sm transition-all whitespace-nowrap border-white/10 text-on-surface-variant hover:text-white">
               Animation
@@ -144,6 +147,25 @@ export default function Portfolio() {
               </div>
             </div>
           </div>
+          </div>
+        </div>
+
+          {/* Section: Website Templates */}
+          <div className="portfolio-section scroll-mt-48" id="templates">
+            <h3 className="text-headline-lg font-display-md text-white mb-6 px-2">Website Templates</h3>
+            <div className="glass rounded-[2.5rem] p-2 md:p-6 lg:p-8 project-card max-w-5xl mx-auto">
+              <div className="w-full bg-[#111111] rounded-t-2xl px-4 py-3 flex items-center gap-2 border-b border-white/10">
+                <div className="w-3 h-3 rounded-full bg-[#ff5f56]"></div>
+                <div className="w-3 h-3 rounded-full bg-[#ffbd2e]"></div>
+                <div className="w-3 h-3 rounded-full bg-[#27c93f]"></div>
+              </div>
+              <div className="bg-background w-full rounded-b-2xl overflow-hidden shadow-2xl">
+                <img src="/template_part_1.webp" className="w-full h-auto block" alt="Casino Template Header"/>
+                <img src="/template_part_2.webp" className="w-full h-auto block" alt="Casino Template Games"/>
+                <img src="/template_part_3.webp" className="w-full h-auto block" alt="Casino Template History"/>
+                <img src="/template_part_4.webp" className="w-full h-auto block" alt="Casino Template FAQ"/>
+                <img src="/template_part_5.webp" className="w-full h-auto block" alt="Casino Template Footer"/>
+              </div>
             </div>
           </div>
           {/* Section: Animation */}
