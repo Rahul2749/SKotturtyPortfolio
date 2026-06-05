@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Portfolio() {
   useEffect(() => {
     // Setup ScrollTrigger for scroll spy on tabs
-    const sections = ['uiux', 'web', 'templates', 'animation', 'branding', 'logo', 'marketing', 'matte'];
+    const sections = ['uiux', 'web', 'templates', 'app', 'animation', 'branding', 'logo', 'marketing', 'matte'];
     
     sections.forEach((id) => {
       ScrollTrigger.create({
@@ -56,6 +56,9 @@ export default function Portfolio() {
             </a>
             <a href="#templates" className="tab-btn px-4 md:px-6 py-1.5 md:py-2 rounded-full glass text-[11px] md:text-label-sm transition-all whitespace-nowrap border-white/10 text-on-surface-variant hover:text-white">
               Website Templates
+            </a>
+            <a href="#app" className="tab-btn px-4 md:px-6 py-1.5 md:py-2 rounded-full glass text-[11px] md:text-label-sm transition-all whitespace-nowrap border-white/10 text-on-surface-variant hover:text-white">
+              App Templates
             </a>
             <a href="#animation" className="tab-btn px-4 md:px-6 py-1.5 md:py-2 rounded-full glass text-[11px] md:text-label-sm transition-all whitespace-nowrap border-white/10 text-on-surface-variant hover:text-white">
               Animation
@@ -171,6 +174,26 @@ export default function Portfolio() {
               </div>
             </div>
           </div>
+
+          {/* Section: App Templates */}
+          <div className="portfolio-section scroll-mt-48" id="app">
+            <h3 className="text-headline-lg font-display-md text-white mb-6 px-2">App Templates</h3>
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+              <div className="glass rounded-3xl p-1 project-card overflow-hidden">
+                <img src="/app_template_1.webp" className="w-full h-auto rounded-[1.3rem] hover:scale-105 transition-transform duration-700" alt="Food App Home"/>
+              </div>
+              <div className="glass rounded-3xl p-1 project-card overflow-hidden">
+                <img src="/app_template_2.webp" className="w-full h-auto rounded-[1.3rem] hover:scale-105 transition-transform duration-700" alt="Food App Details"/>
+              </div>
+              <div className="glass rounded-3xl p-1 project-card overflow-hidden">
+                <img src="/app_template_3.webp" className="w-full h-auto rounded-[1.3rem] hover:scale-105 transition-transform duration-700" alt="Food App Menu"/>
+              </div>
+              <div className="glass rounded-3xl p-1 project-card overflow-hidden">
+                <img src="/app_template_4.webp" className="w-full h-auto rounded-[1.3rem] hover:scale-105 transition-transform duration-700" alt="Food App Cart"/>
+              </div>
+            </div>
+          </div>
+
           {/* Section: Animation */}
           <div className="portfolio-section scroll-mt-48" id="animation">
             <h3 className="text-headline-lg font-display-md text-white mb-6 px-2">Animation</h3>
