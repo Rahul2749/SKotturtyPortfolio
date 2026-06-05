@@ -10,7 +10,7 @@ export default function Navbar() {
           <a className="font-label-lg text-label-lg uppercase tracking-[0.2em] text-on-surface-variant hover:text-primary transition-colors" href="#process">Process</a>
           <a className="font-label-lg text-label-lg uppercase tracking-[0.2em] text-on-surface-variant hover:text-primary transition-colors" href="#contact">Contact</a>
         </nav>
-        <button className="bg-primary px-8 py-2.5 rounded-full font-label-lg text-on-primary font-bold hover:scale-105 transition-all shadow-[0_0_30px_rgba(165,231,255,0.2)]">
+        <button className="bg-primary px-5 py-2 md:px-8 md:py-2.5 rounded-full text-sm md:font-label-lg text-on-primary font-bold hover:scale-105 transition-all shadow-[0_0_30px_rgba(165,231,255,0.2)] whitespace-nowrap">
           Hire Me
         </button>
       </div>
