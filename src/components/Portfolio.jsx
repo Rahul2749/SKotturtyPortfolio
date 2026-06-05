@@ -66,29 +66,33 @@ export default function Portfolio() {
         <div className="space-y-32">
           {/* Section: UI/UX Projects */}
           <div className="portfolio-section scroll-mt-48" id="uiux">
-          <div className="glass rounded-[3rem] overflow-hidden grid grid-cols-1 lg:grid-cols-2 group border border-white/10 project-card">
-            <div className="p-8 lg:p-12 flex flex-col justify-center">
-              <span className="text-primary font-bold text-[10px] uppercase tracking-widest mb-4">Mobile App, Dashboard & User Flows</span>
-              <h3 className="text-headline-lg text-white mb-6">FinStream Ecosystem</h3>
-              <p className="text-on-surface-variant text-body-lg mb-4">Problem: Fragmented financial data causing user drop-off in SME management platforms.</p>
-              <p className="text-body-sm text-outline mb-8">Solution: A unified design system bridging wireframes to high-fidelity Figma prototypes.</p>
-              <div className="flex flex-wrap gap-4 mb-8">
-                <span className="px-3 py-1 bg-white/5 rounded-md border border-white/10 text-[10px] text-outline uppercase">Figma</span>
-                <span className="px-3 py-1 bg-white/5 rounded-md border border-white/10 text-[10px] text-outline uppercase">Wireframes</span>
-                <span className="px-3 py-1 bg-white/5 rounded-md border border-white/10 text-[10px] text-outline uppercase">React</span>
+            <h3 className="text-headline-lg font-display-md text-white mb-6 px-2">UI/UX Design</h3>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="glass rounded-[2.5rem] p-1 overflow-hidden project-card">
+              <div className="bg-surface-container rounded-[2.4rem] h-[340px] flex flex-col items-center justify-center relative overflow-hidden group">
+                <img alt="Healthy Lifestyle App UI" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-110 transition-transform duration-1000" src="/apphome_ui.webp"/>
+                <div className="z-10 text-center p-6 bg-background/50 backdrop-blur-sm rounded-2xl m-4 mt-auto w-11/12 border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  <h4 className="text-white font-bold text-headline-sm">FinTech Mobile App</h4>
+                  <p className="text-on-surface-variant mt-1 text-xs">Modern banking dashboard and user flows.</p>
+                </div>
               </div>
-              <a className="text-primary font-bold flex items-center gap-2 group-hover:gap-4 transition-all" href="#">View Case Study <span className="material-symbols-outlined">east</span></a>
             </div>
-            <div className="bg-gradient-to-br from-primary/20 to-surface-container overflow-hidden relative">
-              <div className="absolute inset-0 flex items-center justify-center p-8 lg:p-12">
-                <img alt="UI/UX Preview" className="w-full h-auto rounded-2xl shadow-2xl transform group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjKf_p1bAdux21iUlbOuByNSoutG_-Yn6eCcfVkLGmwg-JOqJqoZ_10pqYhriRrKWJRkPJ-qZOhR1SR4XDOJATZV1nIBwE8jfc-JDcw1q122z6d_6s8QpkYMT3wx7R451yZaEJGfL6Gcf3SNBIdVepVi-CJUPEBphGYOew3J6UIsq2_QrKpAv60FZoT91FJS_nMJL_Y7Uo7Ej2e5_7hOYC3sWqqPK4otjuwZ_5OqfpLec0ll-pV_Xsb16r8uwTTIkm1sdjaY36OOQR"/>
+            <div className="glass rounded-[2.5rem] p-1 overflow-hidden project-card">
+              <div className="bg-surface-container rounded-[2.4rem] h-[340px] flex flex-col items-center justify-center relative overflow-hidden group">
+                <img alt="Crypto Website Template" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-110 transition-transform duration-1000" src="/crypto_mockup.webp"/>
+                <div className="z-10 text-center p-6 bg-background/50 backdrop-blur-sm rounded-2xl m-4 mt-auto w-11/12 border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  <h4 className="text-white font-bold text-headline-sm">Crypto Platform UI</h4>
+                  <p className="text-on-surface-variant mt-1 text-xs">Modern Web3 website and app design.</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
           {/* Section: Website Projects */}
-          <div className="portfolio-section scroll-mt-48 grid grid-cols-1 md:grid-cols-3 gap-8" id="web">
+          <div className="portfolio-section scroll-mt-48" id="web">
+            <h3 className="text-headline-lg font-display-md text-white mb-6 px-2">Web Development</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Project: Shape2Real */}
           <div className="glass rounded-[2rem] overflow-hidden group border border-white/10 project-card">
             <div className="aspect-video bg-surface-container overflow-hidden relative group-hover:scale-105 transition-all duration-700">
@@ -131,30 +135,27 @@ export default function Portfolio() {
               </div>
             </div>
           </div>
-        </div>
-
+            </div>
+          </div>
           {/* Section: Branding */}
           <div className="portfolio-section scroll-mt-48" id="branding">
+            <h3 className="text-headline-lg font-display-md text-white mb-6 px-2">Branding</h3>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="glass rounded-[2.5rem] p-1 overflow-hidden project-card">
-              <div className="bg-surface-container rounded-[2.4rem] h-[340px] flex flex-col items-center justify-center relative overflow-hidden">
-                <img alt="Astra Brand Kit" className="absolute inset-0 w-full h-full object-cover opacity-30 mix-blend-overlay group-hover:scale-110 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCa4rBjUby4QJU6qi3OBVvpGF4a6hWL0ruND_CiW2KnVW8oBjDMjtzehxQHNeBBkVu5zwVdolbCU9gS7OcVBM9lK_hErOgbOuvd0iEE7p6XM7eb23pPxswdiCi8WxO44RY99YvF8YIdQIs_CdjU5UNCB-SAM_mAk2sw-vHgwU4lhMHiubO3dK0ecwLlEuD8IZx0GtQgg14k6ex8Gr4b2L92YE6Wmv8KFuIvEehuaCI2fzxn0DT66PW5-zLu8a0xMdCHwuHcvtoRRrc"/>
-                <div className="z-10 text-center p-6">
-                  <span className="material-symbols-outlined text-5xl text-secondary mb-3">rocket_launch</span>
-                  <h4 className="text-white font-bold text-headline-md">Astra Identity</h4>
-                  <p className="text-on-surface-variant max-w-xs mx-auto mt-2 text-sm">Full Brand Kit & Guidelines for Space-Tech.</p>
+              <div className="bg-surface-container rounded-[2.4rem] h-[340px] flex flex-col items-center justify-center relative overflow-hidden group">
+                <img alt="Business Card Mockups" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-110 transition-transform duration-1000" src="/branding_mockup.webp"/>
+                <div className="z-10 text-center p-6 bg-background/50 backdrop-blur-sm rounded-2xl m-4 mt-auto w-11/12 border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  <h4 className="text-white font-bold text-headline-sm">Business Card Designs</h4>
+                  <p className="text-on-surface-variant mt-1 text-xs">Print media and brand identity mockups.</p>
                 </div>
               </div>
             </div>
-            <div className="glass rounded-[2.5rem] p-8 flex flex-col justify-center project-card h-[340px]">
-              <h3 className="text-headline-md text-white mb-4">Luxury Packaging Concepts</h3>
-              <p className="text-on-surface-variant mb-6 leading-relaxed text-sm">High-end 3D mockups for premium cosmetics and sustainable tech gadgets.</p>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="h-24 bg-white/5 rounded-2xl flex items-center justify-center">
-                  <span className="material-symbols-outlined text-3xl text-outline">inventory_2</span>
-                </div>
-                <div className="h-24 bg-white/5 rounded-2xl flex items-center justify-center">
-                  <span className="material-symbols-outlined text-3xl text-outline">shopping_bag</span>
+            <div className="glass rounded-[2.5rem] p-1 overflow-hidden project-card">
+              <div className="bg-surface-container rounded-[2.4rem] h-[340px] flex flex-col items-center justify-center relative overflow-hidden group">
+                <img alt="Organic Tea Packaging" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-110 transition-transform duration-1000" src="/packaging_mockup.webp"/>
+                <div className="z-10 text-center p-6 bg-background/50 backdrop-blur-sm rounded-2xl m-4 mt-auto w-11/12 border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  <h4 className="text-white font-bold text-headline-sm">Organic Tea Packaging</h4>
+                  <p className="text-on-surface-variant mt-1 text-xs">Matcha green tea product design.</p>
                 </div>
               </div>
             </div>
@@ -163,6 +164,7 @@ export default function Portfolio() {
 
           {/* Section: Marketing */}
           <div className="portfolio-section scroll-mt-48" id="marketing">
+            <h3 className="text-headline-lg font-display-md text-white mb-6 px-2">Marketing</h3>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
             <div className="lg:col-span-5 glass rounded-[2.5rem] p-8 space-y-6 project-card">
               <h4 className="text-headline-md text-white">Campaign Analytics</h4>
@@ -197,19 +199,13 @@ export default function Portfolio() {
                 </div>
               </div>
             </div>
-            <div className="lg:col-span-7">
-              <div className="masonry-grid">
-                <div className="masonry-item glass p-4 rounded-3xl project-card h-48 flex flex-col justify-end bg-gradient-to-t from-primary/20 to-transparent">
-                  <span className="text-[10px] text-primary uppercase font-black">Carousel Ad</span>
-                </div>
-                <div className="masonry-item glass p-4 rounded-3xl project-card h-56 flex flex-col justify-end bg-gradient-to-t from-secondary/20 to-transparent">
-                  <span className="text-[10px] text-secondary uppercase font-black">Stories Pack</span>
-                </div>
-                <div className="masonry-item glass p-4 rounded-3xl project-card h-32 flex flex-col justify-end bg-gradient-to-t from-tertiary/20 to-transparent">
-                  <span className="text-[10px] text-tertiary uppercase font-black">Pinterest Grid</span>
-                </div>
-                <div className="masonry-item glass p-4 rounded-3xl project-card h-64 flex flex-col justify-end bg-gradient-to-t from-primary/20 to-transparent">
-                  <span className="text-[10px] text-primary uppercase font-black">Reels Cover</span>
+            <div className="lg:col-span-7 h-full min-h-[400px]">
+              <div className="glass rounded-[2.5rem] p-1 overflow-hidden project-card h-full w-full relative group">
+                <img src="/marketing_mockup.webp" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-105 transition-all duration-700" alt="Social Media Ad Creatives" />
+                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent opacity-90"></div>
+                <div className="absolute bottom-0 left-0 p-8 w-full z-10">
+                  <h4 className="text-white font-bold text-headline-sm mb-2">Social Media Ad Creatives</h4>
+                  <p className="text-on-surface-variant text-sm">High-converting product and lifestyle campaigns.</p>
                 </div>
               </div>
             </div>
