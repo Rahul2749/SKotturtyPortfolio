@@ -24,6 +24,9 @@ export default function Portfolio() {
             if (activeBtn) {
               activeBtn.classList.add('active', 'border-primary/50', 'text-primary', 'font-bold');
               activeBtn.classList.remove('border-white/10', 'text-on-surface-variant');
+              
+              // Automatically scroll the tab container to keep the active tab centered
+              activeBtn.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
             }
           }
         }
@@ -42,7 +45,7 @@ export default function Portfolio() {
   return (
     <section className="py-section-gap px-container-margin relative" id="works">
       <div className="max-w-7xl mx-auto">
-        <div className="sticky top-24 z-30 bg-background/90 backdrop-blur-md py-4 mb-16 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 md:gap-8 border-b border-white/5">
+        <div className="sticky top-[72px] md:top-[80px] z-30 bg-background/90 backdrop-blur-md py-4 mb-16 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 md:gap-8 border-b border-white/5 shadow-2xl">
           <div className="portfolio-header">
             <span className="text-primary font-bold tracking-[0.3em] md:tracking-[0.5em] uppercase text-label-sm">Categorized Hub</span>
             <h2 className="font-headline-lg text-[26px] md:text-headline-lg text-white mt-2 leading-tight">Creative <span className="italic font-light text-gradient">Showcase</span></h2>
