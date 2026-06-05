@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Portfolio() {
   useEffect(() => {
     // Setup ScrollTrigger for scroll spy on tabs
-    const sections = ['uiux', 'web', 'animation', 'branding', 'marketing'];
+    const sections = ['uiux', 'web', 'animation', 'branding', 'marketing', 'matte'];
     
     sections.forEach((id) => {
       ScrollTrigger.create({
@@ -62,6 +62,9 @@ export default function Portfolio() {
             </a>
             <a href="#marketing" className="tab-btn px-4 md:px-6 py-1.5 md:py-2 rounded-full glass text-[11px] md:text-label-sm transition-all whitespace-nowrap border-white/10 text-on-surface-variant hover:text-white">
               Marketing
+            </a>
+            <a href="#matte" className="tab-btn px-4 md:px-6 py-1.5 md:py-2 rounded-full glass text-[11px] md:text-label-sm transition-all whitespace-nowrap border-white/10 text-on-surface-variant hover:text-white">
+              Matte Painting
             </a>
           </div>
         </div>
@@ -239,6 +242,20 @@ export default function Portfolio() {
             </div>
           </div>
         </div>
+
+          {/* Section: Matte Painting */}
+          <div className="portfolio-section scroll-mt-48" id="matte">
+            <h3 className="text-headline-lg font-display-md text-white mb-6 px-2">Matte Painting</h3>
+            <div className="glass rounded-[2.5rem] p-1 overflow-hidden project-card w-full">
+              <div className="bg-surface-container rounded-[2.4rem] aspect-video md:h-[500px] flex flex-col items-center justify-center relative overflow-hidden group">
+                <img alt="Fantasy Landscape Matte Painting" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-105 transition-transform duration-1000" src="/matte_painting.webp"/>
+                <div className="z-10 text-center p-8 bg-background/50 backdrop-blur-sm rounded-2xl m-4 md:m-8 mt-auto w-11/12 md:w-3/4 border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  <h4 className="text-white font-bold text-headline-sm mb-2">Fantasy Landscape</h4>
+                  <p className="text-on-surface-variant text-sm">Digital matte painting, photo manipulation, and compositing.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
