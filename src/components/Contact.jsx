@@ -1,25 +1,53 @@
 export default function Contact() {
   return (
-    <section className="py-section-gap px-container-margin" id="contact">
-      <div className="contact-cta max-w-5xl mx-auto glass rounded-[4rem] p-12 md:p-24 relative overflow-hidden text-center group border border-white/10 shadow-[0_0_80px_rgba(165,231,255,0.05)]">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-tertiary/10 opacity-50"></div>
-        <div className="contact-cta-inner relative z-10 space-y-10">
-          <h2 className="font-display-md text-display-md text-white leading-tight">
-            Ready to build <br/> something <span className="italic font-light text-gradient">extraordinary?</span>
-          </h2>
-          <p className="font-body-lg text-on-surface-variant max-w-2xl mx-auto">
-            Currently accepting selective partnerships for Q1 2025. Let's discuss how we can elevate your brand's digital footprint.
+    <section className="py-24 md:py-40 px-container-margin relative overflow-hidden" id="contact">
+      {/* Subtle Top Divider */}
+      <div className="max-w-7xl mx-auto h-px bg-gradient-to-r from-transparent via-white/10 to-transparent mb-16 md:mb-24"></div>
+      
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8 items-end relative z-10">
+        {/* Left Side: Typography */}
+        <div className="md:col-span-7">
+          <p className="font-label-lg text-primary tracking-[0.3em] uppercase mb-6 flex items-center gap-4">
+            <span className="w-12 h-px bg-primary"></span> Next Steps
           </p>
-          <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
-            <a className="bg-primary text-black px-12 py-6 rounded-full font-label-lg font-bold hover:scale-105 transition-all shadow-2xl flex items-center gap-3" href="mailto:skotturty@gmail.com">
-              Start a Conversation <span className="material-symbols-outlined">mail</span>
-            </a>
-            <div className="flex gap-4">
-              <a className="w-16 h-16 glass rounded-full flex items-center justify-center hover:bg-white/10 transition-all border border-white/10" href="#"><span className="material-symbols-outlined text-white">share</span></a>
-              <a className="w-16 h-16 glass rounded-full flex items-center justify-center hover:bg-white/10 transition-all border border-white/10" href="#"><span className="material-symbols-outlined text-white">call</span></a>
+          <h2 className="font-display-md text-[40px] md:text-[64px] text-white leading-[1.1] mb-8">
+            Let's build <br className="hidden md:block"/> something <br/> <span className="italic font-light text-gradient">extraordinary.</span>
+          </h2>
+          <p className="font-body-lg text-on-surface-variant max-w-lg md:text-lg">
+            Currently accepting selective partnerships for Q1 2025. Whether you have a project in mind or just want to chat design, my inbox is always open.
+          </p>
+        </div>
+
+        {/* Right Side: Action Cards */}
+        <div className="md:col-span-5 flex flex-col items-start md:items-end space-y-4 w-full">
+          {/* Main Email Card */}
+          <a className="group flex items-center justify-between w-full max-w-md glass rounded-3xl p-6 md:p-8 border border-white/10 hover:border-primary/40 transition-all hover:bg-white/[0.03]" href="mailto:skotturty@gmail.com">
+            <div className="text-left">
+              <span className="block text-xs uppercase tracking-widest text-on-surface-variant mb-2">Email Me</span>
+              <span className="font-bold text-white text-lg md:text-xl group-hover:text-primary transition-colors">skotturty@gmail.com</span>
             </div>
+            <div className="w-14 h-14 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-primary group-hover:text-black transition-all">
+              <span className="material-symbols-outlined">arrow_outward</span>
+            </div>
+          </a>
+
+          {/* Secondary Action Row */}
+          <div className="flex gap-4 w-full max-w-md">
+            <a className="flex-1 glass rounded-3xl py-6 flex flex-col items-center justify-center hover:bg-white/10 transition-all border border-white/10 group" href="#">
+              <span className="material-symbols-outlined text-white mb-3 group-hover:scale-110 transition-transform">share</span>
+              <span className="text-[10px] uppercase tracking-widest text-on-surface-variant">Socials</span>
+            </a>
+            <a className="flex-1 glass rounded-3xl py-6 flex flex-col items-center justify-center hover:bg-white/10 transition-all border border-white/10 group" href="#">
+              <span className="material-symbols-outlined text-white mb-3 group-hover:scale-110 transition-transform">calendar_month</span>
+              <span className="text-[10px] uppercase tracking-widest text-on-surface-variant">Book Call</span>
+            </a>
           </div>
         </div>
+      </div>
+      
+      {/* Background Graphic Element */}
+      <div className="absolute bottom-0 right-[-5%] text-[120px] md:text-[250px] font-display-lg font-black text-white/[0.02] tracking-tighter pointer-events-none leading-none select-none">
+        SAHITI
       </div>
     </section>
   );
