@@ -2,8 +2,6 @@ import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-import CustomCursor from './components/CustomCursor';
-
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -105,7 +103,6 @@ export default function App() {
 
   return (
     <>
-      <CustomCursor />
       <div className="noise-bg"></div>
       <div ref={mainRef}>
         <Navbar />

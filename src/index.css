@@ -4,11 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-background text-on-surface font-body-lg antialiased overflow-x-hidden cursor-none;
-  }
-  
-  a, button, [role="button"] {
-    @apply cursor-none;
+    @apply bg-background text-on-surface font-body-lg antialiased overflow-x-hidden;
   }
 
   /* Noise Overlay */

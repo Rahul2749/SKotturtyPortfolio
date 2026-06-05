@@ -11,7 +11,7 @@ export default function Contact() {
             Currently accepting selective partnerships for Q1 2025. Let's discuss how we can elevate your brand's digital footprint.
           </p>
           <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
-            <a className="bg-primary text-black px-12 py-6 rounded-full font-label-lg font-bold hover:scale-105 transition-all shadow-2xl flex items-center gap-3" href="mailto:hello@sahiti.com">
+            <a className="bg-primary text-black px-12 py-6 rounded-full font-label-lg font-bold hover:scale-105 transition-all shadow-2xl flex items-center gap-3" href="mailto:skotturty@gmail.com">
               Start a Conversation <span className="material-symbols-outlined">mail</span>
             </a>
             <div className="flex gap-4">
