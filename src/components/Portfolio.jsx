@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Portfolio() {
   useEffect(() => {
     // Setup ScrollTrigger for scroll spy on tabs
-    const sections = ['uiux', 'web', 'templates', 'app', 'animation', 'branding', 'logo', 'marketing', 'social', 'matte'];
+    const sections = ['uiux', 'web', 'templates', 'animation', 'branding', 'logo', 'marketing', 'social', 'matte'];
     
     sections.forEach((id) => {
       ScrollTrigger.create({
@@ -56,9 +56,6 @@ export default function Portfolio() {
             </a>
             <a href="#templates" className="tab-btn px-4 md:px-6 py-1.5 md:py-2 rounded-full glass text-[11px] md:text-label-sm transition-all whitespace-nowrap border-white/10 text-on-surface-variant hover:text-white">
               Website Templates
-            </a>
-            <a href="#app" className="tab-btn px-4 md:px-6 py-1.5 md:py-2 rounded-full glass text-[11px] md:text-label-sm transition-all whitespace-nowrap border-white/10 text-on-surface-variant hover:text-white">
-              App Templates
             </a>
             <a href="#animation" className="tab-btn px-4 md:px-6 py-1.5 md:py-2 rounded-full glass text-[11px] md:text-label-sm transition-all whitespace-nowrap border-white/10 text-on-surface-variant hover:text-white">
               Animation
@@ -174,16 +171,6 @@ export default function Portfolio() {
               </div>
               <div className="glass rounded-3xl p-1 project-card overflow-hidden">
                 <img src="/template_part_5.webp" className="w-full h-auto rounded-[1.3rem] hover:scale-105 transition-transform duration-700" alt="Casino Template Footer"/>
-              </div>
-            </div>
-          </div>
-
-          {/* Section: App Templates */}
-          <div className="portfolio-section scroll-mt-48" id="app">
-            <h3 className="text-headline-lg font-display-md text-white mb-6 px-2">App Templates</h3>
-            <div className="glass rounded-[2.5rem] p-1 md:p-2 project-card overflow-hidden w-full max-w-6xl mx-auto">
-              <div className="bg-surface-container rounded-[2.2rem] md:rounded-[2.4rem] flex items-center justify-center relative overflow-hidden group">
-                <img alt="Food Delivery App Mockup" className="w-full h-auto object-cover opacity-100 group-hover:scale-[1.02] transition-transform duration-1000" src="/app_template_full.webp"/>
               </div>
             </div>
           </div>
