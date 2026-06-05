@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Portfolio() {
   useEffect(() => {
     // Setup ScrollTrigger for scroll spy on tabs
-    const sections = ['uiux', 'web', 'branding', 'marketing'];
+    const sections = ['uiux', 'web', 'animation', 'branding', 'marketing'];
     
     sections.forEach((id) => {
       ScrollTrigger.create({
@@ -53,6 +53,9 @@ export default function Portfolio() {
             </a>
             <a href="#web" className="tab-btn px-4 md:px-6 py-1.5 md:py-2 rounded-full glass text-[11px] md:text-label-sm transition-all whitespace-nowrap border-white/10 text-on-surface-variant hover:text-white">
               Web
+            </a>
+            <a href="#animation" className="tab-btn px-4 md:px-6 py-1.5 md:py-2 rounded-full glass text-[11px] md:text-label-sm transition-all whitespace-nowrap border-white/10 text-on-surface-variant hover:text-white">
+              Animation
             </a>
             <a href="#branding" className="tab-btn px-4 md:px-6 py-1.5 md:py-2 rounded-full glass text-[11px] md:text-label-sm transition-all whitespace-nowrap border-white/10 text-on-surface-variant hover:text-white">
               Branding
@@ -137,6 +140,31 @@ export default function Portfolio() {
           </div>
             </div>
           </div>
+          {/* Section: Animation */}
+          <div className="portfolio-section scroll-mt-48" id="animation">
+            <h3 className="text-headline-lg font-display-md text-white mb-6 px-2">Animation</h3>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="glass rounded-[2.5rem] p-1 overflow-hidden project-card">
+              <div className="bg-surface-container rounded-[2.4rem] aspect-video md:aspect-auto md:h-[340px] flex flex-col items-center justify-center relative overflow-hidden group">
+                <img alt="3D Product Animation" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-110 transition-transform duration-1000" src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&auto=format&fit=crop&q=80"/>
+                <div className="z-10 text-center p-6 bg-background/50 backdrop-blur-sm rounded-2xl m-4 mt-auto w-11/12 border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  <h4 className="text-white font-bold text-headline-sm">3D Product Animation</h4>
+                  <p className="text-on-surface-variant mt-1 text-xs">High-end product reveals and motion.</p>
+                </div>
+              </div>
+            </div>
+            <div className="glass rounded-[2.5rem] p-1 overflow-hidden project-card">
+              <div className="bg-surface-container rounded-[2.4rem] aspect-video md:aspect-auto md:h-[340px] flex flex-col items-center justify-center relative overflow-hidden group">
+                <img alt="Motion Graphics" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-110 transition-transform duration-1000" src="https://images.unsplash.com/photo-1614850523459-c2f4c699c52e?w=800&auto=format&fit=crop&q=80"/>
+                <div className="z-10 text-center p-6 bg-background/50 backdrop-blur-sm rounded-2xl m-4 mt-auto w-11/12 border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  <h4 className="text-white font-bold text-headline-sm">Motion Graphics</h4>
+                  <p className="text-on-surface-variant mt-1 text-xs">Dynamic UI interactions and brand videos.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
           {/* Section: Branding */}
           <div className="portfolio-section scroll-mt-48" id="branding">
             <h3 className="text-headline-lg font-display-md text-white mb-6 px-2">Branding</h3>
