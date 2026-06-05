@@ -20,7 +20,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center pt-24 px-container-margin overflow-hidden">
+    <section className="relative pt-[120px] pb-16 md:min-h-screen md:flex md:items-center md:pt-24 md:pb-0 px-container-margin overflow-hidden">
       <div className="glow-blob w-[600px] h-[600px] bg-primary/20 top-[-10%] left-[-10%] rounded-full"></div>
       <div className="glow-blob w-[500px] h-[500px] bg-tertiary/20 bottom-[-10%] right-[-10%] rounded-full" style={{ animationDelay: '-5s' }}></div>
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
@@ -36,11 +36,11 @@ export default function Hero() {
           <p className="hero-desc font-body-lg text-body-md md:text-body-lg text-on-surface-variant max-w-xl leading-relaxed">
             Bridging the gap between <span className="text-white font-semibold">human intuition</span> and <span className="text-primary font-semibold">technical precision</span>. Designing digital ecosystems that scale and visual identities that resonate.
           </p>
-          <div className="hero-buttons flex flex-row gap-3 pt-4 w-full">
-            <a className="flex-1 bg-white text-black py-3 md:py-5 rounded-full text-[13px] md:text-label-lg font-bold shadow-2xl flex items-center justify-center gap-1.5 hover:translate-y-[-4px] transition-all" href="#works">
-              View Portfolio <span className="material-symbols-outlined text-[18px] md:text-[24px]">arrow_outward</span>
+          <div className="hero-buttons flex flex-col md:flex-row gap-3 pt-4 w-full md:w-auto">
+            <a className="w-full md:w-auto md:flex-1 bg-white text-black py-4 md:py-5 px-6 md:px-10 rounded-full text-[14px] md:text-label-lg font-bold shadow-2xl flex items-center justify-center gap-2 hover:translate-y-[-4px] transition-all" href="#works">
+              View Portfolio <span className="material-symbols-outlined text-[20px] md:text-[24px]">arrow_outward</span>
             </a>
-            <button className="flex-1 glass py-3 md:py-5 rounded-full text-[13px] md:text-label-lg text-on-surface font-semibold hover:bg-white/10 transition-all border border-white/10">
+            <button className="w-full md:w-auto md:flex-1 glass py-4 md:py-5 px-6 md:px-10 rounded-full text-[14px] md:text-label-lg text-on-surface font-semibold hover:bg-white/10 transition-all border border-white/10">
               The Strategy
             </button>
           </div>
