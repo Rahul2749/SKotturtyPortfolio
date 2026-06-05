@@ -1,28 +1,9 @@
-import { useEffect } from 'react';
+import HeroBackground3D from './HeroBackground3D';
 
 export default function Hero() {
-  useEffect(() => {
-    const handleMouseMove = (e) => {
-      const blobs = document.querySelectorAll('.glow-blob');
-      const x = (e.clientX / window.innerWidth - 0.5) * 40;
-      const y = (e.clientY / window.innerHeight - 0.5) * 40;
-      
-      blobs.forEach((blob, index) => {
-        const factor = (index + 1) * 0.15;
-        blob.style.transform = `translate(${x * factor}px, ${y * factor}px)`;
-      });
-    };
-
-    document.addEventListener('mousemove', handleMouseMove);
-    return () => {
-      document.removeEventListener('mousemove', handleMouseMove);
-    };
-  }, []);
-
   return (
     <section className="relative pt-[120px] pb-16 md:min-h-screen md:flex md:items-center md:pt-24 md:pb-0 px-container-margin overflow-hidden">
-      <div className="glow-blob w-[600px] h-[600px] bg-primary/20 top-[-10%] left-[-10%] rounded-full"></div>
-      <div className="glow-blob w-[500px] h-[500px] bg-tertiary/20 bottom-[-10%] right-[-10%] rounded-full" style={{ animationDelay: '-5s' }}></div>
+      <HeroBackground3D />
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
         <div className="md:col-span-8 space-y-8">
           <div className="hero-badge flex items-center gap-2 md:gap-4">
