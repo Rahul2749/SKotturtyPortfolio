@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Portfolio() {
   useEffect(() => {
     // Setup ScrollTrigger for scroll spy on tabs
-    const sections = ['uiux', 'web', 'templates', 'app', 'animation', 'branding', 'logo', 'marketing', 'matte'];
+    const sections = ['uiux', 'web', 'templates', 'app', 'animation', 'branding', 'logo', 'marketing', 'social', 'matte'];
     
     sections.forEach((id) => {
       ScrollTrigger.create({
@@ -71,6 +71,9 @@ export default function Portfolio() {
             </a>
             <a href="#marketing" className="tab-btn px-4 md:px-6 py-1.5 md:py-2 rounded-full glass text-[11px] md:text-label-sm transition-all whitespace-nowrap border-white/10 text-on-surface-variant hover:text-white">
               Marketing
+            </a>
+            <a href="#social" className="tab-btn px-4 md:px-6 py-1.5 md:py-2 rounded-full glass text-[11px] md:text-label-sm transition-all whitespace-nowrap border-white/10 text-on-surface-variant hover:text-white">
+              Social Media
             </a>
             <a href="#matte" className="tab-btn px-4 md:px-6 py-1.5 md:py-2 rounded-full glass text-[11px] md:text-label-sm transition-all whitespace-nowrap border-white/10 text-on-surface-variant hover:text-white">
               Matte Painting
@@ -314,6 +317,32 @@ export default function Portfolio() {
             </div>
           </div>
         </div>
+
+          {/* Section: Social Media */}
+          <div className="portfolio-section scroll-mt-48" id="social">
+            <h3 className="text-headline-lg font-display-md text-white mb-6 px-2">Social Media</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="glass rounded-[2.5rem] p-4 flex items-center justify-center project-card bg-[#8ebae4] overflow-hidden">
+                <img alt="GRE & GMAT Coaching Ad" className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500 rounded-[1.5rem] shadow-xl" src="/social_1.webp"/>
+              </div>
+              <div className="glass rounded-[2.5rem] p-6 flex items-center justify-center project-card bg-surface-container border-2 border-dashed border-white/10 group min-h-[300px] aspect-square md:aspect-auto">
+                <div className="text-center opacity-60 group-hover:opacity-100 transition-opacity">
+                  <div className="w-16 h-16 rounded-full bg-white/5 mx-auto mb-4 flex items-center justify-center">
+                    <span className="material-symbols-outlined text-white text-2xl">add_photo_alternate</span>
+                  </div>
+                  <p className="text-on-surface-variant text-sm font-medium tracking-widest uppercase">Coming Soon</p>
+                </div>
+              </div>
+              <div className="glass rounded-[2.5rem] p-6 flex items-center justify-center project-card bg-surface-container border-2 border-dashed border-white/10 group min-h-[300px] aspect-square md:aspect-auto">
+                <div className="text-center opacity-60 group-hover:opacity-100 transition-opacity">
+                  <div className="w-16 h-16 rounded-full bg-white/5 mx-auto mb-4 flex items-center justify-center">
+                    <span className="material-symbols-outlined text-white text-2xl">add_photo_alternate</span>
+                  </div>
+                  <p className="text-on-surface-variant text-sm font-medium tracking-widest uppercase">Coming Soon</p>
+                </div>
+              </div>
+            </div>
+          </div>
 
           {/* Section: Matte Painting */}
           <div className="portfolio-section scroll-mt-48" id="matte">
