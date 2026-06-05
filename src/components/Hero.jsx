@@ -29,7 +29,7 @@ export default function Hero() {
             <span className="w-8 md:w-12 h-px bg-primary"></span>
             <span className="font-label-lg text-[10px] md:text-label-lg text-primary tracking-[0.2em] md:tracking-[0.4em] uppercase">Multidisciplinary Designer & Artist</span>
           </div>
-          <h1 className="hero-title font-display-lg text-[50px] sm:text-display-lg md:text-[110px] leading-[0.9] tracking-tighter">
+          <h1 className="hero-title font-display-lg text-[42px] sm:text-display-lg md:text-[110px] leading-[0.9] tracking-tighter">
             <span className="font-light italic text-on-surface-variant opacity-50">Sahiti</span><br/>
             <span className="font-black text-gradient">Kotturty</span>
           </h1>
@@ -37,10 +37,10 @@ export default function Hero() {
             Bridging the gap between <span className="text-white font-semibold">human intuition</span> and <span className="text-primary font-semibold">technical precision</span>. Designing digital ecosystems that scale and visual identities that resonate.
           </p>
           <div className="hero-buttons flex flex-row gap-3 pt-4">
-            <a className="bg-white text-black px-5 md:px-10 py-3 md:py-5 rounded-full text-[12px] md:text-label-lg font-bold shadow-2xl flex items-center justify-center gap-2 hover:translate-y-[-4px] transition-all" href="#works">
-              View Portfolio <span className="material-symbols-outlined text-[18px] md:text-[24px]">arrow_outward</span>
+            <a className="bg-white text-black px-4 md:px-10 py-2.5 md:py-5 rounded-full text-[11px] md:text-label-lg font-bold shadow-2xl flex items-center justify-center gap-1.5 hover:translate-y-[-4px] transition-all" href="#works">
+              View Portfolio <span className="material-symbols-outlined text-[16px] md:text-[24px]">arrow_outward</span>
             </a>
-            <button className="glass px-5 md:px-10 py-3 md:py-5 rounded-full text-[12px] md:text-label-lg text-on-surface font-semibold hover:bg-white/10 transition-all border border-white/10">
+            <button className="glass px-4 md:px-10 py-2.5 md:py-5 rounded-full text-[11px] md:text-label-lg text-on-surface font-semibold hover:bg-white/10 transition-all border border-white/10">
               The Strategy
             </button>
           </div>

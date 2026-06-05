@@ -6,10 +6,10 @@ export default function Portfolio() {
   return (
     <section className="py-section-gap px-container-margin" id="works">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 md:mb-16 gap-6 md:gap-8">
           <div className="portfolio-header">
-            <span className="text-primary font-bold tracking-[0.5em] uppercase text-label-sm">Categorized Hub</span>
-            <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-white mt-2">Creative <span className="italic font-light text-gradient">Showcase</span></h2>
+            <span className="text-primary font-bold tracking-[0.3em] md:tracking-[0.5em] uppercase text-label-sm">Categorized Hub</span>
+            <h2 className="font-headline-lg text-[26px] md:text-headline-lg text-white mt-2 leading-tight">Creative <span className="italic font-light text-gradient">Showcase</span></h2>
           </div>
           <div className="portfolio-tabs flex gap-2 overflow-x-auto pb-4 hide-scrollbar flex-nowrap">
             <button 

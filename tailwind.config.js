@@ -64,7 +64,7 @@ export default {
       },
       spacing: {
         "unit": "8px",
-        "container-margin": "clamp(1.5rem, 5vw, 40px)",
+        "container-margin": "clamp(1rem, 5vw, 40px)",
         "gutter": "24px",
         "component-padding-x": "24px",
         "component-padding-y": "12px",
@@ -94,7 +94,7 @@ export default {
         "label-sm": ["12px", {"lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "500"}],
         "display-md": ["56px", {"lineHeight": "60px", "letterSpacing": "-0.03em", "fontWeight": "700"}],
         "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
-        "headline-lg-mobile": ["32px", {"lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+        "headline-lg-mobile": ["28px", {"lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
       }
     },
   },
