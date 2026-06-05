@@ -245,9 +245,9 @@ export default function Portfolio() {
 
           {/* Section: Matte Painting */}
           <div className="portfolio-section scroll-mt-48" id="matte">
-            <h3 className="text-headline-lg font-display-md text-white mb-6 px-2">Matte Painting</h3>
-            <div className="glass rounded-[2.5rem] p-1 overflow-hidden project-card w-full">
-              <div className="bg-surface-container rounded-[2.4rem] aspect-video md:h-[500px] flex flex-col items-center justify-center relative overflow-hidden group">
+            <h3 className="text-headline-lg font-display-md text-white mb-6 text-center">Matte Painting</h3>
+            <div className="glass rounded-[2.5rem] p-1 overflow-hidden project-card w-full max-w-5xl mx-auto">
+              <div className="bg-surface-container rounded-[2.4rem] aspect-video flex flex-col items-center justify-center relative overflow-hidden group">
                 <img alt="Fantasy Landscape Matte Painting" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-105 transition-transform duration-1000" src="/matte_painting.webp"/>
                 <div className="z-10 text-center p-8 bg-background/50 backdrop-blur-sm rounded-2xl m-4 md:m-8 mt-auto w-11/12 md:w-3/4 border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <h4 className="text-white font-bold text-headline-sm mb-2">Fantasy Landscape</h4>
