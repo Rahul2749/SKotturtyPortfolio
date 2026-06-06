@@ -248,7 +248,7 @@ export default function Portfolio() {
             <h3 className="text-headline-lg font-display-md text-white mb-6 px-2">Logo Design</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
               {['logo_11.jpeg', 'logo_12.jpeg', 'logo_13.jpeg', 'logo_14.jpeg'].map((logo, idx) => (
-                <div key={idx} className="glass rounded-[2.5rem] p-1 project-card overflow-hidden w-full aspect-square flex flex-col">
+                <div key={idx} className="glass rounded-[2.5rem] p-1 project-card overflow-hidden w-full aspect-[4/3] flex flex-col">
                   <div className="w-full h-full rounded-[2.4rem] overflow-hidden relative bg-surface-container group flex items-center justify-center">
                     <img src={`/${logo}`} alt={`Logo ${idx+1}`} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                   </div>
