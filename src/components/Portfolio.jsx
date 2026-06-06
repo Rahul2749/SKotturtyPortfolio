@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Portfolio() {
   useEffect(() => {
     // Setup ScrollTrigger for scroll spy on tabs
-    const sections = ['uiux', 'web', 'templates', 'brochure', 'flyer', 'animation', 'branding', 'marketing', 'social', 'matte'];
+    const sections = ['uiux', 'web', 'templates', 'brochure', 'flyer', 'magazine', 'animation', 'branding', 'marketing', 'social', 'matte'];
     
     sections.forEach((id) => {
       ScrollTrigger.create({
@@ -70,6 +70,9 @@ export default function Portfolio() {
             </a>
             <a href="#flyer" className="tab-btn px-4 md:px-6 py-1.5 md:py-2 rounded-full glass text-[11px] md:text-label-sm transition-all whitespace-nowrap border-white/10 text-on-surface-variant hover:text-white">
               Flyer
+            </a>
+            <a href="#magazine" className="tab-btn px-4 md:px-6 py-1.5 md:py-2 rounded-full glass text-[11px] md:text-label-sm transition-all whitespace-nowrap border-white/10 text-on-surface-variant hover:text-white">
+              Magazine
             </a>
             <a href="#animation" className="tab-btn px-4 md:px-6 py-1.5 md:py-2 rounded-full glass text-[11px] md:text-label-sm transition-all whitespace-nowrap border-white/10 text-on-surface-variant hover:text-white">
               Animation
@@ -217,6 +220,23 @@ export default function Portfolio() {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+
+          {/* Section: Magazine */}
+          <div className="portfolio-section scroll-mt-48" id="magazine">
+            <h3 className="text-headline-lg font-display-md text-white mb-6 px-2">Magazine Design</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="glass rounded-[2.5rem] p-1 project-card overflow-hidden w-full h-[500px] md:h-[600px] flex flex-col">
+                <div className="w-full h-full rounded-[2.4rem] overflow-hidden relative bg-surface-container group flex items-center justify-center">
+                  <img src="/magazine.jpeg" alt="Magazine 1" className="w-full h-full object-contain p-2 transition-transform duration-700 group-hover:scale-105" />
+                </div>
+              </div>
+              <div className="glass rounded-[2.5rem] p-1 project-card overflow-hidden w-full h-[500px] md:h-[600px] flex flex-col">
+                <div className="w-full h-full rounded-[2.4rem] overflow-hidden relative bg-surface-container group flex items-center justify-center">
+                  <img src="/magazine2_new.png" alt="Magazine 2" className="w-full h-full object-contain p-2 transition-transform duration-700 group-hover:scale-105" />
+                </div>
+              </div>
             </div>
           </div>
 
