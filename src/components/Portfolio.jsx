@@ -203,8 +203,8 @@ export default function Portfolio() {
               </a>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
-              {['boucher_11.jpeg', 'boucher_12.jpeg', 'boucher_13.jpeg'].map((brochure, idx) => (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+              {['boucher_11.jpeg', 'boucher_12.jpeg', 'boucher_13.jpeg', 'boucher_14.jpeg'].map((brochure, idx) => (
                 <div onClick={() => setSelectedImage(`/${brochure}`)} key={idx} className="glass rounded-[2.5rem] p-1 project-card overflow-hidden w-full aspect-[4/3] flex flex-col group cursor-pointer">
                   <div className="w-full h-full rounded-[2.4rem] overflow-hidden relative bg-surface-container flex items-center justify-center">
                     <img src={`/${brochure}`} alt={`Brochure Page ${idx + 1}`} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
