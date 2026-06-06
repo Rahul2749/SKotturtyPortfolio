@@ -189,27 +189,14 @@ export default function Portfolio() {
           {/* Section: App Templates */}
           <div className="portfolio-section scroll-mt-48" id="apptemplates">
             <h3 className="text-headline-lg font-display-md text-white mb-6 px-2">App Templates</h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-              <div className="glass rounded-3xl p-1 project-card overflow-hidden w-full aspect-[9/19]">
-                <div className="w-full h-full rounded-[1.3rem] overflow-hidden relative bg-surface-container group">
-                  <img src="/app_templates.jpg" alt="Beethub App Screen 1" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" style={{ objectPosition: '0% 50%' }} />
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {[1, 2, 3].map((num) => (
+                <div key={num} className="glass rounded-3xl p-1 project-card overflow-hidden h-full flex flex-col">
+                  <div className="w-full h-full rounded-[1.3rem] overflow-hidden relative bg-surface-container group flex items-center justify-center">
+                    <img src={`/appdesign_${num}.jpeg`} alt={`App Design ${num}`} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                  </div>
                 </div>
-              </div>
-              <div className="glass rounded-3xl p-1 project-card overflow-hidden w-full aspect-[9/19]">
-                <div className="w-full h-full rounded-[1.3rem] overflow-hidden relative bg-surface-container group">
-                  <img src="/app_templates.jpg" alt="Beethub App Screen 2" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" style={{ objectPosition: '33.333% 50%' }} />
-                </div>
-              </div>
-              <div className="glass rounded-3xl p-1 project-card overflow-hidden w-full aspect-[9/19]">
-                <div className="w-full h-full rounded-[1.3rem] overflow-hidden relative bg-surface-container group">
-                  <img src="/app_templates.jpg" alt="Beethub App Screen 3" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" style={{ objectPosition: '66.666% 50%' }} />
-                </div>
-              </div>
-              <div className="glass rounded-3xl p-1 project-card overflow-hidden w-full aspect-[9/19]">
-                <div className="w-full h-full rounded-[1.3rem] overflow-hidden relative bg-surface-container group">
-                  <img src="/app_templates.jpg" alt="Beethub App Screen 4" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" style={{ objectPosition: '100% 50%' }} />
-                </div>
-              </div>
+              ))}
             </div>
           </div>
 
