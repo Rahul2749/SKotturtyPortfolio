@@ -1,7 +1,8 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState, useCallback } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
+import Preloader from './components/Preloader';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -45,6 +46,11 @@ function animateIn(selector, vars) {
 
 export default function App() {
   const mainRef = useRef(null);
+  const [loading, setLoading] = useState(true);
+
+  const handlePreloaderComplete = useCallback(() => {
+    setLoading(false);
+  }, []);
 
   useEffect(() => {
     // Force scroll to top on refresh and clear hash
@@ -165,6 +171,7 @@ export default function App() {
 
   return (
     <>
+      {loading && <Preloader onComplete={handlePreloaderComplete} />}
       <div className="noise-bg"></div>
       <div ref={mainRef} className="overflow-x-hidden w-full relative">
         <Navbar />
