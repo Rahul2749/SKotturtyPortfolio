@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Portfolio() {
   useEffect(() => {
     // Setup ScrollTrigger for scroll spy on tabs
-    const sections = ['uiux', 'web', 'templates', 'brochure', 'flyer', 'magazine', 'animation', 'branding', 'marketing', 'social', 'matte'];
+    const sections = ['uiux', 'web', 'templates', 'brochure', 'flyer', 'magazine', 'logo', 'animation', 'branding', 'marketing', 'social', 'matte'];
     
     sections.forEach((id) => {
       ScrollTrigger.create({
@@ -73,6 +73,9 @@ export default function Portfolio() {
             </a>
             <a href="#magazine" className="tab-btn px-4 md:px-6 py-1.5 md:py-2 rounded-full glass text-[11px] md:text-label-sm transition-all whitespace-nowrap border-white/10 text-on-surface-variant hover:text-white">
               Magazine
+            </a>
+            <a href="#logo" className="tab-btn px-4 md:px-6 py-1.5 md:py-2 rounded-full glass text-[11px] md:text-label-sm transition-all whitespace-nowrap border-white/10 text-on-surface-variant hover:text-white">
+              Logo
             </a>
             <a href="#animation" className="tab-btn px-4 md:px-6 py-1.5 md:py-2 rounded-full glass text-[11px] md:text-label-sm transition-all whitespace-nowrap border-white/10 text-on-surface-variant hover:text-white">
               Animation
@@ -237,6 +240,20 @@ export default function Portfolio() {
                   <img src="/magazine2_new.jpeg" alt="Magazine 2" className="w-full h-auto block transition-transform duration-700 group-hover:scale-105" />
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* Section: Logo */}
+          <div className="portfolio-section scroll-mt-48" id="logo">
+            <h3 className="text-headline-lg font-display-md text-white mb-6 px-2">Logo Design</h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+              {['sk_logo.jpeg', 'pawanJew_logo.jpeg', 'unique_logo.jpeg', 'adenium_logo.jpeg'].map((logo, idx) => (
+                <div key={idx} className="glass rounded-[2.5rem] p-1 project-card overflow-hidden w-full aspect-square flex flex-col">
+                  <div className="w-full h-full rounded-[2.4rem] overflow-hidden relative bg-surface-container group flex items-center justify-center">
+                    <img src={`/${logo}`} alt={`Logo ${idx+1}`} className="w-full h-full object-contain p-4 transition-transform duration-700 group-hover:scale-105" />
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
 

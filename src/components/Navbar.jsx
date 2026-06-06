@@ -3,7 +3,7 @@ export default function Navbar() {
     <header className="fixed top-0 w-full z-[100] bg-background/50 backdrop-blur-2xl border-b border-white/5 shadow-2xl">
       <div className="flex justify-between items-center px-container-margin py-5 max-w-7xl mx-auto">
         <a className="flex items-center gap-2 md:gap-3 text-[18px] md:text-[20px] text-white font-black tracking-tighter" href="#">
-          <img src="/logo.png.jpeg" alt="Logo" className="h-8 md:h-10 mix-blend-screen contrast-[2.0] brightness-110 object-contain" />
+          <img src="/sk_logo.jpeg" alt="Logo" className="h-8 md:h-12 mix-blend-screen contrast-200 object-contain" />
           <span className="mt-1 leading-none">SAHITI<span className="text-primary">.K</span></span>
         </a>
         <nav className="hidden lg:flex gap-10 items-center">
