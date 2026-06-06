@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Portfolio() {
   useEffect(() => {
     // Setup ScrollTrigger for scroll spy on tabs
-    const sections = ['uiux', 'web', 'templates', 'apptemplates', 'brochure', 'animation', 'branding', 'marketing', 'social', 'matte'];
+    const sections = ['uiux', 'web', 'templates', 'brochure', 'animation', 'branding', 'marketing', 'social', 'matte'];
     
     sections.forEach((id) => {
       ScrollTrigger.create({
@@ -64,9 +64,6 @@ export default function Portfolio() {
             </a>
             <a href="#templates" className="tab-btn px-4 md:px-6 py-1.5 md:py-2 rounded-full glass text-[11px] md:text-label-sm transition-all whitespace-nowrap border-white/10 text-on-surface-variant hover:text-white">
               Website Templates
-            </a>
-            <a href="#apptemplates" className="tab-btn px-4 md:px-6 py-1.5 md:py-2 rounded-full glass text-[11px] md:text-label-sm transition-all whitespace-nowrap border-white/10 text-on-surface-variant hover:text-white">
-              App Templates
             </a>
             <a href="#brochure" className="tab-btn px-4 md:px-6 py-1.5 md:py-2 rounded-full glass text-[11px] md:text-label-sm transition-all whitespace-nowrap border-white/10 text-on-surface-variant hover:text-white">
               Brochure
@@ -183,21 +180,6 @@ export default function Portfolio() {
               <div className="glass rounded-3xl p-1 project-card overflow-hidden">
                 <img src="/template_part_5.webp" className="w-full h-auto rounded-[1.3rem] hover:scale-105 transition-transform duration-700" alt="Casino Template Footer"/>
               </div>
-            </div>
-          </div>
-
-          {/* Section: App Templates */}
-          <div className="portfolio-section scroll-mt-48" id="apptemplates">
-            <h3 className="text-headline-lg font-display-md text-white mb-6 px-2">App Templates</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {[1, 2, 3].map((num) => (
-                <div key={num} className="glass rounded-3xl p-1 project-card overflow-hidden h-full flex flex-col">
-                  <div className="w-full h-full rounded-[1.3rem] overflow-hidden relative bg-surface-container group flex items-center justify-center">
-                    {/* Applying a scale and negative top margin to flawlessly crop out the mobile status bars! */}
-                    <img src={`/appdesign_${num}.jpeg`} alt={`App Design ${num}`} className="w-[105%] h-[105%] max-w-none absolute top-[-5%] object-cover transition-transform duration-700 group-hover:scale-110" />
-                  </div>
-                </div>
-              ))}
             </div>
           </div>
 
