@@ -148,7 +148,7 @@ export default function App() {
   return (
     <>
       <div className="noise-bg"></div>
-      <div ref={mainRef}>
+      <div ref={mainRef} className="overflow-x-hidden w-full relative">
         <Navbar />
         <main>
           <Hero />

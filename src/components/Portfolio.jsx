@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Portfolio() {
   useEffect(() => {
     // Setup ScrollTrigger for scroll spy on tabs
-    const sections = ['uiux', 'web', 'templates', 'apptemplates', 'animation', 'branding', 'marketing', 'social', 'matte'];
+    const sections = ['uiux', 'web', 'templates', 'apptemplates', 'animation', 'branding', 'marketing', 'social', 'brochure', 'matte'];
     
     sections.forEach((id) => {
       ScrollTrigger.create({
@@ -74,6 +74,9 @@ export default function Portfolio() {
             </a>
             <a href="#social" className="tab-btn px-4 md:px-6 py-1.5 md:py-2 rounded-full glass text-[11px] md:text-label-sm transition-all whitespace-nowrap border-white/10 text-on-surface-variant hover:text-white">
               Social Media
+            </a>
+            <a href="#brochure" className="tab-btn px-4 md:px-6 py-1.5 md:py-2 rounded-full glass text-[11px] md:text-label-sm transition-all whitespace-nowrap border-white/10 text-on-surface-variant hover:text-white">
+              Brochure
             </a>
             <a href="#matte" className="tab-btn px-4 md:px-6 py-1.5 md:py-2 rounded-full glass text-[11px] md:text-label-sm transition-all whitespace-nowrap border-white/10 text-on-surface-variant hover:text-white">
               Matte Painting
@@ -318,6 +321,26 @@ export default function Portfolio() {
               <div className="glass rounded-[2.5rem] p-4 flex items-center justify-center project-card bg-[#0f172a] overflow-hidden">
                 <img alt="Website Services Digital Ad" className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500 rounded-[1.5rem] shadow-xl" src="/social_3.webp"/>
               </div>
+            </div>
+          </div>
+
+          {/* Section: Brochure */}
+          <div className="portfolio-section scroll-mt-48" id="brochure">
+            <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 px-2 gap-4">
+              <h3 className="text-headline-lg font-display-md text-white">Brochure Design</h3>
+              <a href="/colorful_jewelry_catalog_brochure.pdf" target="_blank" rel="noopener noreferrer" className="bg-primary text-black px-6 py-3 rounded-full text-sm font-bold hover:scale-105 transition-transform flex items-center gap-2 shadow-[0_0_20px_rgba(165,231,255,0.3)] project-card">
+                View PDF Catalog <span className="material-symbols-outlined text-lg">picture_as_pdf</span>
+              </a>
+            </div>
+            
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
+              {[1, 2, 3, 4, 5].map((num) => (
+                <div key={num} className="glass rounded-3xl p-1 project-card overflow-hidden w-full aspect-[3/4]">
+                  <div className="w-full h-full rounded-[1.3rem] overflow-hidden relative bg-surface-container group flex items-center justify-center">
+                    <img src={`/braucher_${num}.jpeg`} alt={`Brochure Page ${num}`} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
 
