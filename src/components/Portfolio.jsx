@@ -1,10 +1,12 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Portfolio() {
+  const [selectedImage, setSelectedImage] = useState(null);
+
   useEffect(() => {
     // Setup ScrollTrigger for scroll spy on tabs
     const sections = ['uiux', 'web', 'templates', 'brochure', 'flyer', 'magazine', 'logo', 'animation', 'branding', 'marketing', 'social', 'matte'];
@@ -201,11 +203,14 @@ export default function Portfolio() {
               </a>
             </div>
             
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
-              {[1, 2, 3, 4, 5].map((num) => (
-                <div key={num} className="glass rounded-3xl p-1 project-card overflow-hidden w-full aspect-[3/4]">
-                  <div className="w-full h-full rounded-[1.3rem] overflow-hidden relative bg-surface-container group flex items-center justify-center">
-                    <img src={`/braucher_${num}.png`} alt={`Brochure Page ${num}`} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+              {['boucher_11.jpeg', 'boucher_12.jpeg', 'boucher_13.jpeg'].map((brochure, idx) => (
+                <div onClick={() => setSelectedImage(`/${brochure}`)} key={idx} className="glass rounded-[2.5rem] p-1 project-card overflow-hidden w-full aspect-[3/4] flex flex-col group cursor-pointer">
+                  <div className="w-full h-full rounded-[2.4rem] overflow-hidden relative bg-surface-container flex items-center justify-center">
+                    <img src={`/${brochure}`} alt={`Brochure Page ${idx + 1}`} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                    <div className="absolute inset-0 bg-background/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
+                      <span className="material-symbols-outlined text-white text-4xl transform translate-y-4 group-hover:translate-y-0 transition-all duration-500 delay-100">open_in_new</span>
+                    </div>
                   </div>
                 </div>
               ))}
@@ -248,14 +253,14 @@ export default function Portfolio() {
             <h3 className="text-headline-lg font-display-md text-white mb-6 px-2">Logo Design</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
               {['logo_11.jpeg', 'logo_12.jpeg', 'logo_13.jpeg', 'logo_14.jpeg'].map((logo, idx) => (
-                <a href={`/${logo}`} target="_blank" rel="noopener noreferrer" key={idx} className="glass rounded-[2.5rem] p-1 project-card overflow-hidden w-full aspect-[4/3] flex flex-col group cursor-pointer">
+                <div onClick={() => setSelectedImage(`/${logo}`)} key={idx} className="glass rounded-[2.5rem] p-1 project-card overflow-hidden w-full aspect-[4/3] flex flex-col group cursor-pointer">
                   <div className="w-full h-full rounded-[2.4rem] overflow-hidden relative bg-surface-container flex items-center justify-center">
                     <img src={`/${logo}`} alt={`Logo ${idx+1}`} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                     <div className="absolute inset-0 bg-background/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
                       <span className="material-symbols-outlined text-white text-4xl transform translate-y-4 group-hover:translate-y-0 transition-all duration-500 delay-100">open_in_new</span>
                     </div>
                   </div>
-                </a>
+                </div>
               ))}
             </div>
           </div>
@@ -391,6 +396,18 @@ export default function Portfolio() {
           </div>
         </div>
       </div>
+
+      {/* Lightbox Modal */}
+      {selectedImage && (
+        <div className="fixed inset-0 z-[500] flex items-center justify-center p-4 md:p-8 bg-black/80 backdrop-blur-md" onClick={() => setSelectedImage(null)}>
+          <button className="absolute top-6 right-6 text-white hover:text-primary transition-colors bg-white/10 hover:bg-white/20 p-2 rounded-full backdrop-blur-sm flex items-center justify-center" onClick={() => setSelectedImage(null)}>
+            <span className="material-symbols-outlined text-2xl">close</span>
+          </button>
+          <div className="relative max-w-5xl w-full max-h-[90vh] flex items-center justify-center" onClick={(e) => e.stopPropagation()}>
+            <img src={selectedImage} alt="Fullscreen view" className="max-w-full max-h-[90vh] object-contain rounded-2xl shadow-2xl" />
+          </div>
+        </div>
+      )}
     </section>
   );
 }
