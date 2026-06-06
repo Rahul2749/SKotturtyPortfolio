@@ -3,11 +3,15 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-background text-on-surface font-body-lg antialiased overflow-x-hidden;
   }
 
-  /* Noise Overlay */
+  /* Noise Overlay – GPU-accelerated */
   .noise-bg {
     position: fixed;
     top: 0;
@@ -17,7 +21,19 @@
     pointer-events: none;
     z-index: 50;
     opacity: 0.03;
+    will-change: transform;
+    transform: translateZ(0);
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  }
+
+  /* Accessibility: respect reduced motion preferences */
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
   }
 }
 
@@ -36,11 +52,13 @@
     filter: blur(100px);
     z-index: -1;
     opacity: 0.35;
+    will-change: transform;
+    transform: translateZ(0);
     animation: pulse 15s infinite alternate ease-in-out;
   }
   @keyframes pulse {
-    0% { transform: scale(1) translate(0, 0); }
-    100% { transform: scale(1.4) translate(40px, 60px); }
+    0% { transform: scale(1) translate3d(0, 0, 0); }
+    100% { transform: scale(1.4) translate3d(40px, 60px, 0); }
   }
   .text-gradient {
     background: linear-gradient(to right, #a5e7ff, #ecd4ff);
@@ -69,10 +87,13 @@
     margin-bottom: 24px;
   }
   .project-card {
-    transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+    transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.5s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform;
+    transform: translateZ(0);
+    backface-visibility: hidden;
   }
   .project-card:hover {
-    transform: translateY(-10px) scale(1.02);
+    transform: translateY(-10px) scale(1.02) translateZ(0);
     border-color: rgba(165, 231, 255, 0.4);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(165, 231, 255, 0.1);
   }
