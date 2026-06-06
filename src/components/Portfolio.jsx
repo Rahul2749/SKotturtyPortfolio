@@ -227,14 +227,14 @@ export default function Portfolio() {
           <div className="portfolio-section scroll-mt-48" id="magazine">
             <h3 className="text-headline-lg font-display-md text-white mb-6 px-2">Magazine Design</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="glass rounded-[2.5rem] p-1 project-card overflow-hidden w-full h-[500px] md:h-[600px] flex flex-col">
+              <div className="glass rounded-[2.5rem] p-1 project-card overflow-hidden w-full h-auto flex flex-col">
                 <div className="w-full h-full rounded-[2.4rem] overflow-hidden relative bg-surface-container group flex items-center justify-center">
-                  <img src="/magazine.jpeg" alt="Magazine 1" className="w-full h-full object-contain p-2 transition-transform duration-700 group-hover:scale-105" />
+                  <img src="/magazine.jpeg" alt="Magazine 1" className="w-full h-auto block transition-transform duration-700 group-hover:scale-105" />
                 </div>
               </div>
-              <div className="glass rounded-[2.5rem] p-1 project-card overflow-hidden w-full h-[500px] md:h-[600px] flex flex-col">
+              <div className="glass rounded-[2.5rem] p-1 project-card overflow-hidden w-full h-auto flex flex-col">
                 <div className="w-full h-full rounded-[2.4rem] overflow-hidden relative bg-surface-container group flex items-center justify-center">
-                  <img src="/magazine2_new.png" alt="Magazine 2" className="w-full h-full object-contain p-2 transition-transform duration-700 group-hover:scale-105" />
+                  <img src="/magazine2_new.jpeg" alt="Magazine 2" className="w-full h-auto block transition-transform duration-700 group-hover:scale-105" />
                 </div>
               </div>
             </div>
