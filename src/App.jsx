@@ -64,18 +64,24 @@ export default function App() {
     requestAnimationFrame(() => window.scrollTo(0, 0));
   }, []);
 
-  // ── 2. Hero entrance: deferred until preloader completes ──
+  // ── 2a. Hide hero elements immediately on mount ──
   useEffect(() => {
-    if (loading) return;
-
-    const heroCtx = gsap.context(() => {
+    const ctx = gsap.context(() => {
       gsap.set('.hero-badge', { autoAlpha: 0, x: -40 });
       gsap.set('.hero-title', { autoAlpha: 0, y: 60 });
       gsap.set('.hero-desc', { autoAlpha: 0, y: 30 });
       gsap.set('.hero-buttons', { autoAlpha: 0, y: 25 });
       gsap.set('.hero-portrait', { autoAlpha: 0, scale: 0.85, x: 40 });
+    }, mainRef);
+    return () => ctx.revert();
+  }, []);
 
-      const heroTl = gsap.timeline({ delay: 0.2, defaults: { ease: 'power3.out', force3D: true } });
+  // ── 2b. Hero entrance: deferred until preloader completes ──
+  useEffect(() => {
+    if (loading) return;
+
+    const heroCtx = gsap.context(() => {
+      const heroTl = gsap.timeline({ delay: 0.4, defaults: { ease: 'power3.out', force3D: true } });
       heroTl
         .to('.hero-badge', { autoAlpha: 1, x: 0, duration: 0.6 })
         .to('.hero-title', { autoAlpha: 1, y: 0, duration: 1, ease: 'expo.out' }, '-=0.35')
