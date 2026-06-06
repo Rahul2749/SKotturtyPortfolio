@@ -211,9 +211,9 @@ export default function Portfolio() {
             <h3 className="text-headline-lg font-display-md text-white mb-6 px-2">Flyer Design</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {['10', '20'].map((num) => (
-                <div key={num} className="glass rounded-[2.5rem] p-1 project-card overflow-hidden w-full h-full flex flex-col">
+                <div key={num} className="glass rounded-[2.5rem] p-1 project-card overflow-hidden w-full h-[500px] md:h-[600px] flex flex-col">
                   <div className="w-full h-full rounded-[2.4rem] overflow-hidden relative bg-surface-container group flex items-center justify-center">
-                    <img src={`/flyer${num}.png`} alt={`Flyer ${num}`} className="w-full h-auto block transition-transform duration-700 group-hover:scale-105" />
+                    <img src={`/flyer${num}.png`} alt={`Flyer ${num}`} className="w-full h-full object-contain p-2 transition-transform duration-700 group-hover:scale-105" />
                   </div>
                 </div>
               ))}

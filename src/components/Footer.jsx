@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="flex flex-wrap justify-center gap-10">
           <a className="text-label-sm text-outline hover:text-primary transition-colors uppercase tracking-widest font-bold" href="#">Dribbble</a>
           <a className="text-label-sm text-outline hover:text-primary transition-colors uppercase tracking-widest font-bold" href="#">LinkedIn</a>
-          <a className="text-label-sm text-outline hover:text-primary transition-colors uppercase tracking-widest font-bold" href="#">Instagram</a>
+          <a className="text-label-sm text-outline hover:text-primary transition-colors uppercase tracking-widest font-bold" href="https://www.instagram.com/_sahitikotturty_.20?igsh=MW9ubXNwM2ozNGtpNg==" target="_blank" rel="noopener noreferrer">Instagram</a>
           <a className="text-label-sm text-outline hover:text-primary transition-colors uppercase tracking-widest font-bold" href="#">Behance</a>
         </div>
       </div>
