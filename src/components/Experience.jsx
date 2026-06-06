@@ -13,7 +13,7 @@ export default function Experience() {
       description: "Collaborated directly with over 30+ clients across e-commerce, real estate, and healthcare to deliver comprehensive branding and web design solutions."
     },
     {
-      year: "2019 - 2021",
+      year: "2023 - Present",
       role: "Visual Designer",
       company: "TechNova Solutions",
       description: "Designed marketing materials, social media campaigns, and user interfaces for web applications, increasing user engagement by 45%."

@@ -24,9 +24,14 @@ export default function Portfolio() {
             if (activeBtn) {
               activeBtn.classList.add('active', 'border-primary/50', 'text-primary', 'font-bold');
               activeBtn.classList.remove('border-white/10', 'text-on-surface-variant');
-              
-              // Automatically scroll the tab container to keep the active tab centered
-              activeBtn.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+              // Automatically scroll the tab container to keep the active tab centered without affecting vertical scroll
+              const tabsContainer = document.querySelector('.portfolio-tabs');
+              if (tabsContainer) {
+                const containerRect = tabsContainer.getBoundingClientRect();
+                const btnRect = activeBtn.getBoundingClientRect();
+                const scrollLeft = activeBtn.offsetLeft - (containerRect.width / 2) + (btnRect.width / 2);
+                tabsContainer.scrollTo({ left: scrollLeft, behavior: 'smooth' });
+              }
             }
           }
         }
