@@ -184,22 +184,22 @@ export default function Portfolio() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
               <div className="glass rounded-3xl p-1 project-card overflow-hidden w-full aspect-[9/19]">
                 <div className="w-full h-full rounded-[1.3rem] overflow-hidden relative bg-surface-container group">
-                  <img src="/app_templates.webp" alt="Beethub App Screen 1" className="absolute top-0 left-0 w-[400%] h-full max-w-none object-cover transition-transform duration-700 group-hover:scale-105" style={{ objectPosition: '0% 50%' }} />
+                  <img src="/app_templates.jpg" alt="Beethub App Screen 1" className="absolute top-0 left-0 w-[400%] h-full max-w-none object-cover transition-transform duration-700 group-hover:scale-105" style={{ objectPosition: '0% 50%' }} />
                 </div>
               </div>
               <div className="glass rounded-3xl p-1 project-card overflow-hidden w-full aspect-[9/19]">
                 <div className="w-full h-full rounded-[1.3rem] overflow-hidden relative bg-surface-container group">
-                  <img src="/app_templates.webp" alt="Beethub App Screen 2" className="absolute top-0 left-0 w-[400%] h-full max-w-none object-cover transition-transform duration-700 group-hover:scale-105" style={{ objectPosition: '33.333% 50%' }} />
+                  <img src="/app_templates.jpg" alt="Beethub App Screen 2" className="absolute top-0 left-0 w-[400%] h-full max-w-none object-cover transition-transform duration-700 group-hover:scale-105" style={{ objectPosition: '33.333% 50%' }} />
                 </div>
               </div>
               <div className="glass rounded-3xl p-1 project-card overflow-hidden w-full aspect-[9/19]">
                 <div className="w-full h-full rounded-[1.3rem] overflow-hidden relative bg-surface-container group">
-                  <img src="/app_templates.webp" alt="Beethub App Screen 3" className="absolute top-0 left-0 w-[400%] h-full max-w-none object-cover transition-transform duration-700 group-hover:scale-105" style={{ objectPosition: '66.666% 50%' }} />
+                  <img src="/app_templates.jpg" alt="Beethub App Screen 3" className="absolute top-0 left-0 w-[400%] h-full max-w-none object-cover transition-transform duration-700 group-hover:scale-105" style={{ objectPosition: '66.666% 50%' }} />
                 </div>
               </div>
               <div className="glass rounded-3xl p-1 project-card overflow-hidden w-full aspect-[9/19]">
                 <div className="w-full h-full rounded-[1.3rem] overflow-hidden relative bg-surface-container group">
-                  <img src="/app_templates.webp" alt="Beethub App Screen 4" className="absolute top-0 left-0 w-[400%] h-full max-w-none object-cover transition-transform duration-700 group-hover:scale-105" style={{ objectPosition: '100% 50%' }} />
+                  <img src="/app_templates.jpg" alt="Beethub App Screen 4" className="absolute top-0 left-0 w-[400%] h-full max-w-none object-cover transition-transform duration-700 group-hover:scale-105" style={{ objectPosition: '100% 50%' }} />
                 </div>
               </div>
             </div>
