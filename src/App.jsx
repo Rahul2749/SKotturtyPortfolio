@@ -7,6 +7,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Services from './components/Services';
 import Portfolio from './components/Portfolio';
+import AdsStats from './components/AdsStats';
 import CaseStudies from './components/CaseStudies';
 import Testimonials from './components/Testimonials';
 import Process from './components/Process';
@@ -161,6 +162,7 @@ export default function App() {
           <About />
           <Experience />
           <Portfolio />
+          <AdsStats />
           <Services />
           <CaseStudies />
           <Testimonials />
