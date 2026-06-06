@@ -196,7 +196,7 @@ export default function Portfolio() {
               {[1, 2, 3, 4, 5].map((num) => (
                 <div key={num} className="glass rounded-3xl p-1 project-card overflow-hidden w-full aspect-[3/4]">
                   <div className="w-full h-full rounded-[1.3rem] overflow-hidden relative bg-surface-container group flex items-center justify-center">
-                    <img src={`/braucher_${num}.jpeg`} alt={`Brochure Page ${num}`} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                    <img src={`/braucher_${num}.png`} alt={`Brochure Page ${num}`} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                   </div>
                 </div>
               ))}
