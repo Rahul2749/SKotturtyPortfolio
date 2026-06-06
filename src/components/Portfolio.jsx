@@ -250,7 +250,7 @@ export default function Portfolio() {
               {['logo_11.jpeg', 'logo_12.jpeg', 'logo_13.jpeg', 'logo_14.jpeg'].map((logo, idx) => (
                 <div key={idx} className="glass rounded-[2.5rem] p-1 project-card overflow-hidden w-full aspect-square flex flex-col">
                   <div className="w-full h-full rounded-[2.4rem] overflow-hidden relative bg-surface-container group flex items-center justify-center">
-                    <img src={`/${logo}`} alt={`Logo ${idx+1}`} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                    <img src={`/${logo}`} alt={`Logo ${idx+1}`} className="w-full h-full object-contain p-4 transition-transform duration-700 group-hover:scale-105" />
                   </div>
                 </div>
               ))}
