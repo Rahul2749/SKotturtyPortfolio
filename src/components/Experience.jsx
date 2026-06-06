@@ -1,13 +1,13 @@
 export default function Experience() {
   const experiences = [
     {
-      year: "2023 - Present",
-      role: "Senior UI/UX Designer",
+      year: "2024 - Present",
+      role: "UI/UX Designer",
       company: "Creative Studio Agency",
       description: "Leading the design team in creating scalable digital products for global tech startups. Driving UX strategy and maintaining comprehensive design systems."
     },
     {
-      year: "2021 - 2023",
+      year: "2024 - Present",
       role: "Freelance Multidisciplinary Designer",
       company: "Self-Employed",
       description: "Collaborated directly with over 30+ clients across e-commerce, real estate, and healthcare to deliver comprehensive branding and web design solutions."
