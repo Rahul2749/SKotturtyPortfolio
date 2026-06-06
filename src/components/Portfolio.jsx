@@ -297,10 +297,10 @@ export default function Portfolio() {
             </div>
             <div className="glass rounded-[2.5rem] p-1 overflow-hidden project-card">
               <div className="bg-surface-container rounded-[2.4rem] aspect-video md:aspect-auto md:h-[340px] flex flex-col items-center justify-center relative overflow-hidden group">
-                <img alt="Organic Tea Packaging" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-110 transition-transform duration-1000" src="/packaging_mockup.webp"/>
+                <img alt="Lumina Branding Design" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-110 transition-transform duration-1000" src="/branding_lumina.jpeg"/>
                 <div className="z-10 text-center p-6 bg-background/50 backdrop-blur-sm rounded-2xl m-4 mt-auto w-11/12 border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <h4 className="text-white font-bold text-headline-sm">Organic Tea Packaging</h4>
-                  <p className="text-on-surface-variant mt-1 text-xs">Matcha green tea product design.</p>
+                  <h4 className="text-white font-bold text-headline-sm">Lumina Creative</h4>
+                  <p className="text-on-surface-variant mt-1 text-xs">Complete brand identity and visual language.</p>
                 </div>
               </div>
             </div>
