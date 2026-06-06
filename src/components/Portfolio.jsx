@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Portfolio() {
   useEffect(() => {
     // Setup ScrollTrigger for scroll spy on tabs
-    const sections = ['uiux', 'web', 'templates', 'brochure', 'animation', 'branding', 'marketing', 'social', 'matte'];
+    const sections = ['uiux', 'web', 'templates', 'brochure', 'flyer', 'animation', 'branding', 'marketing', 'social', 'matte'];
     
     sections.forEach((id) => {
       ScrollTrigger.create({
@@ -67,6 +67,9 @@ export default function Portfolio() {
             </a>
             <a href="#brochure" className="tab-btn px-4 md:px-6 py-1.5 md:py-2 rounded-full glass text-[11px] md:text-label-sm transition-all whitespace-nowrap border-white/10 text-on-surface-variant hover:text-white">
               Brochure
+            </a>
+            <a href="#flyer" className="tab-btn px-4 md:px-6 py-1.5 md:py-2 rounded-full glass text-[11px] md:text-label-sm transition-all whitespace-nowrap border-white/10 text-on-surface-variant hover:text-white">
+              Flyer
             </a>
             <a href="#animation" className="tab-btn px-4 md:px-6 py-1.5 md:py-2 rounded-full glass text-[11px] md:text-label-sm transition-all whitespace-nowrap border-white/10 text-on-surface-variant hover:text-white">
               Animation
@@ -197,6 +200,20 @@ export default function Portfolio() {
                 <div key={num} className="glass rounded-3xl p-1 project-card overflow-hidden w-full aspect-[3/4]">
                   <div className="w-full h-full rounded-[1.3rem] overflow-hidden relative bg-surface-container group flex items-center justify-center">
                     <img src={`/braucher_${num}.png`} alt={`Brochure Page ${num}`} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Section: Flyer */}
+          <div className="portfolio-section scroll-mt-48" id="flyer">
+            <h3 className="text-headline-lg font-display-md text-white mb-6 px-2">Flyer Design</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {['10', '20'].map((num) => (
+                <div key={num} className="glass rounded-[2.5rem] p-1 project-card overflow-hidden w-full md:h-[600px]">
+                  <div className="w-full h-full rounded-[2.4rem] overflow-hidden relative bg-surface-container group flex items-center justify-center">
+                    <img src={`/flyer${num}.png`} alt={`Flyer ${num}`} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                   </div>
                 </div>
               ))}
