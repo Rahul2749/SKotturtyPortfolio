@@ -52,8 +52,8 @@ export default function App() {
     setLoading(false);
   }, []);
 
+  // ── 1. Scroll to top on mount ──
   useEffect(() => {
-    // Force scroll to top on refresh and clear hash
     if ('scrollRestoration' in window.history) {
       window.history.scrollRestoration = 'manual';
     }
@@ -62,26 +62,34 @@ export default function App() {
     }
     window.scrollTo(0, 0);
     requestAnimationFrame(() => window.scrollTo(0, 0));
+  }, []);
 
-    const ctx = gsap.context(() => {
+  // ── 2. Hero entrance: deferred until preloader completes ──
+  useEffect(() => {
+    if (loading) return;
 
-      // ── Hero: immediate entrance (no scroll needed) ──
-      gsap.set(['.hero-badge', '.hero-title', '.hero-desc', '.hero-buttons', '.hero-portrait'], { autoAlpha: 0 });
+    const heroCtx = gsap.context(() => {
+      gsap.set('.hero-badge', { autoAlpha: 0, x: -40 });
+      gsap.set('.hero-title', { autoAlpha: 0, y: 60 });
+      gsap.set('.hero-desc', { autoAlpha: 0, y: 30 });
+      gsap.set('.hero-buttons', { autoAlpha: 0, y: 25 });
+      gsap.set('.hero-portrait', { autoAlpha: 0, scale: 0.85, x: 40 });
 
-      const heroTl = gsap.timeline({ delay: 0.15, defaults: { ease: 'power3.out', duration: 0.7, force3D: true } });
+      const heroTl = gsap.timeline({ delay: 0.2, defaults: { ease: 'power3.out', force3D: true } });
       heroTl
-        .to('.hero-badge', { autoAlpha: 1, x: 0, duration: 0.5 })
-        .to('.hero-title', { autoAlpha: 1, y: 0, duration: 0.8 }, '-=0.35')
-        .to('.hero-desc', { autoAlpha: 1, y: 0, duration: 0.6 }, '-=0.35')
-        .to('.hero-buttons', { autoAlpha: 1, y: 0, duration: 0.5 }, '-=0.25')
-        .to('.hero-portrait', { autoAlpha: 1, scale: 1, duration: 0.9 }, '-=0.4');
+        .to('.hero-badge', { autoAlpha: 1, x: 0, duration: 0.6 })
+        .to('.hero-title', { autoAlpha: 1, y: 0, duration: 1, ease: 'expo.out' }, '-=0.35')
+        .to('.hero-desc', { autoAlpha: 1, y: 0, duration: 0.7 }, '-=0.5')
+        .to('.hero-buttons', { autoAlpha: 1, y: 0, duration: 0.6 }, '-=0.4')
+        .to('.hero-portrait', { autoAlpha: 1, scale: 1, x: 0, duration: 1.2, ease: 'expo.out' }, '-=0.8');
+    }, mainRef);
 
-      // Set initial hidden states for hero
-      gsap.set('.hero-badge', { x: -30 });
-      gsap.set('.hero-title', { y: 40 });
-      gsap.set('.hero-desc', { y: 25 });
-      gsap.set('.hero-buttons', { y: 20 });
-      gsap.set('.hero-portrait', { scale: 0.92 });
+    return () => heroCtx.revert();
+  }, [loading]);
+
+  // ── 3. Scroll-triggered section animations ──
+  useEffect(() => {
+    const ctx = gsap.context(() => {
 
       // ── About section ──
       animateIn('.about-heading', { from: { y: 20 }, to: {} });
