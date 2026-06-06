@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Portfolio() {
   useEffect(() => {
     // Setup ScrollTrigger for scroll spy on tabs
-    const sections = ['uiux', 'web', 'templates', 'animation', 'branding', 'marketing', 'social', 'matte'];
+    const sections = ['uiux', 'web', 'templates', 'apptemplates', 'animation', 'branding', 'marketing', 'social', 'matte'];
     
     sections.forEach((id) => {
       ScrollTrigger.create({
@@ -59,6 +59,9 @@ export default function Portfolio() {
             </a>
             <a href="#templates" className="tab-btn px-4 md:px-6 py-1.5 md:py-2 rounded-full glass text-[11px] md:text-label-sm transition-all whitespace-nowrap border-white/10 text-on-surface-variant hover:text-white">
               Website Templates
+            </a>
+            <a href="#apptemplates" className="tab-btn px-4 md:px-6 py-1.5 md:py-2 rounded-full glass text-[11px] md:text-label-sm transition-all whitespace-nowrap border-white/10 text-on-surface-variant hover:text-white">
+              App Templates
             </a>
             <a href="#animation" className="tab-btn px-4 md:px-6 py-1.5 md:py-2 rounded-full glass text-[11px] md:text-label-sm transition-all whitespace-nowrap border-white/10 text-on-surface-variant hover:text-white">
               Animation
@@ -171,6 +174,33 @@ export default function Portfolio() {
               </div>
               <div className="glass rounded-3xl p-1 project-card overflow-hidden">
                 <img src="/template_part_5.webp" className="w-full h-auto rounded-[1.3rem] hover:scale-105 transition-transform duration-700" alt="Casino Template Footer"/>
+              </div>
+            </div>
+          </div>
+
+          {/* Section: App Templates */}
+          <div className="portfolio-section scroll-mt-48" id="apptemplates">
+            <h3 className="text-headline-lg font-display-md text-white mb-6 px-2">App Templates</h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+              <div className="glass rounded-3xl p-1 project-card overflow-hidden w-full aspect-[9/19]">
+                <div className="w-full h-full rounded-[1.3rem] overflow-hidden relative bg-surface-container group">
+                  <img src="/app_templates.webp" alt="Beethub App Screen 1" className="absolute top-0 left-0 w-[400%] h-full max-w-none object-cover transition-transform duration-700 group-hover:scale-105" style={{ objectPosition: '0% 50%' }} />
+                </div>
+              </div>
+              <div className="glass rounded-3xl p-1 project-card overflow-hidden w-full aspect-[9/19]">
+                <div className="w-full h-full rounded-[1.3rem] overflow-hidden relative bg-surface-container group">
+                  <img src="/app_templates.webp" alt="Beethub App Screen 2" className="absolute top-0 left-0 w-[400%] h-full max-w-none object-cover transition-transform duration-700 group-hover:scale-105" style={{ objectPosition: '33.333% 50%' }} />
+                </div>
+              </div>
+              <div className="glass rounded-3xl p-1 project-card overflow-hidden w-full aspect-[9/19]">
+                <div className="w-full h-full rounded-[1.3rem] overflow-hidden relative bg-surface-container group">
+                  <img src="/app_templates.webp" alt="Beethub App Screen 3" className="absolute top-0 left-0 w-[400%] h-full max-w-none object-cover transition-transform duration-700 group-hover:scale-105" style={{ objectPosition: '66.666% 50%' }} />
+                </div>
+              </div>
+              <div className="glass rounded-3xl p-1 project-card overflow-hidden w-full aspect-[9/19]">
+                <div className="w-full h-full rounded-[1.3rem] overflow-hidden relative bg-surface-container group">
+                  <img src="/app_templates.webp" alt="Beethub App Screen 4" className="absolute top-0 left-0 w-[400%] h-full max-w-none object-cover transition-transform duration-700 group-hover:scale-105" style={{ objectPosition: '100% 50%' }} />
+                </div>
               </div>
             </div>
           </div>
