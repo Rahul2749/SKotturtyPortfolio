@@ -41,6 +41,12 @@ export default function App() {
   const mainRef = useRef(null);
 
   useEffect(() => {
+    // Force scroll to top on refresh
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
+
     const ctx = gsap.context(() => {
 
       // ── Hero: immediate entrance (no scroll needed) ──
