@@ -42,11 +42,15 @@ export default function App() {
   const mainRef = useRef(null);
 
   useEffect(() => {
-    // Force scroll to top on refresh
+    // Force scroll to top on refresh and clear hash
     if ('scrollRestoration' in window.history) {
       window.history.scrollRestoration = 'manual';
     }
+    if (window.location.hash) {
+      window.history.replaceState(null, '', window.location.pathname);
+    }
     window.scrollTo(0, 0);
+    setTimeout(() => window.scrollTo(0, 0), 100);
 
     const ctx = gsap.context(() => {
 
