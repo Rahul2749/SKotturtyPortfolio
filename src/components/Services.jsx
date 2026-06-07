@@ -1,4 +1,9 @@
+import { useState } from "react";
+import GetStartedModal from "./GetStartedModal";
+
 export default function Services() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const services = [
     {
       title: "Website Building",
@@ -80,11 +85,16 @@ export default function Services() {
           <p className="text-on-primary-fixed-variant/80 text-lg md:text-xl mb-10 max-w-2xl mx-auto">
             Let's build a strategy that takes your business from earth to orbit.
           </p>
-          <a href="#contact" className="inline-flex items-center gap-2 bg-white text-on-primary-fixed-variant font-bold text-lg px-8 py-4 rounded-full hover:scale-105 transition-transform duration-300">
+          <button 
+            onClick={() => setIsModalOpen(true)}
+            className="inline-flex items-center gap-2 bg-white text-on-primary-fixed-variant font-bold text-lg px-8 py-4 rounded-full hover:scale-105 transition-transform duration-300"
+          >
             Get Started Now <span className="material-symbols-outlined">arrow_forward</span>
-          </a>
+          </button>
         </div>
       </div>
+      
+      <GetStartedModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </section>
   );
 }

@@ -21,8 +21,8 @@ export default function Hero() {
             <a className="w-full md:w-auto md:flex-1 bg-white text-black py-4 md:py-5 px-6 md:px-10 rounded-full text-[14px] md:text-label-lg font-bold shadow-2xl flex items-center justify-center gap-2 hover:translate-y-[-4px] transition-all" href="#works">
               View Portfolio <span className="material-symbols-outlined text-[20px] md:text-[24px]">arrow_outward</span>
             </a>
-            <a className="w-full md:w-auto md:flex-1 glass py-4 md:py-5 px-6 md:px-10 rounded-full text-[14px] md:text-label-lg text-on-surface font-semibold hover:bg-white/10 transition-all border border-white/10 flex items-center justify-center text-center" href="#process">
-              The Strategy
+            <a className="w-full md:w-auto md:flex-1 glass py-4 md:py-5 px-6 md:px-10 rounded-full text-[14px] md:text-label-lg text-on-surface font-semibold hover:bg-white/10 transition-all border border-white/10 flex items-center justify-center text-center" href="#services">
+              Our Services
             </a>
           </div>
         </div>
