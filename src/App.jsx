@@ -198,7 +198,6 @@ export default function App() {
           <Services />
           <CaseStudies />
           <Testimonials />
-          <Process />
           <Skills />
           <Faq />
           <Contact />
