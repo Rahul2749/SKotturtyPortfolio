@@ -55,30 +55,30 @@ export default function CaseStudies() {
             </div>
           </div>
 
-          {/* CARD 2: Animation (Narrow - 4 Cols) */}
+          {/* CARD 2: Branding & Marketing (Narrow - 4 Cols) */}
           <div className="md:col-span-4 group relative bg-[#131620] rounded-[2.5rem] p-8 md:p-10 border border-white/5 hover:border-tertiary/30 hover:-translate-y-2 transition-all duration-500 overflow-hidden flex flex-col shadow-2xl min-h-[400px]">
             <div className="absolute inset-0 bg-gradient-to-br from-tertiary/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             {/* Oversized Background Element */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-tertiary/20 rounded-full blur-[80px] opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
             
             <div className="relative z-10 flex-1 flex flex-col h-full">
-              <span className="text-tertiary font-bold text-[10px] tracking-widest uppercase mb-6 inline-block w-fit border border-tertiary/20 bg-tertiary/5 px-4 py-1.5 rounded-full">Animation</span>
-              <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">Kids Animation Studio</h3>
+              <span className="text-tertiary font-bold text-[10px] tracking-widest uppercase mb-6 inline-block w-fit border border-tertiary/20 bg-tertiary/5 px-4 py-1.5 rounded-full">Brand & Marketing</span>
+              <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">Omnichannel Brand Growth</h3>
               <p className="text-on-surface-variant leading-relaxed mb-8 text-base font-light">
-                Crafting vibrant environments and character-driven storytelling to bring imaginative worlds to life.
+                A comprehensive 360° strategy integrating brand identity, targeted social media ads, and performance marketing.
               </p>
               
               <div className="mt-auto space-y-4">
                 <div className="flex justify-between items-center pb-3 border-b border-white/5">
                   <span className="text-[10px] text-outline uppercase font-black tracking-widest">Problem</span>
-                  <span className="text-sm text-white/90">Flat storytelling.</span>
+                  <span className="text-sm text-white/90">Fragmented identity.</span>
                 </div>
                 <div className="flex justify-between items-center pb-3 border-b border-white/5">
                   <span className="text-[10px] text-outline uppercase font-black tracking-widest">Result</span>
-                  <span className="text-sm text-tertiary font-bold">High engagement.</span>
+                  <span className="text-sm text-tertiary font-bold">Unified presence.</span>
                 </div>
                 <div className="pt-4 flex justify-between items-center cursor-pointer">
-                   <span className="text-sm text-white font-bold tracking-wide">Watch Showreel</span>
+                   <span className="text-sm text-white font-bold tracking-wide">View Strategy</span>
                    <span className="material-symbols-outlined text-tertiary group-hover:translate-x-2 transition-transform">arrow_forward</span>
                 </div>
               </div>
