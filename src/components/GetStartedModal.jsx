@@ -54,7 +54,6 @@ export default function GetStartedModal({ isOpen, onClose }) {
               <label className="text-[11px] font-bold text-outline uppercase tracking-wider ml-1">Full Name</label>
               <input 
                 type="text" 
-                placeholder="Arjun Sharma"
                 className="w-full bg-[#25293a] border border-white/5 rounded-xl px-4 py-3 text-white placeholder:text-outline-variant focus:outline-none focus:border-primary/50 transition-colors"
                 required
               />
@@ -64,7 +63,6 @@ export default function GetStartedModal({ isOpen, onClose }) {
               <label className="text-[11px] font-bold text-outline uppercase tracking-wider ml-1">Email</label>
               <input 
                 type="email" 
-                placeholder="arjun@company.com"
                 className="w-full bg-[#25293a] border border-white/5 rounded-xl px-4 py-3 text-white placeholder:text-outline-variant focus:outline-none focus:border-primary/50 transition-colors"
                 required
               />
@@ -74,7 +72,6 @@ export default function GetStartedModal({ isOpen, onClose }) {
               <label className="text-[11px] font-bold text-outline uppercase tracking-wider ml-1">Mobile</label>
               <input 
                 type="tel" 
-                placeholder="+91 99511 12341"
                 className="w-full bg-[#25293a] border border-white/5 rounded-xl px-4 py-3 text-white placeholder:text-outline-variant focus:outline-none focus:border-primary/50 transition-colors"
               />
             </div>
@@ -103,7 +100,6 @@ export default function GetStartedModal({ isOpen, onClose }) {
               <label className="text-[11px] font-bold text-outline uppercase tracking-wider ml-1">Message</label>
               <textarea 
                 rows="3"
-                placeholder="Tell us about your goals..."
                 className="w-full bg-[#25293a] border border-white/5 rounded-xl px-4 py-3 text-white placeholder:text-outline-variant focus:outline-none focus:border-primary/50 transition-colors resize-none"
                 required
               ></textarea>

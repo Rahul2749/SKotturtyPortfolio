@@ -53,7 +53,7 @@ export default function Services() {
             Services Built For <br/><span className="text-primary">Exponential Growth.</span>
           </h2>
           <p className="text-outline text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-            From visibility to conversion, every service we offer is engineered to compound your brand's momentum in the digital universe.
+            Every service we offer is focused on creating impactful digital experiences that drive engagement, growth, and lasting value.
           </p>
         </div>
 
