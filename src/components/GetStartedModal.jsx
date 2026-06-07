@@ -26,7 +26,7 @@ export default function GetStartedModal({ isOpen, onClose }) {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-8">
       {/* Backdrop */}
       <div 
         className="absolute inset-0 bg-background/80 backdrop-blur-md"
@@ -34,7 +34,7 @@ export default function GetStartedModal({ isOpen, onClose }) {
       ></div>
 
       {/* Modal */}
-      <div className="relative w-full max-w-md md:max-w-lg bg-[#1a1f2f] rounded-[2rem] shadow-2xl border border-white/10 flex flex-col max-h-[95vh] sm:max-h-[90vh]">
+      <div className="relative w-full max-w-md md:max-w-lg bg-[#1a1f2f] rounded-[2rem] shadow-2xl border border-white/10 flex flex-col max-h-full">
         
         {/* Fixed Header */}
         <div className="p-6 md:p-8 pb-4 md:pb-6 flex-shrink-0 relative border-b border-white/5">
@@ -48,7 +48,7 @@ export default function GetStartedModal({ isOpen, onClose }) {
         </div>
 
         {/* Scrollable Form Body */}
-        <div className="p-6 md:p-8 pt-6 overflow-y-auto flex-1">
+        <div className="p-6 md:p-8 pt-6 overflow-y-auto flex-1 min-h-0">
           <form className="space-y-5" onSubmit={(e) => { e.preventDefault(); onClose(); }}>
             <div className="space-y-1.5">
               <label className="text-[11px] font-bold text-outline uppercase tracking-wider ml-1">Full Name</label>
