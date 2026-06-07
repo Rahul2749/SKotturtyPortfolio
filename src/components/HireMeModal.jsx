@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { createPortal } from "react-dom";
 
 export default function HireMeModal({ isOpen, onClose }) {
   // Close modal on escape key
@@ -17,7 +18,7 @@ export default function HireMeModal({ isOpen, onClose }) {
 
   if (!isOpen) return null;
 
-  return (
+  return createPortal(
     <div className="fixed inset-0 z-[150] flex items-center justify-center p-4">
       {/* Backdrop */}
       <div 
@@ -77,6 +78,7 @@ export default function HireMeModal({ isOpen, onClose }) {
           </a>
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }
