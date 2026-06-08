@@ -8,9 +8,7 @@ export default function GetStartedModal({ isOpen, onClose, initialService = "" }
     service: "",
     message: ""
   });
-
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSuccess, setIsSuccess] = useState(false);
+  const [status, setStatus] = useState("idle"); // idle | loading | success | error
 
   useEffect(() => {
     if (isOpen && initialService) {
@@ -24,13 +22,51 @@ export default function GetStartedModal({ isOpen, onClose, initialService = "" }
       if (e.key === "Escape") onClose();
     };
     if (isOpen) {
-      document.body.style.overflow = "hidden"; // Prevent scrolling
+      document.body.style.overflow = "hidden";
       window.addEventListener("keydown", handleKeyDown);
     } else {
       document.body.style.overflow = "unset";
     }
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [isOpen, onClose]);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("loading");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          access_key: "4ac0d40e-c895-4afb-b2dd-359b1fc36d75",
+          subject: `New Inquiry from ${formData.fullName} — ${formData.service}`,
+          from_name: formData.fullName,
+          name: formData.fullName,
+          email: formData.email,
+          mobile: formData.mobile,
+          service: formData.service,
+          message: formData.message
+        })
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        setStatus("success");
+        setFormData({ fullName: "", email: "", mobile: "", service: "", message: "" });
+        setTimeout(() => {
+          setStatus("idle");
+          onClose();
+        }, 2500);
+      } else {
+        setStatus("error");
+        setTimeout(() => setStatus("idle"), 3000);
+      }
+    } catch {
+      setStatus("error");
+      setTimeout(() => setStatus("idle"), 3000);
+    }
+  };
 
   if (!isOpen) return null;
 
@@ -49,7 +85,6 @@ export default function GetStartedModal({ isOpen, onClose, initialService = "" }
         <div className="p-5 md:p-6 pb-3 md:pb-4 flex-shrink-0 relative border-b border-white/5">
           <button 
             onClick={onClose}
-            type="button"
             className="absolute top-5 md:top-6 right-5 md:right-6 text-on-surface-variant hover:text-white transition-colors bg-white/5 p-1.5 rounded-full hover:bg-white/10 flex items-center justify-center"
           >
             <span className="material-symbols-outlined text-[18px]">close</span>
@@ -59,17 +94,11 @@ export default function GetStartedModal({ isOpen, onClose, initialService = "" }
 
         {/* Scrollable Form Body */}
         <div className="p-5 md:p-6 pt-4 overflow-y-auto flex-1 min-h-0">
-          <form action="https://formsubmit.co/rgnagrikar@gmail.com" method="POST" className="space-y-3.5">
-            {/* FormSubmit Configuration */}
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_template" value="table" />
-            <input type="hidden" name="_subject" value={`New Inquiry from ${formData.fullName} — ${formData.service}`} />
-            
+          <form className="space-y-3.5" onSubmit={handleSubmit}>
             <div className="space-y-1">
               <label htmlFor="gs-fullname" className="text-[10px] font-bold text-outline uppercase tracking-wider ml-1">Full Name</label>
               <input 
                 id="gs-fullname"
-                name="name"
                 type="text" 
                 className="w-full bg-[#25293a] border border-white/5 rounded-lg px-3 py-2.5 text-sm text-white placeholder:text-outline-variant focus:outline-none focus:border-primary/50 transition-colors"
                 required
@@ -82,7 +111,6 @@ export default function GetStartedModal({ isOpen, onClose, initialService = "" }
               <label htmlFor="gs-email" className="text-[10px] font-bold text-outline uppercase tracking-wider ml-1">Email</label>
               <input 
                 id="gs-email"
-                name="email"
                 type="email" 
                 className="w-full bg-[#25293a] border border-white/5 rounded-lg px-3 py-2.5 text-sm text-white placeholder:text-outline-variant focus:outline-none focus:border-primary/50 transition-colors"
                 required
@@ -95,7 +123,6 @@ export default function GetStartedModal({ isOpen, onClose, initialService = "" }
               <label htmlFor="gs-mobile" className="text-[10px] font-bold text-outline uppercase tracking-wider ml-1">Mobile</label>
               <input 
                 id="gs-mobile"
-                name="mobile"
                 type="tel" 
                 className="w-full bg-[#25293a] border border-white/5 rounded-lg px-3 py-2.5 text-sm text-white placeholder:text-outline-variant focus:outline-none focus:border-primary/50 transition-colors"
                 value={formData.mobile}
@@ -108,7 +135,6 @@ export default function GetStartedModal({ isOpen, onClose, initialService = "" }
               <div className="relative">
                 <select 
                   id="gs-service"
-                  name="service"
                   className="w-full bg-[#25293a] border border-white/5 rounded-lg px-3 py-2.5 text-sm text-white placeholder:text-outline-variant focus:outline-none focus:border-primary/50 transition-colors appearance-none"
                   required
                   value={formData.service}
@@ -136,7 +162,6 @@ export default function GetStartedModal({ isOpen, onClose, initialService = "" }
               <label htmlFor="gs-message" className="text-[10px] font-bold text-outline uppercase tracking-wider ml-1">Message</label>
               <textarea 
                 id="gs-message"
-                name="message"
                 rows="2"
                 className="w-full bg-[#25293a] border border-white/5 rounded-lg px-3 py-2.5 text-sm text-white placeholder:text-outline-variant focus:outline-none focus:border-primary/50 transition-colors resize-none"
                 required
@@ -147,14 +172,30 @@ export default function GetStartedModal({ isOpen, onClose, initialService = "" }
 
             <button 
               type="submit"
-              className="w-full bg-primary text-on-primary-fixed-variant font-bold text-base py-3 rounded-lg flex items-center justify-center gap-2 hover:scale-[1.02] transition-transform mt-5 shadow-[0_0_15px_rgba(165,231,255,0.15)]"
+              disabled={status === "loading" || status === "success"}
+              className={`w-full font-bold text-base py-3 rounded-lg flex items-center justify-center gap-2 transition-all mt-5 ${
+                status === "success" 
+                  ? "bg-green-500 text-white" 
+                  : status === "error" 
+                  ? "bg-red-500/80 text-white" 
+                  : "bg-primary text-on-primary-fixed-variant hover:scale-[1.02] shadow-[0_0_15px_rgba(165,231,255,0.15)]"
+              } ${status === "loading" ? "opacity-70 cursor-not-allowed" : ""}`}
             >
-              Send Message <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+              {status === "loading" && (
+                <><span className="w-4 h-4 border-2 border-current border-t-transparent rounded-full animate-spin"></span> Sending...</>
+              )}
+              {status === "success" && (
+                <><span className="material-symbols-outlined text-[18px]">check_circle</span> Sent Successfully!</>
+              )}
+              {status === "error" && (
+                <><span className="material-symbols-outlined text-[18px]">error</span> Failed — Try Again</>
+              )}
+              {status === "idle" && (
+                <>Send Message <span className="material-symbols-outlined text-[18px]">arrow_forward</span></>
+              )}
             </button>
           </form>
         </div>
-      </div>
-    </div>
       </div>
     </div>
   );
