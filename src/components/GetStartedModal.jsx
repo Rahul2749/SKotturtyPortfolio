@@ -35,7 +35,7 @@ export default function GetStartedModal({ isOpen, onClose, initialService = "" }
     const body = encodeURIComponent(
       `Name: ${formData.fullName}\nEmail: ${formData.email}\nMobile: ${formData.mobile}\nService: ${formData.service}\n\nMessage:\n${formData.message}`
     );
-    window.location.href = `mailto:sahitikotturty@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:skotturty@gmail.com?subject=${subject}&body=${body}`;
     onClose();
   };
 
