@@ -2,7 +2,7 @@ export default function Contact() {
   return (
     <section className="py-24 md:py-40 px-container-margin relative overflow-hidden" id="contact">
       {/* Subtle Top Divider */}
-      <div className="max-w-7xl mx-auto h-px bg-gradient-to-r from-transparent via-white/10 to-transparent mb-16 md:mb-24"></div>
+      <div className="max-w-7xl mx-auto h-px bg-gradient-to-r from-transparent via-white/10 to-transparent mb-12 md:mb-16"></div>
       
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8 items-end relative z-10">
         {/* Left Side: Typography */}
@@ -14,7 +14,7 @@ export default function Contact() {
             Let's build <br className="hidden md:block"/> something <br/> <span className="italic font-light text-gradient">extraordinary.</span>
           </h2>
           <p className="font-body-lg text-on-surface-variant max-w-lg md:text-lg">
-            Currently accepting selective partnerships for Q1 2025. Whether you have a project in mind or just want to chat design, my inbox is always open.
+            Helping brands grow with modern design, creative storytelling, SEO optimization, and high-converting ad campaigns.
           </p>
         </div>
 

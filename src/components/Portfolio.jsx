@@ -97,7 +97,7 @@ export default function Portfolio() {
           </div>
         </div>
 
-        <div className="space-y-32">
+        <div className="space-y-16">
           {/* Section: UI/UX Projects */}
           <div className="portfolio-section scroll-mt-48" id="uiux">
             <h3 className="text-headline-lg font-display-md text-white mb-6 px-2">UI/UX Design</h3>

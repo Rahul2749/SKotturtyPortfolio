@@ -47,7 +47,7 @@ export default function ServicesIOffer() {
     <section className="py-section-gap bg-surface-container-lowest/50" id="services-i-offer">
       <div className="max-w-7xl mx-auto px-container-margin">
         {/* Header */}
-        <div className="services-header text-center mb-16 md:mb-24">
+        <div className="services-header text-center mb-12 md:mb-16">
           <span className="text-primary font-bold tracking-[0.2em] uppercase text-label-sm">Services I Offer</span>
           <h2 className="font-headline-lg text-4xl md:text-6xl lg:text-7xl font-black text-white mt-6 mb-6 leading-tight">
             Services I <span className="text-primary">Offer.</span>

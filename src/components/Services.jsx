@@ -47,7 +47,7 @@ export default function Services() {
     <section className="py-section-gap bg-surface-container-lowest/50" id="services">
       <div className="max-w-7xl mx-auto px-container-margin">
         {/* Header */}
-        <div className="services-header text-center mb-16 md:mb-24">
+        <div className="services-header text-center mb-12 md:mb-16">
           <span className="text-primary font-bold tracking-[0.2em] uppercase text-label-sm">OUR EXPERTISE</span>
           <h2 className="font-headline-lg text-4xl md:text-6xl lg:text-7xl font-black text-white mt-6 mb-6 leading-tight">
             Strategic Services For <br/><span className="text-primary">Fast Growth</span>

@@ -23,7 +23,7 @@ export default function Experience() {
   return (
     <section className="py-section-gap px-container-margin" id="experience">
       <div className="max-w-5xl mx-auto">
-        <div className="experience-header text-center mb-16 md:mb-24">
+        <div className="experience-header text-center mb-12 md:mb-16">
           <span className="text-primary font-bold tracking-[0.5em] uppercase text-label-sm">My Journey</span>
           <h2 className="font-headline-lg text-headline-lg text-white mt-4">Professional <span className="italic font-light text-gradient">Experience</span></h2>
         </div>
@@ -32,7 +32,7 @@ export default function Experience() {
           {/* Vertical Line */}
           <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-primary/50 via-white/10 to-transparent transform md:-translate-x-1/2"></div>
           
-          <div className="space-y-12 md:space-y-24">
+          <div className="space-y-8 md:space-y-12">
             {experiences.map((exp, index) => (
               <div key={index} className={`experience-card relative flex flex-col md:flex-row items-start md:items-center justify-between gap-8 md:gap-16 w-full ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
                 
