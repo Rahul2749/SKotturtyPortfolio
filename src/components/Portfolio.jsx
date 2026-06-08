@@ -129,11 +129,8 @@ export default function Portfolio() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Project: Shape2Real */}
           <div className="glass rounded-[2rem] overflow-hidden group border border-white/10 project-card">
-            <div className="aspect-video bg-gradient-to-br from-surface-container via-surface to-background overflow-hidden relative group-hover:scale-105 transition-all duration-700 flex items-center justify-center">
-              <div className="text-center">
-                <span className="material-symbols-outlined text-5xl text-white/20 mb-2 block">language</span>
-                <span className="text-white/40 text-sm font-medium">Live Preview</span>
-              </div>
+            <div className="aspect-video bg-surface-container overflow-hidden relative group-hover:scale-105 transition-all duration-700">
+              <iframe src="https://shape2-real-web.vercel.app/" title="Shape2Real" loading="lazy" className="w-[200%] h-[200%] absolute top-0 left-0 origin-top-left scale-50 pointer-events-none border-none bg-white"></iframe>
             </div>
             <div className="p-8">
               <h4 className="text-white font-bold text-headline-md mb-2">Shape2Real</h4>
@@ -146,11 +143,8 @@ export default function Portfolio() {
           </div>
           {/* Project: Adenium Heaven */}
           <div className="glass rounded-[2rem] overflow-hidden group border border-white/10 project-card">
-            <div className="aspect-video bg-gradient-to-br from-surface-container via-surface to-background overflow-hidden relative group-hover:scale-105 transition-all duration-700 flex items-center justify-center">
-              <div className="text-center">
-                <span className="material-symbols-outlined text-5xl text-white/20 mb-2 block">language</span>
-                <span className="text-white/40 text-sm font-medium">Live Preview</span>
-              </div>
+            <div className="aspect-video bg-surface-container overflow-hidden relative group-hover:scale-105 transition-all duration-700">
+              <iframe src="https://adeniumheaven.in/" title="Adenium Heaven" loading="lazy" className="w-[200%] h-[200%] absolute top-0 left-0 origin-top-left scale-50 pointer-events-none border-none bg-white"></iframe>
             </div>
             <div className="p-8">
               <h4 className="text-white font-bold text-headline-md mb-2">Adenium Heaven</h4>
@@ -163,11 +157,8 @@ export default function Portfolio() {
           </div>
           {/* Project: Future Investment Planner */}
           <div className="glass rounded-[2rem] overflow-hidden group border border-white/10 project-card">
-            <div className="aspect-video bg-gradient-to-br from-surface-container via-surface to-background overflow-hidden relative group-hover:scale-105 transition-all duration-700 flex items-center justify-center">
-              <div className="text-center">
-                <span className="material-symbols-outlined text-5xl text-white/20 mb-2 block">language</span>
-                <span className="text-white/40 text-sm font-medium">Live Preview</span>
-              </div>
+            <div className="aspect-video bg-surface-container overflow-hidden relative group-hover:scale-105 transition-all duration-700">
+              <iframe src="https://future-investment-planner-iink.vercel.app/" title="Future Investment Planner" loading="lazy" className="w-[200%] h-[200%] absolute top-0 left-0 origin-top-left scale-50 pointer-events-none border-none bg-white"></iframe>
             </div>
             <div className="p-8">
               <h4 className="text-white font-bold text-headline-md mb-2">Future Investment Planner</h4>
