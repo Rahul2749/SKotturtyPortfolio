@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export default function GetStartedModal({ isOpen, onClose }) {
+export default function GetStartedModal({ isOpen, onClose, initialService = "" }) {
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -8,6 +8,12 @@ export default function GetStartedModal({ isOpen, onClose }) {
     service: "",
     message: ""
   });
+
+  useEffect(() => {
+    if (isOpen && initialService) {
+      setFormData(prev => ({ ...prev, service: initialService }));
+    }
+  }, [isOpen, initialService]);
 
   // Close modal on escape key
   useEffect(() => {
@@ -82,15 +88,22 @@ export default function GetStartedModal({ isOpen, onClose }) {
                 <select 
                   className="w-full bg-[#25293a] border border-white/5 rounded-lg px-3 py-2.5 text-sm text-white placeholder:text-outline-variant focus:outline-none focus:border-primary/50 transition-colors appearance-none"
                   required
-                  defaultValue=""
+                  value={formData.service}
+                  onChange={(e) => setFormData({...formData, service: e.target.value})}
                 >
                   <option value="" disabled>Select a service...</option>
-                  <option value="website">Website Building</option>
-                  <option value="seo">SEO & Organic Growth</option>
-                  <option value="ads">Paid Advertising</option>
-                  <option value="social">Social Media Management</option>
-                  <option value="content">Content Marketing</option>
-                  <option value="branding">Brand Identity & Design</option>
+                  <option value="UI/UX Design">UI/UX Design</option>
+                  <option value="Graphic Design">Graphic Design</option>
+                  <option value="SEO Optimization">SEO Optimization</option>
+                  <option value="Meta Ads">Meta Ads</option>
+                  <option value="Google Ads">Google Ads</option>
+                  <option value="Website Design">Website Design</option>
+                  <option value="Website Building">Website Building</option>
+                  <option value="SEO & Organic Growth">SEO & Organic Growth</option>
+                  <option value="Paid Advertising">Paid Advertising</option>
+                  <option value="Social Media Management">Social Media Management</option>
+                  <option value="Content Marketing">Content Marketing</option>
+                  <option value="Brand Identity & Design">Brand Identity & Design</option>
                 </select>
                 <span className="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[18px]">expand_more</span>
               </div>

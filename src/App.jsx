@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Services from './components/Services';
+import ServicesIOffer from './components/ServicesIOffer';
 import Portfolio from './components/Portfolio';
 import AdsStats from './components/AdsStats';
 import CaseStudies from './components/CaseStudies';
@@ -193,6 +194,7 @@ export default function App() {
           <Hero />
           <About />
           <Experience />
+          <ServicesIOffer />
           <Portfolio />
           <AdsStats />
           <Services />
