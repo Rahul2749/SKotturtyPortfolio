@@ -50,7 +50,7 @@ export default function Services() {
         <div className="services-header text-center mb-16 md:mb-24">
           <span className="text-primary font-bold tracking-[0.2em] uppercase text-label-sm">OUR EXPERTISE</span>
           <h2 className="font-headline-lg text-4xl md:text-6xl lg:text-7xl font-black text-white mt-6 mb-6 leading-tight">
-            Services Built For <br/><span className="text-primary">Exponential Growth.</span>
+            Strategic Services For <br/><span className="text-primary">Fast Growth</span>
           </h2>
           <p className="text-outline text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
             Every service we offer is focused on creating impactful digital experiences that drive engagement, growth, and lasting value.
