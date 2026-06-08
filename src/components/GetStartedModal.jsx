@@ -16,11 +16,6 @@ export default function GetStartedModal({ isOpen, onClose, initialService = "" }
     if (isOpen && initialService) {
       setFormData(prev => ({ ...prev, service: initialService }));
     }
-    // Reset state on open
-    if (isOpen) {
-      setIsSuccess(false);
-      setIsSubmitting(false);
-    }
   }, [isOpen, initialService]);
 
   // Close modal on escape key
@@ -36,43 +31,6 @@ export default function GetStartedModal({ isOpen, onClose, initialService = "" }
     }
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [isOpen, onClose]);
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    try {
-      const response = await fetch("https://formsubmit.co/ajax/rgnagrikar@gmail.com", {
-        method: "POST",
-        headers: { 
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-        },
-        body: JSON.stringify({
-            name: formData.fullName,
-            email: formData.email,
-            mobile: formData.mobile,
-            service: formData.service,
-            message: formData.message,
-            _subject: `New Inquiry from ${formData.fullName} — ${formData.service}`
-        })
-      });
-
-      if (response.ok) {
-        setIsSuccess(true);
-        setTimeout(() => {
-            onClose();
-            setFormData({ fullName: "", email: "", mobile: "", service: "", message: "" });
-        }, 2000);
-      } else {
-        alert("Something went wrong. Please try again.");
-      }
-    } catch (error) {
-      alert("Something went wrong. Please try again.");
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
 
   if (!isOpen) return null;
 
@@ -91,6 +49,7 @@ export default function GetStartedModal({ isOpen, onClose, initialService = "" }
         <div className="p-5 md:p-6 pb-3 md:pb-4 flex-shrink-0 relative border-b border-white/5">
           <button 
             onClick={onClose}
+            type="button"
             className="absolute top-5 md:top-6 right-5 md:right-6 text-on-surface-variant hover:text-white transition-colors bg-white/5 p-1.5 rounded-full hover:bg-white/10 flex items-center justify-center"
           >
             <span className="material-symbols-outlined text-[18px]">close</span>
@@ -100,11 +59,17 @@ export default function GetStartedModal({ isOpen, onClose, initialService = "" }
 
         {/* Scrollable Form Body */}
         <div className="p-5 md:p-6 pt-4 overflow-y-auto flex-1 min-h-0">
-          <form className="space-y-3.5" onSubmit={handleSubmit}>
+          <form action="https://formsubmit.co/rgnagrikar@gmail.com" method="POST" className="space-y-3.5">
+            {/* FormSubmit Configuration */}
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_subject" value={`New Inquiry from ${formData.fullName} — ${formData.service}`} />
+            
             <div className="space-y-1">
               <label htmlFor="gs-fullname" className="text-[10px] font-bold text-outline uppercase tracking-wider ml-1">Full Name</label>
               <input 
                 id="gs-fullname"
+                name="name"
                 type="text" 
                 className="w-full bg-[#25293a] border border-white/5 rounded-lg px-3 py-2.5 text-sm text-white placeholder:text-outline-variant focus:outline-none focus:border-primary/50 transition-colors"
                 required
@@ -117,6 +82,7 @@ export default function GetStartedModal({ isOpen, onClose, initialService = "" }
               <label htmlFor="gs-email" className="text-[10px] font-bold text-outline uppercase tracking-wider ml-1">Email</label>
               <input 
                 id="gs-email"
+                name="email"
                 type="email" 
                 className="w-full bg-[#25293a] border border-white/5 rounded-lg px-3 py-2.5 text-sm text-white placeholder:text-outline-variant focus:outline-none focus:border-primary/50 transition-colors"
                 required
@@ -129,6 +95,7 @@ export default function GetStartedModal({ isOpen, onClose, initialService = "" }
               <label htmlFor="gs-mobile" className="text-[10px] font-bold text-outline uppercase tracking-wider ml-1">Mobile</label>
               <input 
                 id="gs-mobile"
+                name="mobile"
                 type="tel" 
                 className="w-full bg-[#25293a] border border-white/5 rounded-lg px-3 py-2.5 text-sm text-white placeholder:text-outline-variant focus:outline-none focus:border-primary/50 transition-colors"
                 value={formData.mobile}
@@ -141,6 +108,7 @@ export default function GetStartedModal({ isOpen, onClose, initialService = "" }
               <div className="relative">
                 <select 
                   id="gs-service"
+                  name="service"
                   className="w-full bg-[#25293a] border border-white/5 rounded-lg px-3 py-2.5 text-sm text-white placeholder:text-outline-variant focus:outline-none focus:border-primary/50 transition-colors appearance-none"
                   required
                   value={formData.service}
@@ -168,6 +136,7 @@ export default function GetStartedModal({ isOpen, onClose, initialService = "" }
               <label htmlFor="gs-message" className="text-[10px] font-bold text-outline uppercase tracking-wider ml-1">Message</label>
               <textarea 
                 id="gs-message"
+                name="message"
                 rows="2"
                 className="w-full bg-[#25293a] border border-white/5 rounded-lg px-3 py-2.5 text-sm text-white placeholder:text-outline-variant focus:outline-none focus:border-primary/50 transition-colors resize-none"
                 required
@@ -178,25 +147,14 @@ export default function GetStartedModal({ isOpen, onClose, initialService = "" }
 
             <button 
               type="submit"
-              disabled={isSubmitting || isSuccess}
-              className={`w-full font-bold text-base py-3 rounded-lg flex items-center justify-center gap-2 transition-all mt-5 shadow-[0_0_15px_rgba(165,231,255,0.15)] ${
-                isSuccess 
-                  ? "bg-green-500 text-white" 
-                  : isSubmitting 
-                    ? "bg-primary/50 text-on-primary-fixed-variant cursor-not-allowed" 
-                    : "bg-primary text-on-primary-fixed-variant hover:scale-[1.02]"
-              }`}
+              className="w-full bg-primary text-on-primary-fixed-variant font-bold text-base py-3 rounded-lg flex items-center justify-center gap-2 hover:scale-[1.02] transition-transform mt-5 shadow-[0_0_15px_rgba(165,231,255,0.15)]"
             >
-              {isSuccess ? (
-                <>Sent Successfully! <span className="material-symbols-outlined text-[18px]">check_circle</span></>
-              ) : isSubmitting ? (
-                <>Sending... <span className="material-symbols-outlined text-[18px] animate-spin">sync</span></>
-              ) : (
-                <>Send Message <span className="material-symbols-outlined text-[18px]">arrow_forward</span></>
-              )}
+              Send Message <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
             </button>
           </form>
         </div>
+      </div>
+    </div>
       </div>
     </div>
   );
