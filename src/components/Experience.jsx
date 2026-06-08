@@ -16,7 +16,7 @@ export default function Experience() {
       year: "2023 - Present",
       role: "Digital Marketer",
       company: "Freelance",
-      description: "Designed marketing materials, social media campaigns, and user interfaces for web applications, increasing user engagement by 45%."
+      description: "Masterminded data-driven digital marketing campaigns and scalable growth strategies, catapulting brand visibility and driving an impressive 45% surge in high-converting user engagement."
     }
   ];
 
