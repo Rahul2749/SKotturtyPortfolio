@@ -201,6 +201,7 @@ export default function App() {
           <CaseStudies />
           <Testimonials />
           <Skills />
+          <Process />
           <Faq />
           <Contact />
         </main>
