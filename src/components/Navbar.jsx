@@ -1,8 +1,7 @@
 import { useState } from "react";
-import HireMeModal from "./HireMeModal";
 
 export default function Navbar() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
     <header className="fixed top-0 w-full z-[100] bg-background/50 backdrop-blur-2xl border-b border-white/5 shadow-2xl">
@@ -11,6 +10,8 @@ export default function Navbar() {
           <img src="/skotturty_logo.png" alt="Logo" className="h-7 md:h-8 mix-blend-screen contrast-200 object-contain" />
           <span className="mt-1 leading-none">SAHITI<span className="text-primary">.K</span></span>
         </a>
+        
+        {/* Desktop Nav */}
         <nav className="hidden lg:flex gap-10 items-center">
           <a className="font-label-lg text-label-lg uppercase tracking-[0.2em] text-primary font-bold" href="#works">Works</a>
           <a className="font-label-lg text-label-lg uppercase tracking-[0.2em] text-on-surface-variant hover:text-primary transition-colors" href="#about">About</a>
@@ -18,15 +19,30 @@ export default function Navbar() {
           <a className="font-label-lg text-label-lg uppercase tracking-[0.2em] text-on-surface-variant hover:text-primary transition-colors" href="#process">Process</a>
           <a className="font-label-lg text-label-lg uppercase tracking-[0.2em] text-on-surface-variant hover:text-primary transition-colors" href="#contact">Contact</a>
         </nav>
+
+        {/* Mobile Hamburger Button */}
         <button 
-          onClick={() => setIsModalOpen(true)}
-          className="bg-primary px-5 py-2 md:px-8 md:py-2.5 rounded-full text-sm md:font-label-lg text-on-primary font-bold hover:scale-105 transition-all shadow-[0_0_30px_rgba(165,231,255,0.2)] whitespace-nowrap"
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          className="lg:hidden text-white hover:text-primary transition-colors flex items-center justify-center p-2"
         >
-          Hire Me
+          <span className="material-symbols-outlined text-[28px]">
+            {isMobileMenuOpen ? "close" : "menu"}
+          </span>
         </button>
       </div>
-      
-      <HireMeModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+
+      {/* Mobile Menu Dropdown */}
+      {isMobileMenuOpen && (
+        <div className="lg:hidden absolute top-full left-0 w-full bg-[#0a0a0f] border-b border-white/10 shadow-2xl">
+          <nav className="flex flex-col py-6 px-8 gap-6">
+            <a onClick={() => setIsMobileMenuOpen(false)} className="font-label-lg text-label-lg uppercase tracking-[0.2em] text-primary font-bold" href="#works">Works</a>
+            <a onClick={() => setIsMobileMenuOpen(false)} className="font-label-lg text-label-lg uppercase tracking-[0.2em] text-white hover:text-primary transition-colors" href="#about">About</a>
+            <a onClick={() => setIsMobileMenuOpen(false)} className="font-label-lg text-label-lg uppercase tracking-[0.2em] text-white hover:text-primary transition-colors" href="#services">Expertise</a>
+            <a onClick={() => setIsMobileMenuOpen(false)} className="font-label-lg text-label-lg uppercase tracking-[0.2em] text-white hover:text-primary transition-colors" href="#process">Process</a>
+            <a onClick={() => setIsMobileMenuOpen(false)} className="font-label-lg text-label-lg uppercase tracking-[0.2em] text-white hover:text-primary transition-colors" href="#contact">Contact</a>
+          </nav>
+        </div>
+      )}
     </header>
   );
 }
