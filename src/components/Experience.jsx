@@ -15,7 +15,7 @@ export default function Experience() {
     {
       year: "2023 - Present",
       role: "Digital Marketer",
-      company: "TechNova Solutions",
+      company: "Freelance",
       description: "Designed marketing materials, social media campaigns, and user interfaces for web applications, increasing user engagement by 45%."
     }
   ];
