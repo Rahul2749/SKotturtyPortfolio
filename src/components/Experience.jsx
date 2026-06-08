@@ -13,7 +13,7 @@ export default function Experience() {
       description: "Collaborated directly with over 30+ clients across e-commerce, real estate, and healthcare to deliver comprehensive branding and web design solutions."
     },
     {
-      year: "2023 - Present",
+      year: "2025 - Present",
       role: "Digital Marketer",
       company: "Freelance",
       description: "Masterminded data-driven digital marketing campaigns and scalable growth strategies, catapulting brand visibility and driving an impressive 45% surge in high-converting user engagement."
