@@ -47,44 +47,10 @@
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.08);
   }
-  .glow-blob {
-    position: absolute;
-    filter: blur(100px);
-    z-index: -1;
-    opacity: 0.35;
-    will-change: transform;
-    transform: translateZ(0);
-    animation: pulse 15s infinite alternate ease-in-out;
-  }
-  @keyframes pulse {
-    0% { transform: scale(1) translate3d(0, 0, 0); }
-    100% { transform: scale(1.4) translate3d(40px, 60px, 0); }
-  }
   .text-gradient {
     background: linear-gradient(to right, #a5e7ff, #ecd4ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
-  .tab-content {
-    display: none;
-    animation: fadeIn 0.5s ease-out;
-  }
-  .tab-content.active {
-    display: block;
-  }
-  @keyframes fadeIn {
-    from { opacity: 0; transform: scale(0.98); }
-    to { opacity: 1; transform: scale(1); }
-  }
-  .masonry-grid {
-    column-count: 1;
-    column-gap: 24px;
-  }
-  @media (min-width: 768px) { .masonry-grid { column-count: 2; } }
-  @media (min-width: 1024px) { .masonry-grid { column-count: 3; } }
-  .masonry-item {
-    break-inside: avoid;
-    margin-bottom: 24px;
   }
   .project-card {
     transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.5s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.5s cubic-bezier(0.22, 1, 0.36, 1);
@@ -96,14 +62,6 @@
     transform: translateY(-10px) scale(1.02) translateZ(0);
     border-color: rgba(165, 231, 255, 0.4);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(165, 231, 255, 0.1);
-  }
-  @keyframes marquee {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-  }
-  .animate-marquee {
-    animation: marquee 20s linear infinite;
-    width: max-content;
   }
 }
 
