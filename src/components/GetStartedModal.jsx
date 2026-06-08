@@ -8,6 +8,9 @@ export default function GetStartedModal({ isOpen, onClose, initialService = "" }
     service: "",
     message: ""
   });
+  
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState("idle"); // 'idle', 'success', 'error'
 
   useEffect(() => {
     if (isOpen && initialService) {
@@ -25,18 +28,53 @@ export default function GetStartedModal({ isOpen, onClose, initialService = "" }
       window.addEventListener("keydown", handleKeyDown);
     } else {
       document.body.style.overflow = "unset";
+      // Reset status when modal closes
+      setTimeout(() => setSubmitStatus("idle"), 300);
     }
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [isOpen, onClose]);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const subject = encodeURIComponent(`New Inquiry from ${formData.fullName} — ${formData.service}`);
-    const body = encodeURIComponent(
-      `Name: ${formData.fullName}\nEmail: ${formData.email}\nMobile: ${formData.mobile}\nService: ${formData.service}\n\nMessage:\n${formData.message}`
-    );
-    window.location.href = `mailto:skotturty@gmail.com?subject=${subject}&body=${body}`;
-    onClose();
+    setIsSubmitting(true);
+    setSubmitStatus("idle");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          // The access key comes from environment variables
+          access_key: import.meta.env.VITE_WEB3FORMS_KEY || "YOUR_ACCESS_KEY_HERE",
+          name: formData.fullName,
+          email: formData.email,
+          phone: formData.mobile,
+          service: formData.service,
+          message: formData.message,
+          subject: `New Inquiry from ${formData.fullName} — ${formData.service}`,
+          from_name: "SKotturty Portfolio",
+        }),
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        setSubmitStatus("success");
+        // Clear form and close after a delay
+        setTimeout(() => {
+          onClose();
+          setFormData({ fullName: "", email: "", mobile: "", service: "", message: "" });
+        }, 2000);
+      } else {
+        setSubmitStatus("error");
+      }
+    } catch (error) {
+      setSubmitStatus("error");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (!isOpen) return null;
@@ -65,89 +103,114 @@ export default function GetStartedModal({ isOpen, onClose, initialService = "" }
 
         {/* Scrollable Form Body */}
         <div className="p-5 md:p-6 pt-4 overflow-y-auto flex-1 min-h-0">
-          <form className="space-y-3.5" onSubmit={handleSubmit}>
-            <div className="space-y-1">
-              <label htmlFor="gs-fullname" className="text-[10px] font-bold text-outline uppercase tracking-wider ml-1">Full Name</label>
-              <input 
-                id="gs-fullname"
-                type="text" 
-                className="w-full bg-[#25293a] border border-white/5 rounded-lg px-3 py-2.5 text-sm text-white placeholder:text-outline-variant focus:outline-none focus:border-primary/50 transition-colors"
-                required
-                value={formData.fullName}
-                onChange={(e) => setFormData({...formData, fullName: e.target.value})}
-              />
-            </div>
-
-            <div className="space-y-1">
-              <label htmlFor="gs-email" className="text-[10px] font-bold text-outline uppercase tracking-wider ml-1">Email</label>
-              <input 
-                id="gs-email"
-                type="email" 
-                className="w-full bg-[#25293a] border border-white/5 rounded-lg px-3 py-2.5 text-sm text-white placeholder:text-outline-variant focus:outline-none focus:border-primary/50 transition-colors"
-                required
-                value={formData.email}
-                onChange={(e) => setFormData({...formData, email: e.target.value})}
-              />
-            </div>
-
-            <div className="space-y-1">
-              <label htmlFor="gs-mobile" className="text-[10px] font-bold text-outline uppercase tracking-wider ml-1">Mobile</label>
-              <input 
-                id="gs-mobile"
-                type="tel" 
-                className="w-full bg-[#25293a] border border-white/5 rounded-lg px-3 py-2.5 text-sm text-white placeholder:text-outline-variant focus:outline-none focus:border-primary/50 transition-colors"
-                value={formData.mobile}
-                onChange={(e) => setFormData({...formData, mobile: e.target.value})}
-              />
-            </div>
-
-            <div className="space-y-1">
-              <label htmlFor="gs-service" className="text-[10px] font-bold text-outline uppercase tracking-wider ml-1">Service</label>
-              <div className="relative">
-                <select 
-                  id="gs-service"
-                  className="w-full bg-[#25293a] border border-white/5 rounded-lg px-3 py-2.5 text-sm text-white placeholder:text-outline-variant focus:outline-none focus:border-primary/50 transition-colors appearance-none"
-                  required
-                  value={formData.service}
-                  onChange={(e) => setFormData({...formData, service: e.target.value})}
-                >
-                  <option value="" disabled>Select a service...</option>
-                  <option value="UI/UX Design">UI/UX Design</option>
-                  <option value="Graphic Design">Graphic Design</option>
-                  <option value="SEO Optimization">SEO Optimization</option>
-                  <option value="Meta Ads">Meta Ads</option>
-                  <option value="Google Ads">Google Ads</option>
-                  <option value="Website Design">Website Design</option>
-                  <option value="Website Building">Website Building</option>
-                  <option value="SEO & Organic Growth">SEO & Organic Growth</option>
-                  <option value="Paid Advertising">Paid Advertising</option>
-                  <option value="Social Media Management">Social Media Management</option>
-                  <option value="Content Marketing">Content Marketing</option>
-                  <option value="Brand Identity & Design">Brand Identity & Design</option>
-                </select>
-                <span className="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[18px]">expand_more</span>
+          
+          {submitStatus === "success" ? (
+            <div className="flex flex-col items-center justify-center py-10 text-center animate-in fade-in zoom-in duration-300">
+              <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mb-4">
+                <span className="material-symbols-outlined text-4xl text-primary">check_circle</span>
               </div>
+              <h4 className="text-white font-bold text-xl mb-2">Message Sent!</h4>
+              <p className="text-on-surface-variant text-sm">Thanks for reaching out. I'll get back to you shortly.</p>
             </div>
+          ) : (
+            <form className="space-y-3.5" onSubmit={handleSubmit}>
+              <div className="space-y-1">
+                <label htmlFor="gs-fullname" className="text-[10px] font-bold text-outline uppercase tracking-wider ml-1">Full Name</label>
+                <input 
+                  id="gs-fullname"
+                  type="text" 
+                  className="w-full bg-[#25293a] border border-white/5 rounded-lg px-3 py-2.5 text-sm text-white placeholder:text-outline-variant focus:outline-none focus:border-primary/50 transition-colors"
+                  required
+                  value={formData.fullName}
+                  onChange={(e) => setFormData({...formData, fullName: e.target.value})}
+                  disabled={isSubmitting}
+                />
+              </div>
 
-            <div className="space-y-1">
-              <label htmlFor="gs-message" className="text-[10px] font-bold text-outline uppercase tracking-wider ml-1">Message</label>
-              <textarea 
-                id="gs-message"
-                rows="2"
-                className="w-full bg-[#25293a] border border-white/5 rounded-lg px-3 py-2.5 text-sm text-white placeholder:text-outline-variant focus:outline-none focus:border-primary/50 transition-colors resize-none"
-                required
-                value={formData.message}
-                onChange={(e) => setFormData({...formData, message: e.target.value})}
-              ></textarea>
-            </div>
+              <div className="space-y-1">
+                <label htmlFor="gs-email" className="text-[10px] font-bold text-outline uppercase tracking-wider ml-1">Email</label>
+                <input 
+                  id="gs-email"
+                  type="email" 
+                  className="w-full bg-[#25293a] border border-white/5 rounded-lg px-3 py-2.5 text-sm text-white placeholder:text-outline-variant focus:outline-none focus:border-primary/50 transition-colors"
+                  required
+                  value={formData.email}
+                  onChange={(e) => setFormData({...formData, email: e.target.value})}
+                  disabled={isSubmitting}
+                />
+              </div>
 
-            <button 
-              type="submit"
-              className="w-full bg-primary text-on-primary-fixed-variant font-bold text-base py-3 rounded-lg flex items-center justify-center gap-2 hover:scale-[1.02] transition-transform mt-5 shadow-[0_0_15px_rgba(165,231,255,0.15)]"
-            >
-              Send Message <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
-            </button>
-          </form>
+              <div className="space-y-1">
+                <label htmlFor="gs-mobile" className="text-[10px] font-bold text-outline uppercase tracking-wider ml-1">Mobile</label>
+                <input 
+                  id="gs-mobile"
+                  type="tel" 
+                  className="w-full bg-[#25293a] border border-white/5 rounded-lg px-3 py-2.5 text-sm text-white placeholder:text-outline-variant focus:outline-none focus:border-primary/50 transition-colors"
+                  value={formData.mobile}
+                  onChange={(e) => setFormData({...formData, mobile: e.target.value})}
+                  disabled={isSubmitting}
+                />
+              </div>
+
+              <div className="space-y-1">
+                <label htmlFor="gs-service" className="text-[10px] font-bold text-outline uppercase tracking-wider ml-1">Service</label>
+                <div className="relative">
+                  <select 
+                    id="gs-service"
+                    className="w-full bg-[#25293a] border border-white/5 rounded-lg px-3 py-2.5 text-sm text-white placeholder:text-outline-variant focus:outline-none focus:border-primary/50 transition-colors appearance-none"
+                    required
+                    value={formData.service}
+                    onChange={(e) => setFormData({...formData, service: e.target.value})}
+                    disabled={isSubmitting}
+                  >
+                    <option value="" disabled>Select a service...</option>
+                    <option value="UI/UX Design">UI/UX Design</option>
+                    <option value="Graphic Design">Graphic Design</option>
+                    <option value="SEO Optimization">SEO Optimization</option>
+                    <option value="Meta Ads">Meta Ads</option>
+                    <option value="Google Ads">Google Ads</option>
+                    <option value="Website Design">Website Design</option>
+                    <option value="Website Building">Website Building</option>
+                    <option value="SEO & Organic Growth">SEO & Organic Growth</option>
+                    <option value="Paid Advertising">Paid Advertising</option>
+                    <option value="Social Media Management">Social Media Management</option>
+                    <option value="Content Marketing">Content Marketing</option>
+                    <option value="Brand Identity & Design">Brand Identity & Design</option>
+                  </select>
+                  <span className="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[18px]">expand_more</span>
+                </div>
+              </div>
+
+              <div className="space-y-1">
+                <label htmlFor="gs-message" className="text-[10px] font-bold text-outline uppercase tracking-wider ml-1">Message</label>
+                <textarea 
+                  id="gs-message"
+                  rows="2"
+                  className="w-full bg-[#25293a] border border-white/5 rounded-lg px-3 py-2.5 text-sm text-white placeholder:text-outline-variant focus:outline-none focus:border-primary/50 transition-colors resize-none"
+                  required
+                  value={formData.message}
+                  onChange={(e) => setFormData({...formData, message: e.target.value})}
+                  disabled={isSubmitting}
+                ></textarea>
+              </div>
+
+              {submitStatus === "error" && (
+                <p className="text-red-400 text-xs text-center">Something went wrong. Please try again or email directly.</p>
+              )}
+
+              <button 
+                type="submit"
+                disabled={isSubmitting}
+                className="w-full bg-primary text-on-primary-fixed-variant font-bold text-base py-3 rounded-lg flex items-center justify-center gap-2 hover:scale-[1.02] transition-transform mt-5 shadow-[0_0_15px_rgba(165,231,255,0.15)] disabled:opacity-50 disabled:hover:scale-100"
+              >
+                {isSubmitting ? (
+                  <>Sending... <span className="material-symbols-outlined animate-spin text-[18px]">progress_activity</span></>
+                ) : (
+                  <>Send Message <span className="material-symbols-outlined text-[18px]">arrow_forward</span></>
+                )}
+              </button>
+            </form>
+          )}
         </div>
       </div>
     </div>
