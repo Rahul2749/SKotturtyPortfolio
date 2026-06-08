@@ -11,6 +11,7 @@ export default {
         "tertiary": "#ecd4ff",
         "outline": "#859399",
         "primary": "#a5e7ff",
+        "on-primary-fixed-variant": "#004e60",
         "on-tertiary": "#4a0080",
         "on-background": "#dee1f7",
         "background": "#05070A",
