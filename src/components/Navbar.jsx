@@ -12,7 +12,7 @@ export default function Navbar() {
         </a>
         
         {/* Desktop Nav */}
-        <nav className="hidden lg:flex gap-10 items-center">
+        <nav className="hidden lg:flex gap-10 items-center" role="navigation" aria-label="Main navigation">
           <a className="font-label-lg text-label-lg uppercase tracking-[0.2em] text-primary font-bold" href="#works">Works</a>
           <a className="font-label-lg text-label-lg uppercase tracking-[0.2em] text-on-surface-variant hover:text-primary transition-colors" href="#about">About</a>
           <a className="font-label-lg text-label-lg uppercase tracking-[0.2em] text-on-surface-variant hover:text-primary transition-colors" href="#services">Expertise</a>
@@ -24,6 +24,8 @@ export default function Navbar() {
         <button 
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           className="lg:hidden text-white hover:text-primary transition-colors flex items-center justify-center p-2"
+          aria-label="Toggle navigation menu"
+          aria-expanded={isMobileMenuOpen}
         >
           <span className="material-symbols-outlined text-[28px]">
             {isMobileMenuOpen ? "close" : "menu"}
@@ -34,7 +36,7 @@ export default function Navbar() {
       {/* Mobile Menu Dropdown */}
       {isMobileMenuOpen && (
         <div className="lg:hidden absolute top-full left-0 w-full bg-[#0a0a0f] border-b border-white/10 shadow-2xl">
-          <nav className="flex flex-col py-6 px-8 gap-6">
+          <nav className="flex flex-col py-6 px-8 gap-6" role="navigation" aria-label="Mobile navigation">
             <a onClick={() => setIsMobileMenuOpen(false)} className="font-label-lg text-label-lg uppercase tracking-[0.2em] text-primary font-bold" href="#works">Works</a>
             <a onClick={() => setIsMobileMenuOpen(false)} className="font-label-lg text-label-lg uppercase tracking-[0.2em] text-white hover:text-primary transition-colors" href="#about">About</a>
             <a onClick={() => setIsMobileMenuOpen(false)} className="font-label-lg text-label-lg uppercase tracking-[0.2em] text-white hover:text-primary transition-colors" href="#services">Expertise</a>

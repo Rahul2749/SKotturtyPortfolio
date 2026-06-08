@@ -22,6 +22,10 @@ export default function Faq() {
     }
   ];
 
+  const toggleFaq = (index) => {
+    setOpenIndex(openIndex === index ? -1 : index);
+  };
+
   return (
     <section className="py-section-gap px-container-margin" id="faq">
       <div className="max-w-4xl mx-auto">
@@ -37,9 +41,20 @@ export default function Faq() {
               <div 
                 key={index} 
                 className={`faq-item glass rounded-3xl overflow-hidden transition-all duration-500 border ${isOpen ? 'border-primary/30 bg-primary/5' : 'border-white/5 cursor-pointer hover:bg-white/[0.02]'}`}
-                onClick={() => setOpenIndex(isOpen ? -1 : index)}
               >
-                <div className="p-6 md:p-8 flex justify-between items-center gap-4">
+                <div 
+                  className="p-6 md:p-8 flex justify-between items-center gap-4"
+                  role="button"
+                  aria-expanded={isOpen}
+                  tabIndex={0}
+                  onClick={() => toggleFaq(index)}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      e.preventDefault();
+                      toggleFaq(index);
+                    }
+                  }}
+                >
                   <h3 className={`font-headline-md text-lg md:text-xl font-bold ${isOpen ? 'text-white' : 'text-on-surface-variant'}`}>
                     {faq.question}
                   </h3>
@@ -49,6 +64,8 @@ export default function Faq() {
                 </div>
                 <div 
                   className={`px-6 md:px-8 transition-all duration-500 ease-in-out ${isOpen ? 'max-h-96 pb-6 md:pb-8 opacity-100' : 'max-h-0 opacity-0 pb-0'}`}
+                  role="region"
+                  aria-hidden={!isOpen}
                 >
                   <p className="text-body-lg text-on-surface-variant leading-relaxed">
                     {faq.answer}

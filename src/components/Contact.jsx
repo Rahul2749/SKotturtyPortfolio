@@ -21,10 +21,10 @@ export default function Contact() {
         {/* Right Side: Action Cards */}
         <div className="md:col-span-5 flex flex-col items-start md:items-end space-y-4 w-full">
           {/* Main Email Card */}
-          <a className="group flex items-center justify-between w-full max-w-md glass rounded-3xl p-6 md:p-8 border border-white/10 hover:border-primary/40 transition-all hover:bg-white/[0.03]" href="mailto:skotturty@gmail.com">
+          <a className="group flex items-center justify-between w-full max-w-md glass rounded-3xl p-6 md:p-8 border border-white/10 hover:border-primary/40 transition-all hover:bg-white/[0.03]" href="mailto:sahitikotturty@gmail.com">
             <div className="text-left">
               <span className="block text-xs uppercase tracking-widest text-on-surface-variant mb-2">Email Me</span>
-              <span className="font-bold text-white text-lg md:text-xl group-hover:text-primary transition-colors">skotturty@gmail.com</span>
+              <span className="font-bold text-white text-lg md:text-xl group-hover:text-primary transition-colors">sahitikotturty@gmail.com</span>
             </div>
             <div className="w-14 h-14 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-primary group-hover:text-black transition-all">
               <span className="material-symbols-outlined">arrow_outward</span>
@@ -33,11 +33,11 @@ export default function Contact() {
 
           {/* Secondary Action Row */}
           <div className="flex gap-4 w-full max-w-md">
-            <a className="flex-1 glass rounded-3xl py-6 flex flex-col items-center justify-center hover:bg-white/10 transition-all border border-white/10 group" href="#">
+            <a className="flex-1 glass rounded-3xl py-6 flex flex-col items-center justify-center hover:bg-white/10 transition-all border border-white/10 group" href="https://linkedin.com/in/sahitikotturty" target="_blank" rel="noopener noreferrer">
               <span className="material-symbols-outlined text-white mb-3 group-hover:scale-110 transition-transform">share</span>
               <span className="text-[10px] uppercase tracking-widest text-on-surface-variant">Socials</span>
             </a>
-            <a className="flex-1 glass rounded-3xl py-6 flex flex-col items-center justify-center hover:bg-white/10 transition-all border border-white/10 group" href="#">
+            <a className="flex-1 glass rounded-3xl py-6 flex flex-col items-center justify-center hover:bg-white/10 transition-all border border-white/10 group" href="https://calendly.com/sahitikotturty" target="_blank" rel="noopener noreferrer">
               <span className="material-symbols-outlined text-white mb-3 group-hover:scale-110 transition-transform">calendar_month</span>
               <span className="text-[10px] uppercase tracking-widest text-on-surface-variant">Book Call</span>
             </a>

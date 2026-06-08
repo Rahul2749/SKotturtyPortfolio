@@ -104,7 +104,7 @@ export default function Portfolio() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="glass rounded-[2.5rem] p-1 overflow-hidden project-card">
               <div className="bg-surface-container rounded-[2.4rem] aspect-video md:aspect-auto md:h-[340px] flex flex-col items-center justify-center relative overflow-hidden group">
-                <img alt="UI/UX Design 1" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-110 transition-transform duration-1000" src="/uiux_1.jpeg"/>
+                <img alt="UI/UX Design 1" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-110 transition-transform duration-1000" src="/uiux_1.jpeg" loading="lazy"/>
                 <div className="z-10 text-center p-6 bg-background/50 backdrop-blur-sm rounded-2xl m-4 mt-auto w-11/12 border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <h4 className="text-white font-bold text-headline-sm">FinTech Mobile App</h4>
                   <p className="text-on-surface-variant mt-1 text-xs">Modern banking dashboard and user flows.</p>
@@ -113,7 +113,7 @@ export default function Portfolio() {
             </div>
             <div className="glass rounded-[2.5rem] p-1 overflow-hidden project-card">
               <div className="bg-surface-container rounded-[2.4rem] aspect-video md:aspect-auto md:h-[340px] flex flex-col items-center justify-center relative overflow-hidden group">
-                <img alt="UI/UX Design 2" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-110 transition-transform duration-1000" src="/uiux_2.jpeg"/>
+                <img alt="UI/UX Design 2" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-110 transition-transform duration-1000" src="/uiux_2.jpeg" loading="lazy"/>
                 <div className="z-10 text-center p-6 bg-background/50 backdrop-blur-sm rounded-2xl m-4 mt-auto w-11/12 border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <h4 className="text-white font-bold text-headline-sm">Crypto Platform UI</h4>
                   <p className="text-on-surface-variant mt-1 text-xs">Modern Web3 website and app design.</p>
@@ -129,8 +129,11 @@ export default function Portfolio() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Project: Shape2Real */}
           <div className="glass rounded-[2rem] overflow-hidden group border border-white/10 project-card">
-            <div className="aspect-video bg-surface-container overflow-hidden relative group-hover:scale-105 transition-all duration-700">
-              <iframe src="https://shape2-real-web.vercel.app/" title="Shape2Real" className="w-[200%] h-[200%] absolute top-0 left-0 origin-top-left scale-50 pointer-events-none border-none bg-white"></iframe>
+            <div className="aspect-video bg-gradient-to-br from-surface-container via-surface to-background overflow-hidden relative group-hover:scale-105 transition-all duration-700 flex items-center justify-center">
+              <div className="text-center">
+                <span className="material-symbols-outlined text-5xl text-white/20 mb-2 block">language</span>
+                <span className="text-white/40 text-sm font-medium">Live Preview</span>
+              </div>
             </div>
             <div className="p-8">
               <h4 className="text-white font-bold text-headline-md mb-2">Shape2Real</h4>
@@ -143,8 +146,11 @@ export default function Portfolio() {
           </div>
           {/* Project: Adenium Heaven */}
           <div className="glass rounded-[2rem] overflow-hidden group border border-white/10 project-card">
-            <div className="aspect-video bg-surface-container overflow-hidden relative group-hover:scale-105 transition-all duration-700">
-              <iframe src="https://adeniumheaven.in/" title="Adenium Heaven" className="w-[200%] h-[200%] absolute top-0 left-0 origin-top-left scale-50 pointer-events-none border-none bg-white"></iframe>
+            <div className="aspect-video bg-gradient-to-br from-surface-container via-surface to-background overflow-hidden relative group-hover:scale-105 transition-all duration-700 flex items-center justify-center">
+              <div className="text-center">
+                <span className="material-symbols-outlined text-5xl text-white/20 mb-2 block">language</span>
+                <span className="text-white/40 text-sm font-medium">Live Preview</span>
+              </div>
             </div>
             <div className="p-8">
               <h4 className="text-white font-bold text-headline-md mb-2">Adenium Heaven</h4>
@@ -157,8 +163,11 @@ export default function Portfolio() {
           </div>
           {/* Project: Future Investment Planner */}
           <div className="glass rounded-[2rem] overflow-hidden group border border-white/10 project-card">
-            <div className="aspect-video bg-surface-container overflow-hidden relative group-hover:scale-105 transition-all duration-700">
-              <iframe src="https://future-investment-planner-iink.vercel.app/" title="Future Investment Planner" className="w-[200%] h-[200%] absolute top-0 left-0 origin-top-left scale-50 pointer-events-none border-none bg-white"></iframe>
+            <div className="aspect-video bg-gradient-to-br from-surface-container via-surface to-background overflow-hidden relative group-hover:scale-105 transition-all duration-700 flex items-center justify-center">
+              <div className="text-center">
+                <span className="material-symbols-outlined text-5xl text-white/20 mb-2 block">language</span>
+                <span className="text-white/40 text-sm font-medium">Live Preview</span>
+              </div>
             </div>
             <div className="p-8">
               <h4 className="text-white font-bold text-headline-md mb-2">Future Investment Planner</h4>
@@ -177,19 +186,19 @@ export default function Portfolio() {
             <h3 className="text-headline-lg font-display-md text-white mb-6 px-2">Website Templates</h3>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
               <div className="glass rounded-3xl p-1 project-card overflow-hidden">
-                <img src="/template_part_1.webp" className="w-full h-auto rounded-[1.3rem] hover:scale-105 transition-transform duration-700" alt="Casino Template Header"/>
+                <img src="/template_part_1.webp" className="w-full h-auto rounded-[1.3rem] hover:scale-105 transition-transform duration-700" alt="Casino Template Header" loading="lazy"/>
               </div>
               <div className="glass rounded-3xl p-1 project-card overflow-hidden">
-                <img src="/template_part_2.webp" className="w-full h-auto rounded-[1.3rem] hover:scale-105 transition-transform duration-700" alt="Casino Template Games"/>
+                <img src="/template_part_2.webp" className="w-full h-auto rounded-[1.3rem] hover:scale-105 transition-transform duration-700" alt="Casino Template Games" loading="lazy"/>
               </div>
               <div className="glass rounded-3xl p-1 project-card overflow-hidden">
-                <img src="/template_part_3.webp" className="w-full h-auto rounded-[1.3rem] hover:scale-105 transition-transform duration-700" alt="Casino Template History"/>
+                <img src="/template_part_3.webp" className="w-full h-auto rounded-[1.3rem] hover:scale-105 transition-transform duration-700" alt="Casino Template History" loading="lazy"/>
               </div>
               <div className="glass rounded-3xl p-1 project-card overflow-hidden">
-                <img src="/template_part_4.webp" className="w-full h-auto rounded-[1.3rem] hover:scale-105 transition-transform duration-700" alt="Casino Template FAQ"/>
+                <img src="/template_part_4.webp" className="w-full h-auto rounded-[1.3rem] hover:scale-105 transition-transform duration-700" alt="Casino Template FAQ" loading="lazy"/>
               </div>
               <div className="glass rounded-3xl p-1 project-card overflow-hidden">
-                <img src="/template_part_5.webp" className="w-full h-auto rounded-[1.3rem] hover:scale-105 transition-transform duration-700" alt="Casino Template Footer"/>
+                <img src="/template_part_5.webp" className="w-full h-auto rounded-[1.3rem] hover:scale-105 transition-transform duration-700" alt="Casino Template Footer" loading="lazy"/>
               </div>
             </div>
           </div>
@@ -207,7 +216,7 @@ export default function Portfolio() {
               {['boucher_11.jpeg', 'boucher_12.jpeg', 'boucher_13.jpeg', 'boucher_14.jpeg'].map((brochure, idx) => (
                 <div onClick={() => setSelectedImage(`/${brochure}`)} key={idx} className="glass rounded-[2.5rem] p-1 project-card overflow-hidden w-full aspect-[4/3] flex flex-col group cursor-pointer">
                   <div className="w-full h-full rounded-[2.4rem] overflow-hidden relative bg-surface-container flex items-center justify-center">
-                    <img src={`/${brochure}`} alt={`Brochure Page ${idx + 1}`} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                    <img src={`/${brochure}`} alt={`Brochure Page ${idx + 1}`} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
                     <div className="absolute inset-0 bg-background/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
                       <span className="material-symbols-outlined text-white text-4xl transform translate-y-4 group-hover:translate-y-0 transition-all duration-500 delay-100">open_in_new</span>
                     </div>
@@ -224,7 +233,7 @@ export default function Portfolio() {
               {['10', '20'].map((num) => (
                 <div key={num} className="glass rounded-[2.5rem] p-1 project-card overflow-hidden w-full h-[500px] md:h-[600px] flex flex-col">
                   <div className="w-full h-full rounded-[2.4rem] overflow-hidden relative bg-surface-container group flex items-center justify-center">
-                    <img src={`/flyer${num}.png`} alt={`Flyer ${num}`} className="w-full h-full object-contain p-2 transition-transform duration-700 group-hover:scale-105" />
+                    <img src={`/flyer${num}.png`} alt={`Flyer ${num}`} className="w-full h-full object-contain p-2 transition-transform duration-700 group-hover:scale-105" loading="lazy" />
                   </div>
                 </div>
               ))}
@@ -237,12 +246,12 @@ export default function Portfolio() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="glass rounded-[2.5rem] p-1 project-card overflow-hidden w-full h-auto flex flex-col">
                 <div className="w-full h-full rounded-[2.4rem] overflow-hidden relative bg-surface-container group flex items-center justify-center">
-                  <img src="/magazine.jpeg" alt="Magazine 1" className="w-full h-auto block transition-transform duration-700 group-hover:scale-105" />
+                  <img src="/magazine.jpeg" alt="Magazine 1" className="w-full h-auto block transition-transform duration-700 group-hover:scale-105" loading="lazy" />
                 </div>
               </div>
               <div className="glass rounded-[2.5rem] p-1 project-card overflow-hidden w-full h-auto flex flex-col">
                 <div className="w-full h-full rounded-[2.4rem] overflow-hidden relative bg-surface-container group flex items-center justify-center">
-                  <img src="/magazine2_new.jpeg" alt="Magazine 2" className="w-full h-auto block transition-transform duration-700 group-hover:scale-105" />
+                  <img src="/magazine2_new.jpeg" alt="Magazine 2" className="w-full h-auto block transition-transform duration-700 group-hover:scale-105" loading="lazy" />
                 </div>
               </div>
             </div>
@@ -255,7 +264,7 @@ export default function Portfolio() {
               {['logo_pawan.jpeg', 'logo_12.jpeg', 'logo_aden.jpeg', 'logo_14.jpeg', 'logo_uniquearts.jpeg'].map((logo, idx) => (
                 <div onClick={() => setSelectedImage(`/${logo}`)} key={idx} className="glass rounded-[1.5rem] md:rounded-[2.5rem] p-1 project-card overflow-hidden w-full aspect-[4/3] flex flex-col group cursor-pointer">
                   <div className="w-full h-full rounded-[1.4rem] md:rounded-[2.4rem] overflow-hidden relative bg-surface-container flex items-center justify-center">
-                    <img src={`/${logo}`} alt={`Logo ${idx+1}`} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                    <img src={`/${logo}`} alt={`Logo ${idx+1}`} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
                     <div className="absolute inset-0 bg-background/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
                       <span className="material-symbols-outlined text-white text-4xl transform translate-y-4 group-hover:translate-y-0 transition-all duration-500 delay-100">open_in_new</span>
                     </div>
@@ -271,7 +280,7 @@ export default function Portfolio() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="glass rounded-[2.5rem] p-1 overflow-hidden project-card">
               <div className="bg-surface-container rounded-[2.4rem] aspect-video md:aspect-auto md:h-[340px] flex flex-col items-center justify-center relative overflow-hidden group">
-                <img alt="Kids Animation" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-110 transition-transform duration-1000" src="/animation_2.webp"/>
+                <img alt="Kids Animation" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-110 transition-transform duration-1000" src="/animation_2.webp" loading="lazy"/>
                 <div className="z-10 text-center p-6 bg-background/50 backdrop-blur-sm rounded-2xl m-4 mt-auto w-11/12 border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <h4 className="text-white font-bold text-headline-sm">Kids Animation</h4>
                   <p className="text-on-surface-variant mt-1 text-xs">Vibrant environments and character storytelling.</p>
@@ -280,7 +289,7 @@ export default function Portfolio() {
             </div>
             <div className="glass rounded-[2.5rem] p-1 overflow-hidden project-card">
               <div className="bg-surface-container rounded-[2.4rem] aspect-video md:aspect-auto md:h-[340px] flex flex-col items-center justify-center relative overflow-hidden group">
-                <img alt="Character Animation" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-110 transition-transform duration-1000" src="/animation_1.webp"/>
+                <img alt="Character Animation" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-110 transition-transform duration-1000" src="/animation_1.webp" loading="lazy"/>
                 <div className="z-10 text-center p-6 bg-background/50 backdrop-blur-sm rounded-2xl m-4 mt-auto w-11/12 border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <h4 className="text-white font-bold text-headline-sm">Character Animation</h4>
                   <p className="text-on-surface-variant mt-1 text-xs">Classic cartoon recreations and concept art.</p>
@@ -296,7 +305,7 @@ export default function Portfolio() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="glass rounded-[2.5rem] p-1 overflow-hidden project-card">
               <div className="bg-surface-container rounded-[2.4rem] aspect-video md:aspect-auto md:h-[340px] flex flex-col items-center justify-center relative overflow-hidden group">
-                <img alt="Business Card Mockups" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-110 transition-transform duration-1000" src="/branding_mockup.webp"/>
+                <img alt="Business Card Mockups" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-110 transition-transform duration-1000" src="/branding_mockup.webp" loading="lazy"/>
                 <div className="z-10 text-center p-6 bg-background/50 backdrop-blur-sm rounded-2xl m-4 mt-auto w-11/12 border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <h4 className="text-white font-bold text-headline-sm">Business Card Designs</h4>
                   <p className="text-on-surface-variant mt-1 text-xs">Print media and brand identity mockups.</p>
@@ -305,7 +314,7 @@ export default function Portfolio() {
             </div>
             <div className="glass rounded-[2.5rem] p-1 overflow-hidden project-card">
               <div className="bg-surface-container rounded-[2.4rem] aspect-video md:aspect-auto md:h-[340px] flex flex-col items-center justify-center relative overflow-hidden group">
-                <img alt="Lumina Branding Design" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-110 transition-transform duration-1000" src="/branding_lumina.jpeg"/>
+                <img alt="Lumina Branding Design" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-110 transition-transform duration-1000" src="/branding_lumina.jpeg" loading="lazy"/>
                 <div className="z-10 text-center p-6 bg-background/50 backdrop-blur-sm rounded-2xl m-4 mt-auto w-11/12 border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <h4 className="text-white font-bold text-headline-sm">Lumina Creative</h4>
                   <p className="text-on-surface-variant mt-1 text-xs">Complete brand identity and visual language.</p>
@@ -354,7 +363,7 @@ export default function Portfolio() {
             </div>
             <div className="lg:col-span-7 aspect-video md:aspect-auto md:h-full md:min-h-[400px]">
               <div className="glass rounded-[2.5rem] p-1 overflow-hidden project-card h-full w-full relative group">
-                <img src="/marketing_mockup.webp" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-105 transition-all duration-700" alt="Social Media Ad Creatives" />
+                <img src="/marketing_mockup.webp" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-105 transition-all duration-700" alt="Social Media Ad Creatives" loading="lazy" />
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent opacity-90"></div>
                 <div className="absolute bottom-0 left-0 p-8 w-full z-10">
                   <h4 className="text-white font-bold text-headline-sm mb-2">Social Media Ad Creatives</h4>
@@ -370,13 +379,13 @@ export default function Portfolio() {
             <h3 className="text-headline-lg font-display-md text-white mb-6 px-2">Social Media</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="glass rounded-[2.5rem] p-4 flex items-center justify-center project-card bg-[#8ebae4] overflow-hidden">
-                <img alt="GRE & GMAT Coaching Ad" className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500 rounded-[1.5rem] shadow-xl" src="/social_1.webp"/>
+                <img alt="GRE & GMAT Coaching Ad" className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500 rounded-[1.5rem] shadow-xl" src="/social_1.webp" loading="lazy"/>
               </div>
               <div className="glass rounded-[2.5rem] p-4 flex items-center justify-center project-card bg-white overflow-hidden">
-                <img alt="Grow Your Business Meta Ads Graphic" className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500 rounded-[1.5rem] shadow-xl" src="/social_2.webp"/>
+                <img alt="Grow Your Business Meta Ads Graphic" className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500 rounded-[1.5rem] shadow-xl" src="/social_2.webp" loading="lazy"/>
               </div>
               <div className="glass rounded-[2.5rem] p-4 flex items-center justify-center project-card bg-[#0f172a] overflow-hidden">
-                <img alt="Website Services Digital Ad" className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500 rounded-[1.5rem] shadow-xl" src="/social_3.webp"/>
+                <img alt="Website Services Digital Ad" className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500 rounded-[1.5rem] shadow-xl" src="/social_3.webp" loading="lazy"/>
               </div>
             </div>
           </div>
@@ -386,7 +395,7 @@ export default function Portfolio() {
             <h3 className="text-headline-lg font-display-md text-white mb-6 text-center">Matte Painting</h3>
             <div className="glass rounded-[2.5rem] p-1 overflow-hidden project-card w-full max-w-5xl mx-auto">
               <div className="bg-surface-container rounded-[2.4rem] aspect-video flex flex-col items-center justify-center relative overflow-hidden group">
-                <img alt="Fantasy Landscape Matte Painting" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-105 transition-transform duration-1000" src="/matte_painting.webp"/>
+                <img alt="Fantasy Landscape Matte Painting" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-105 transition-transform duration-1000" src="/matte_painting.webp" loading="lazy"/>
                 <div className="z-10 text-center p-8 bg-background/50 backdrop-blur-sm rounded-2xl m-4 md:m-8 mt-auto w-11/12 md:w-3/4 border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <h4 className="text-white font-bold text-headline-sm mb-2">Fantasy Landscape</h4>
                   <p className="text-on-surface-variant text-sm">Digital matte painting, photo manipulation, and compositing.</p>
@@ -399,12 +408,12 @@ export default function Portfolio() {
 
       {/* Lightbox Modal */}
       {selectedImage && (
-        <div className="fixed inset-0 z-[500] flex items-center justify-center p-4 md:p-8 bg-black/80 backdrop-blur-md" onClick={() => setSelectedImage(null)}>
-          <button className="absolute top-6 right-6 text-white hover:text-primary transition-colors bg-white/10 hover:bg-white/20 p-2 rounded-full backdrop-blur-sm flex items-center justify-center" onClick={() => setSelectedImage(null)}>
+        <div className="fixed inset-0 z-[500] flex items-center justify-center p-4 md:p-8 bg-black/80 backdrop-blur-md" role="dialog" aria-modal="true" aria-label="Image preview" onClick={() => setSelectedImage(null)}>
+          <button className="absolute top-6 right-6 text-white hover:text-primary transition-colors bg-white/10 hover:bg-white/20 p-2 rounded-full backdrop-blur-sm flex items-center justify-center" aria-label="Close preview" onClick={() => setSelectedImage(null)}>
             <span className="material-symbols-outlined text-2xl">close</span>
           </button>
           <div className="relative max-w-5xl w-full max-h-[90vh] flex items-center justify-center" onClick={(e) => e.stopPropagation()}>
-            <img src={selectedImage} alt="Fullscreen view" className="max-w-full max-h-[90vh] object-contain rounded-2xl shadow-2xl" />
+            <img src={selectedImage} alt="Fullscreen view" className="max-w-full max-h-[90vh] object-contain rounded-2xl shadow-2xl" loading="lazy" />
           </div>
         </div>
       )}
