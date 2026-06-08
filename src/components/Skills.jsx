@@ -42,53 +42,6 @@ export default function Skills() {
               ))}
             </div>
           </div>
-
-          {/* Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            
-            {/* UI/UX Design */}
-            <div className="group relative bg-[#131620] rounded-[24px] p-8 border border-white/5 hover:border-primary/40 hover:-translate-y-1 transition-all duration-500 overflow-hidden shadow-2xl flex flex-col h-full">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <div className="relative z-10 flex flex-col gap-5 flex-1">
-                <div className="w-14 h-14 rounded-2xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary group-hover:scale-110 group-hover:rotate-6 transition-transform duration-500">
-                  <span className="material-symbols-outlined text-[28px]">draw</span>
-                </div>
-                <div>
-                  <h3 className="text-white font-bold text-xl mb-3">UI/UX Design</h3>
-                  <p className="text-on-surface-variant text-sm leading-relaxed font-light">Designing intuitive, user-centered interfaces that combine aesthetics, usability, and seamless digital experiences.</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Graphic Design */}
-            <div className="group relative bg-[#131620] rounded-[24px] p-8 border border-white/5 hover:border-secondary/40 hover:-translate-y-1 transition-all duration-500 overflow-hidden shadow-2xl flex flex-col h-full">
-              <div className="absolute inset-0 bg-gradient-to-br from-secondary/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <div className="relative z-10 flex flex-col gap-5 flex-1">
-                <div className="w-14 h-14 rounded-2xl bg-secondary/10 border border-secondary/20 flex items-center justify-center text-secondary group-hover:scale-110 group-hover:-rotate-6 transition-transform duration-500">
-                  <span className="material-symbols-outlined text-[28px]">palette</span>
-                </div>
-                <div>
-                  <h3 className="text-white font-bold text-xl mb-3">Graphic Design</h3>
-                  <p className="text-on-surface-variant text-sm leading-relaxed font-light">Creating premium visual identities, social media creatives, branding assets, brochures, posters, and marketing materials.</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Digital Marketing */}
-            <div className="group relative bg-[#131620] rounded-[24px] p-8 border border-white/5 hover:border-tertiary/40 hover:-translate-y-1 transition-all duration-500 overflow-hidden shadow-2xl flex flex-col h-full">
-              <div className="absolute inset-0 bg-gradient-to-br from-tertiary/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <div className="relative z-10 flex flex-col gap-5 flex-1">
-                <div className="w-14 h-14 rounded-2xl bg-tertiary/10 border border-tertiary/20 flex items-center justify-center text-tertiary group-hover:scale-110 group-hover:rotate-6 transition-transform duration-500">
-                  <span className="material-symbols-outlined text-[28px]">campaign</span>
-                </div>
-                <div>
-                  <h3 className="text-white font-bold text-xl mb-3">Digital Marketing</h3>
-                  <p className="text-on-surface-variant text-sm leading-relaxed font-light">Running high-converting Meta ad campaigns, growth strategies, content marketing, and performance-driven digital promotions.</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
         </div>
       </div>
     </section>
