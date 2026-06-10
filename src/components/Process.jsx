@@ -30,7 +30,7 @@ export default function Process() {
     <section className="py-section-gap px-container-margin" id="process">
       <div className="max-w-7xl mx-auto">
         <div className="process-header text-center mb-16 md:mb-20">
-          <span className="text-primary font-bold tracking-[0.5em] uppercase text-label-sm">Workflow</span>
+          <span className="text-primary font-bold tracking-[0.5em] uppercase text-label-sm">Process</span>
           <h2 className="font-headline-lg text-[32px] md:text-headline-lg text-white mt-4 leading-tight">
             Launch Your <span className="italic font-light text-gradient">Success</span>
           </h2>
