@@ -13,26 +13,49 @@ export default function ServicesIOffer() {
       title: "UI/UX Design",
       icon: "design_services",
       desc: "Designing intuitive mobile apps and websites with modern user experiences that improve engagement and conversion.",
-      subtitle: "Crafting digital experiences that users love.",
-      introDesc: "Our UI/UX design service focuses on creating user-centric, aesthetically pleasing, and highly functional interfaces. We bridge the gap between user needs and business goals through research-driven design.",
+      subtitle: "Creating seamless digital experiences that users love.",
+      introDesc: "We design modern, user-focused websites and mobile applications that are visually appealing, easy to use, and built to improve engagement, trust, and conversions.",
       sections: [
         {
+          heading: "What is UI/UX Design?",
+          paragraphs: [
+            "UI (User Interface) focuses on the visual appearance of a product — colors, typography, layouts, buttons, and overall aesthetics.",
+            "UX (User Experience) focuses on how users interact with the product — ensuring smooth navigation, usability, accessibility, and user satisfaction.",
+            "Together, UI/UX design creates digital experiences that are both beautiful and functional."
+          ]
+        },
+        {
           heading: "What We Do",
-          listItems: ["User Research & Personas", "Wireframing & Prototyping", "User Interface Design", "User Experience Optimization", "Usability Testing", "Design Systems"],
+          listItems: [
+            "Mobile App Design", "Website UI Design", "Landing Page Design", "Dashboard Design", 
+            "Wireframing & Prototyping", "User Flow Planning", "Responsive Design", 
+            "Design Systems", "UX Research", "Modern Interactive Interfaces"
+          ],
           listIcon: "check"
         },
         {
-          heading: "Our Process",
+          heading: "Why UI/UX Matters",
+          paragraphs: ["Good UI/UX design helps businesses:"],
+          listItems: [
+            "Increase user engagement", "Improve conversion rates", "Build customer trust", 
+            "Reduce bounce rates", "Create smooth user journeys", "Make products easier to use", 
+            "Strengthen brand identity"
+          ],
+          listIcon: "trending_up"
+        },
+        {
+          heading: "Our Design Process",
           processSteps: [
-            { num: "01", title: "Research & Discovery", desc: "Understanding the user and business requirements." },
-            { num: "02", title: "Wireframing", desc: "Creating the structural blueprint of the application." },
-            { num: "03", title: "Visual Design", desc: "Applying branding, colors, and typography." },
-            { num: "04", title: "Prototyping & Testing", desc: "Building interactive models and testing with real users." }
+            { num: "01", title: "Research", desc: "Understanding your brand, audience, and goals." },
+            { num: "02", title: "Wireframing", desc: "Creating the structure and user flow." },
+            { num: "03", title: "UI Design", desc: "Designing modern and visually engaging interfaces." },
+            { num: "04", title: "Prototype", desc: "Building interactive previews before development." },
+            { num: "05", title: "Final Delivery", desc: "Delivering polished, responsive, developer-ready designs." }
           ]
         },
         {
           heading: "Tools We Use",
-          tools: ["Figma", "Adobe XD", "Sketch", "InVision", "Framer"]
+          tools: ["Figma", "Adobe XD", "Photoshop", "Illustrator", "Framer"]
         }
       ]
     },
@@ -40,21 +63,56 @@ export default function ServicesIOffer() {
       title: "Graphic Design",
       icon: "palette",
       desc: "Creating premium visual designs for brands, social media, packaging, and marketing campaigns.",
-      subtitle: "Visually communicating your brand's unique story.",
-      introDesc: "We create stunning, high-quality visual assets that capture attention and communicate your brand's message effectively across all mediums.",
+      subtitle: "Crafting visuals that make brands unforgettable.",
+      introDesc: "We create premium graphic designs that communicate your brand identity, attract attention, and leave a lasting impression across digital and print platforms.",
       sections: [
         {
+          heading: "What is Graphic Design?",
+          paragraphs: [
+            "Graphic design is the art of combining visuals, typography, colors, and creativity to communicate ideas effectively. It helps brands present themselves professionally and connect with their audience visually.",
+            "From social media creatives to branding materials, graphic design plays a key role in marketing and brand recognition."
+          ]
+        },
+        {
           heading: "What We Do",
-          listItems: ["Logo & Identity Design", "Social Media Graphics", "Marketing Collateral", "Packaging Design", "Illustration", "Brand Guidelines"],
+          listItems: [
+            "Social Media Post Design", "Brand Identity Design", "Logo Design", "Packaging Design", 
+            "Brochure & Flyer Design", "Poster Design", "Banner Design", "Ad Creatives", 
+            "Business Cards", "Presentation Design", "Marketing Materials", "Creative Campaign Visuals"
+          ],
           listIcon: "check"
         },
         {
-          heading: "Why It Matters",
-          paragraphs: ["Great design is more than just looking good. It builds brand recognition, establishes trust, and helps you stand out in a crowded market."]
+          heading: "Why Graphic Design Matters",
+          paragraphs: ["Good graphic design helps businesses:"],
+          listItems: [
+            "Build strong brand identity", "Attract more audience attention", "Increase engagement on social media", 
+            "Create professional brand presence", "Improve marketing performance", "Make communication visually effective", 
+            "Leave a memorable impression"
+          ],
+          listIcon: "trending_up"
+        },
+        {
+          heading: "Our Design Process",
+          processSteps: [
+            { num: "01", title: "Brand Understanding", desc: "Learning about your brand style, audience, and goals." },
+            { num: "02", title: "Concept Creation", desc: "Developing creative visual ideas and layouts." },
+            { num: "03", title: "Design Execution", desc: "Crafting high-quality modern visuals with attention to detail." },
+            { num: "04", title: "Revisions & Refinement", desc: "Improving designs based on feedback and perfection." },
+            { num: "05", title: "Final Delivery", desc: "Providing polished, high-resolution, ready-to-use designs." }
+          ]
         },
         {
           heading: "Tools We Use",
-          tools: ["Adobe Photoshop", "Adobe Illustrator", "Adobe InDesign", "Canva Pro", "CorelDRAW"]
+          tools: ["Adobe Photoshop", "Adobe Illustrator", "Figma", "Canva Pro", "Adobe InDesign", "After Effects"]
+        },
+        {
+          heading: "Results You Can Expect",
+          listItems: [
+            "Premium Brand Presence", "Eye-Catching Visuals", "Better Audience Engagement", 
+            "Strong Brand Recognition", "High-Quality Marketing Assets"
+          ],
+          listIcon: "done_all"
         }
       ]
     },
