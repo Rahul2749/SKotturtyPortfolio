@@ -178,22 +178,56 @@ export default function ServicesIOffer() {
       title: "Meta Ads",
       icon: "campaign",
       desc: "Running high-converting Facebook & Instagram ad campaigns focused on leads, sales, and brand awareness.",
-      subtitle: "Targeted social advertising to scale your business.",
-      introDesc: "We design, execute, and manage highly profitable Meta (Facebook & Instagram) ad campaigns tailored to your specific business objectives.",
+      subtitle: "Running powerful ad campaigns that drive reach, engagement, and conversions.",
+      introDesc: "We create strategic Meta advertising campaigns on Facebook and Instagram that help brands attract the right audience, generate leads, increase sales, and scale their online presence effectively.",
       sections: [
         {
+          heading: "What are Meta Ads?",
+          paragraphs: [
+            "Meta Ads are paid advertising campaigns run across platforms like Facebook and Instagram through Meta Ads Manager. These ads help businesses reach targeted audiences based on interests, behavior, demographics, and online activity.",
+            "Meta advertising is one of the most effective ways to grow brand awareness, website traffic, leads, and conversions."
+          ]
+        },
+        {
           heading: "What We Do",
-          listItems: ["Campaign Strategy & Setup", "Audience Targeting", "Ad Creative & Copywriting", "A/B Testing", "Pixel Setup & Tracking", "Retargeting Campaigns"],
+          listItems: [
+            "Facebook Ads Campaigns", "Instagram Ads Campaigns", "Lead Generation Ads", "Conversion Ads", 
+            "Brand Awareness Campaigns", "Retargeting Ads", "Audience Targeting", "Ad Creative Strategy", 
+            "Campaign Optimization", "Performance Tracking", "A/B Testing", "Sales Funnel Ads"
+          ],
           listIcon: "check"
         },
         {
-          heading: "Our Process",
+          heading: "Why Meta Ads Matter",
+          paragraphs: ["Effective Meta Ads help businesses:"],
+          listItems: [
+            "Reach targeted audiences", "Generate high-quality leads", "Increase website traffic", 
+            "Boost sales and conversions", "Improve brand awareness", "Retarget potential customers", 
+            "Scale business growth faster"
+          ],
+          listIcon: "trending_up"
+        },
+        {
+          heading: "Our Ads Process",
           processSteps: [
-            { num: "01", title: "Strategy", desc: "Defining goals, budgets, and target audiences." },
-            { num: "02", title: "Creation", desc: "Developing compelling ad creatives and copy." },
-            { num: "03", title: "Launch & Test", desc: "Deploying campaigns and testing variations." },
-            { num: "04", title: "Scale", desc: "Optimizing top performers for maximum ROI." }
+            { num: "01", title: "Strategy Planning", desc: "Understanding your goals, audience, and business objectives." },
+            { num: "02", title: "Audience Targeting", desc: "Identifying the right audience for maximum performance." },
+            { num: "03", title: "Creative Development", desc: "Designing engaging ad creatives and copy." },
+            { num: "04", title: "Campaign Launch", desc: "Setting up and running optimized Meta ad campaigns." },
+            { num: "05", title: "Optimization & Scaling", desc: "Monitoring performance and improving results continuously." }
           ]
+        },
+        {
+          heading: "Tools We Use",
+          tools: ["Meta Ads Manager", "Facebook Business Suite", "Canva Pro", "Google Analytics", "Pixel Tracking", "Audience Insights"]
+        },
+        {
+          heading: "Results You Can Expect",
+          listItems: [
+            "Higher Reach & Engagement", "Quality Lead Generation", "Increased Sales & Conversions", 
+            "Better Brand Awareness", "Improved Return on Ad Spend (ROAS)"
+          ],
+          listIcon: "done_all"
         }
       ]
     },
@@ -201,17 +235,56 @@ export default function ServicesIOffer() {
       title: "Google Ads",
       icon: "ads_click",
       desc: "Creating strategic Google ad campaigns that drive targeted traffic and maximize ROI.",
-      subtitle: "Capture high-intent traffic precisely when they search.",
-      introDesc: "We manage Google Ads campaigns that place your business at the top of search results, driving high-quality traffic that is ready to convert.",
+      subtitle: "Driving targeted traffic and measurable results through strategic Google advertising.",
+      introDesc: "We create high-performing Google Ads campaigns that help businesses reach potential customers at the right time, increase visibility, generate quality leads, and maximize conversions.",
       sections: [
         {
+          heading: "What are Google Ads?",
+          paragraphs: [
+            "Google Ads is an online advertising platform that allows businesses to appear on Google Search, YouTube, websites, and apps through paid campaigns. It helps brands connect with users actively searching for products or services.",
+            "With the right strategy, Google Ads can deliver fast, targeted, and measurable business growth."
+          ]
+        },
+        {
           heading: "What We Do",
-          listItems: ["Search Network Campaigns", "Display Ads", "Performance Max", "Shopping Campaigns", "YouTube Video Ads", "Keyword Optimization"],
+          listItems: [
+            "Google Search Ads", "Display Ads", "YouTube Ads", "Shopping Ads", 
+            "Lead Generation Campaigns", "PPC Campaign Management", "Keyword Research", 
+            "Ad Copy Creation", "Audience Targeting", "Conversion Tracking", 
+            "Campaign Optimization", "Remarketing Ads"
+          ],
           listIcon: "check"
         },
         {
+          heading: "Why Google Ads Matter",
+          paragraphs: ["Effective Google Ads help businesses:"],
+          listItems: [
+            "Reach high-intent customers", "Generate quality leads quickly", "Increase website traffic", 
+            "Boost sales and conversions", "Improve brand visibility", "Target specific audiences", 
+            "Achieve measurable ROI"
+          ],
+          listIcon: "trending_up"
+        },
+        {
+          heading: "Our Ads Process",
+          processSteps: [
+            { num: "01", title: "Strategy Planning", desc: "Understanding your business goals and target audience." },
+            { num: "02", title: "Keyword Research", desc: "Finding high-performing keywords for better targeting." },
+            { num: "03", title: "Campaign Setup", desc: "Creating optimized ad campaigns with strategic structure." },
+            { num: "04", title: "Ad Launch", desc: "Running targeted campaigns across Google platforms." },
+            { num: "05", title: "Optimization & Reporting", desc: "Monitoring performance and continuously improving results." }
+          ]
+        },
+        {
+          heading: "Tools We Use",
+          tools: ["Google Ads Manager", "Google Analytics", "Google Tag Manager", "Keyword Planner", "SEMrush", "Conversion Tracking Tools"]
+        },
+        {
           heading: "Results You Can Expect",
-          listItems: ["Lower Cost-Per-Click (CPC)", "Higher Conversion Rates", "Increased ROI", "Predictable Lead Generation"],
+          listItems: [
+            "Increased Website Traffic", "Higher Lead Generation", "Better Conversion Rates", 
+            "Strong Online Visibility", "Improved Return on Investment (ROI)"
+          ],
           listIcon: "done_all"
         }
       ]
@@ -220,26 +293,49 @@ export default function ServicesIOffer() {
       title: "Website Design",
       icon: "devices",
       desc: "Building modern responsive websites optimized for performance, branding, and conversion.",
-      subtitle: "Your digital storefront, engineered for success.",
-      introDesc: "We build fast, secure, and fully responsive websites that serve as the foundation of your digital marketing efforts.",
+      subtitle: "Designing modern websites that elevate brands and drive results.",
+      introDesc: "We create visually stunning, responsive, and user-friendly websites that help businesses build credibility, engage audiences, and grow their online presence effectively.",
       sections: [
         {
+          heading: "What is Website Design?",
+          paragraphs: [
+            "Website design is the process of creating the visual layout, structure, and user experience of a website. A well-designed website combines aesthetics, functionality, and performance to provide visitors with a seamless digital experience.",
+            "A professional website is essential for building trust, showcasing services, and converting visitors into customers."
+          ]
+        },
+        {
           heading: "What We Do",
-          listItems: ["Custom Web Development", "E-Commerce Solutions", "Landing Page Design", "CMS Integration (WordPress, etc.)", "Website Maintenance", "Performance Optimization"],
+          listItems: [
+            "Business Website Design", "Portfolio Website Design", "Landing Page Design", 
+            "E-Commerce Website Design", "Responsive Web Design", "Custom Website UI Design", 
+            "Website Redesign", "WordPress Website Design", "Modern Interactive Layouts", 
+            "Website Optimization", "Conversion-Focused Design", "Website Maintenance"
+          ],
           listIcon: "check"
         },
         {
-          heading: "Our Process",
+          heading: "Why Website Design Matters",
+          paragraphs: ["Good website design helps businesses:"],
+          listItems: [
+            "Build strong online presence", "Create professional brand image", "Improve user experience", 
+            "Increase customer engagement", "Generate leads and conversions", "Improve website performance", 
+            "Build trust and credibility"
+          ],
+          listIcon: "trending_up"
+        },
+        {
+          heading: "Our Design Process",
           processSteps: [
-            { num: "01", title: "Planning", desc: "Sitemaps and technical architecture." },
-            { num: "02", title: "Design", desc: "High-fidelity mockups and visual direction." },
-            { num: "03", title: "Development", desc: "Clean coding and CMS integration." },
-            { num: "04", title: "Launch", desc: "Quality assurance, testing, and deployment." }
+            { num: "01", title: "Discovery & Planning", desc: "Understanding your business, goals, and audience." },
+            { num: "02", title: "Wireframing & Structure", desc: "Creating website layout and user flow." },
+            { num: "03", title: "Visual Design", desc: "Designing modern, clean, and engaging interfaces." },
+            { num: "04", title: "Development & Optimization", desc: "Building responsive and high-performing websites." },
+            { num: "05", title: "Launch & Support", desc: "Testing, launching, and maintaining the final website." }
           ]
         },
         {
           heading: "Tools We Use",
-          tools: ["React", "Next.js", "Tailwind CSS", "WordPress", "Webflow", "Shopify"]
+          tools: ["Figma", "WordPress", "Webflow", "Framer"]
         }
       ]
     }
