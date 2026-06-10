@@ -6,6 +6,7 @@ export default function Navbar() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
+    <>
     <header className="fixed top-0 w-full z-[100] bg-background/50 backdrop-blur-2xl border-b border-white/5 shadow-2xl">
       <div className="flex justify-between items-center px-container-margin py-5 max-w-7xl mx-auto">
         <a className="flex items-center gap-2 md:gap-3 text-[18px] md:text-[20px] text-white font-black tracking-tighter" href="#">
@@ -59,8 +60,8 @@ export default function Navbar() {
           </nav>
         </div>
       )}
-      
-      <GetStartedModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </header>
+    <GetStartedModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+    </>
   );
 }
