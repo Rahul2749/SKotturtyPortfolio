@@ -18,7 +18,7 @@ export default function Navbar() {
         <nav className="hidden lg:flex gap-10 items-center" role="navigation" aria-label="Main navigation">
           <a className="font-label-lg text-label-lg uppercase tracking-[0.2em] text-primary font-bold" href="#works">Works</a>
           <a className="font-label-lg text-label-lg uppercase tracking-[0.2em] text-on-surface-variant hover:text-primary transition-colors" href="#about">About</a>
-          <a className="font-label-lg text-label-lg uppercase tracking-[0.2em] text-on-surface-variant hover:text-primary transition-colors" href="#services">Expertise</a>
+          <a className="font-label-lg text-label-lg uppercase tracking-[0.2em] text-on-surface-variant hover:text-primary transition-colors" href="#services-i-offer">Services</a>
           <a className="font-label-lg text-label-lg uppercase tracking-[0.2em] text-on-surface-variant hover:text-primary transition-colors" href="#process">Process</a>
           <a className="font-label-lg text-label-lg uppercase tracking-[0.2em] text-on-surface-variant hover:text-primary transition-colors" href="#contact">Contact</a>
           <button 
@@ -48,7 +48,7 @@ export default function Navbar() {
           <nav className="flex flex-col py-6 px-8 gap-6" role="navigation" aria-label="Mobile navigation">
             <a onClick={() => setIsMobileMenuOpen(false)} className="font-label-lg text-label-lg uppercase tracking-[0.2em] text-primary font-bold" href="#works">Works</a>
             <a onClick={() => setIsMobileMenuOpen(false)} className="font-label-lg text-label-lg uppercase tracking-[0.2em] text-white hover:text-primary transition-colors" href="#about">About</a>
-            <a onClick={() => setIsMobileMenuOpen(false)} className="font-label-lg text-label-lg uppercase tracking-[0.2em] text-white hover:text-primary transition-colors" href="#services">Expertise</a>
+            <a onClick={() => setIsMobileMenuOpen(false)} className="font-label-lg text-label-lg uppercase tracking-[0.2em] text-white hover:text-primary transition-colors" href="#services-i-offer">Services</a>
             <a onClick={() => setIsMobileMenuOpen(false)} className="font-label-lg text-label-lg uppercase tracking-[0.2em] text-white hover:text-primary transition-colors" href="#process">Process</a>
             <a onClick={() => setIsMobileMenuOpen(false)} className="font-label-lg text-label-lg uppercase tracking-[0.2em] text-white hover:text-primary transition-colors" href="#contact">Contact</a>
             <button 
