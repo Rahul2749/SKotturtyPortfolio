@@ -1,7 +1,9 @@
 import { useState } from "react";
+import GetStartedModal from "./GetStartedModal";
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <header className="fixed top-0 w-full z-[100] bg-background/50 backdrop-blur-2xl border-b border-white/5 shadow-2xl">
@@ -18,6 +20,12 @@ export default function Navbar() {
           <a className="font-label-lg text-label-lg uppercase tracking-[0.2em] text-on-surface-variant hover:text-primary transition-colors" href="#services">Expertise</a>
           <a className="font-label-lg text-label-lg uppercase tracking-[0.2em] text-on-surface-variant hover:text-primary transition-colors" href="#process">Process</a>
           <a className="font-label-lg text-label-lg uppercase tracking-[0.2em] text-on-surface-variant hover:text-primary transition-colors" href="#contact">Contact</a>
+          <button 
+            onClick={() => setIsModalOpen(true)}
+            className="ml-4 bg-primary text-on-primary-fixed-variant font-bold text-xs uppercase tracking-widest px-6 py-2.5 rounded-full hover:scale-105 transition-transform shadow-[0_0_15px_rgba(165,231,255,0.15)]"
+          >
+            Get Started
+          </button>
         </nav>
 
         {/* Mobile Hamburger Button */}
@@ -42,9 +50,17 @@ export default function Navbar() {
             <a onClick={() => setIsMobileMenuOpen(false)} className="font-label-lg text-label-lg uppercase tracking-[0.2em] text-white hover:text-primary transition-colors" href="#services">Expertise</a>
             <a onClick={() => setIsMobileMenuOpen(false)} className="font-label-lg text-label-lg uppercase tracking-[0.2em] text-white hover:text-primary transition-colors" href="#process">Process</a>
             <a onClick={() => setIsMobileMenuOpen(false)} className="font-label-lg text-label-lg uppercase tracking-[0.2em] text-white hover:text-primary transition-colors" href="#contact">Contact</a>
+            <button 
+              onClick={() => { setIsMobileMenuOpen(false); setIsModalOpen(true); }}
+              className="mt-2 bg-primary text-on-primary-fixed-variant font-bold text-sm uppercase tracking-widest px-6 py-3.5 rounded-full text-center shadow-[0_0_15px_rgba(165,231,255,0.15)]"
+            >
+              Get Started
+            </button>
           </nav>
         </div>
       )}
+      
+      <GetStartedModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </header>
   );
 }
