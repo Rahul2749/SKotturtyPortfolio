@@ -158,7 +158,7 @@ export default function ServicesIOffer() {
         <div className="services-header text-center mb-12 md:mb-16">
           <span className="text-[#3b82f6] font-bold tracking-[0.2em] uppercase text-label-sm">Services I Offer</span>
           <h2 className="font-headline-lg text-4xl md:text-6xl lg:text-7xl font-black text-[#0f172a] mt-6 mb-6 leading-tight">
-            Services I <span className="italic font-light text-[#3b82f6]">Offer.</span>
+            Services I <span className="italic font-normal text-[#3b82f6]">Offer.</span>
           </h2>
           <p className="text-[#64748b] text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
             From visual branding to performance marketing, I create digital experiences that attract, engage, and convert.

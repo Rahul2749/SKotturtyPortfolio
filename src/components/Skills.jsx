@@ -26,9 +26,9 @@ export default function Skills() {
           <div className="flex flex-col items-center text-center">
             <span className="text-secondary font-bold tracking-[0.4em] uppercase text-[11px] mb-4 border border-secondary/20 bg-secondary/5 px-4 py-1.5 rounded-full inline-block">Arsenal</span>
             <h2 className="font-headline-lg text-[40px] md:text-[56px] text-on-surface leading-[1.1] mb-6">
-              The <span className="italic font-light text-gradient">Creative Suite</span>
+              The <span className="italic font-normal text-gradient">Creative Suite</span>
             </h2>
-            <p className="text-on-surface-variant text-base md:text-lg font-light leading-relaxed mb-10 max-w-2xl mx-auto">
+            <p className="text-on-surface-variant text-base md:text-lg font-normal leading-relaxed mb-10 max-w-2xl mx-auto">
               A strategic blend of UI/UX design, branding, graphic design, and performance marketing crafted to build visually powerful and conversion-focused digital experiences.
             </p>
             

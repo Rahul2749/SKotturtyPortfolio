@@ -72,7 +72,7 @@ export default function Portfolio() {
         <div className="sticky top-[72px] md:top-[80px] z-30 bg-background/80 backdrop-blur-xl py-4 md:py-6 px-6 md:px-8 mb-16 flex flex-col xl:flex-row justify-between items-start xl:items-center gap-6 border border-on-surface/10 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)] rounded-[2rem] mt-8 w-full">
           <div className="portfolio-header">
             <span className="text-primary font-bold tracking-[0.3em] md:tracking-[0.5em] uppercase text-label-sm">Categorized Hub</span>
-            <h2 className="font-headline-lg text-[26px] md:text-headline-lg text-on-surface mt-2 leading-tight">Creative <span className="italic font-light text-gradient">Showcase</span></h2>
+            <h2 className="font-headline-lg text-[26px] md:text-headline-lg text-on-surface mt-2 leading-tight">Creative <span className="italic font-normal text-gradient">Showcase</span></h2>
           </div>
           <div className="portfolio-tabs flex gap-2 overflow-x-auto pb-2 hide-scrollbar flex-nowrap w-full xl:w-auto flex-1 min-w-0 items-center">
             <a href="#uiux" className="tab-btn shrink-0 px-4 md:px-6 py-1.5 md:py-2 rounded-full text-[11px] md:text-label-sm transition-all whitespace-nowrap active bg-on-surface text-background font-bold shadow-md">
@@ -124,7 +124,7 @@ export default function Portfolio() {
                 <img alt="UI/UX Design 1" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-110 transition-transform duration-1000" src="/uiux_1.jpeg" loading="lazy"/>
                 <div className="z-10 text-center p-6 bg-background/50 backdrop-blur-sm rounded-2xl m-4 mt-auto w-11/12 border border-on-surface/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <h4 className="text-[#1e293b] font-bold text-headline-sm">FinTech Mobile App</h4>
-                  <p className="text-on-card-variant mt-1 text-xs">Modern banking dashboard and user flows.</p>
+                  <p className="text-[#334155] font-medium mt-1 text-xs">Modern banking dashboard and user flows.</p>
                 </div>
               </div>
             </div>
@@ -133,7 +133,7 @@ export default function Portfolio() {
                 <img alt="UI/UX Design 2" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-110 transition-transform duration-1000" src="/uiux_2.jpeg" loading="lazy"/>
                 <div className="z-10 text-center p-6 bg-background/50 backdrop-blur-sm rounded-2xl m-4 mt-auto w-11/12 border border-on-surface/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <h4 className="text-[#1e293b] font-bold text-headline-sm">Crypto Platform UI</h4>
-                  <p className="text-on-card-variant mt-1 text-xs">Modern Web3 website and app design.</p>
+                  <p className="text-[#334155] font-medium mt-1 text-xs">Modern Web3 website and app design.</p>
                 </div>
               </div>
             </div>
@@ -151,7 +151,7 @@ export default function Portfolio() {
             </div>
             <div className="p-8">
               <h4 className="text-[#1e293b] font-bold text-headline-md mb-2">Shape2Real</h4>
-              <p className="text-on-card-variant text-body-sm mb-4">A minimalist architectural portfolio with scroll-driven interactions.</p>
+              <p className="text-[#334155] font-medium text-body-sm mb-4">A minimalist architectural portfolio with scroll-driven interactions.</p>
               <div className="flex justify-between items-center mt-auto">
                 <span className="text-secondary font-bold text-label-sm uppercase">Premium UX</span>
                 <a href="https://shape2-real-web.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-[#1e293b] text-xs px-4 py-2 border border-[#c4cdd9] rounded-full hover:bg-[#d5dce6] transition-colors cursor-pointer">Live Website</a>
@@ -165,7 +165,7 @@ export default function Portfolio() {
             </div>
             <div className="p-8">
               <h4 className="text-[#1e293b] font-bold text-headline-md mb-2">Adenium Heaven</h4>
-              <p className="text-on-card-variant text-body-sm mb-4">E-commerce experience for rare botanical collections.</p>
+              <p className="text-[#334155] font-medium text-body-sm mb-4">E-commerce experience for rare botanical collections.</p>
               <div className="flex justify-between items-center mt-auto">
                 <span className="text-tertiary font-bold text-label-sm uppercase">Botanical Store</span>
                 <a href="https://adeniumheaven.in/" target="_blank" rel="noopener noreferrer" className="text-[#1e293b] text-xs px-4 py-2 border border-[#c4cdd9] rounded-full hover:bg-[#d5dce6] transition-colors cursor-pointer">Live Website</a>
@@ -179,7 +179,7 @@ export default function Portfolio() {
             </div>
             <div className="p-8">
               <h4 className="text-[#1e293b] font-bold text-headline-md mb-2">Future Investment Planner</h4>
-              <p className="text-on-card-variant text-body-sm mb-4">Goal: Modernize wealth management for Gen Z with interactive data viz.</p>
+              <p className="text-[#334155] font-medium text-body-sm mb-4">Goal: Modernize wealth management for Gen Z with interactive data viz.</p>
               <div className="flex justify-between items-center mt-auto">
                 <span className="text-primary font-bold text-label-sm uppercase">Desktop/Mobile</span>
                 <a href="https://future-investment-planner-iink.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-[#1e293b] text-xs px-4 py-2 border border-[#c4cdd9] rounded-full hover:bg-[#d5dce6] transition-colors cursor-pointer">Live Website</a>
@@ -193,21 +193,16 @@ export default function Portfolio() {
           <div className="portfolio-section scroll-mt-48" id="templates">
             <h3 className="text-headline-lg font-display-md text-on-surface mb-6 px-2">Website Templates</h3>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
-              <div className="glass rounded-3xl p-1 project-card overflow-hidden">
-                <img src="/template_part_1.webp" className="w-full h-auto rounded-[1.3rem] hover:scale-105 transition-transform duration-700" alt="Casino Template Header" loading="lazy"/>
-              </div>
-              <div className="glass rounded-3xl p-1 project-card overflow-hidden">
-                <img src="/template_part_2.webp" className="w-full h-auto rounded-[1.3rem] hover:scale-105 transition-transform duration-700" alt="Casino Template Games" loading="lazy"/>
-              </div>
-              <div className="glass rounded-3xl p-1 project-card overflow-hidden">
-                <img src="/template_part_3.webp" className="w-full h-auto rounded-[1.3rem] hover:scale-105 transition-transform duration-700" alt="Casino Template History" loading="lazy"/>
-              </div>
-              <div className="glass rounded-3xl p-1 project-card overflow-hidden">
-                <img src="/template_part_4.webp" className="w-full h-auto rounded-[1.3rem] hover:scale-105 transition-transform duration-700" alt="Casino Template FAQ" loading="lazy"/>
-              </div>
-              <div className="glass rounded-3xl p-1 project-card overflow-hidden">
-                <img src="/template_part_5.webp" className="w-full h-auto rounded-[1.3rem] hover:scale-105 transition-transform duration-700" alt="Casino Template Footer" loading="lazy"/>
-              </div>
+              {[1, 2, 3, 4, 5].map((num) => (
+                <div key={num} onClick={() => setSelectedImage(`/template_part_${num}.webp`)} className="glass rounded-[1.5rem] p-1 project-card overflow-hidden cursor-pointer group">
+                  <div className="relative w-full h-full rounded-[1.3rem] overflow-hidden bg-surface-container flex items-center justify-center">
+                    <img src={`/template_part_${num}.webp`} className="w-full h-auto transition-transform duration-700 group-hover:scale-105" alt={`Template Part ${num}`} loading="lazy"/>
+                    <div className="absolute inset-0 bg-background/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
+                      <span className="material-symbols-outlined text-white text-4xl transform translate-y-4 group-hover:translate-y-0 transition-all duration-500 delay-100">open_in_new</span>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -291,7 +286,7 @@ export default function Portfolio() {
                 <img alt="Kids Animation" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-110 transition-transform duration-1000" src="/animation_2.webp" loading="lazy"/>
                 <div className="z-10 text-center p-6 bg-background/50 backdrop-blur-sm rounded-2xl m-4 mt-auto w-11/12 border border-on-surface/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <h4 className="text-[#1e293b] font-bold text-headline-sm">Kids Animation</h4>
-                  <p className="text-on-card-variant mt-1 text-xs">Vibrant environments and character storytelling.</p>
+                  <p className="text-[#334155] font-medium mt-1 text-xs">Vibrant environments and character storytelling.</p>
                 </div>
               </div>
             </div>
@@ -300,7 +295,7 @@ export default function Portfolio() {
                 <img alt="Character Animation" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-110 transition-transform duration-1000" src="/animation_1.webp" loading="lazy"/>
                 <div className="z-10 text-center p-6 bg-background/50 backdrop-blur-sm rounded-2xl m-4 mt-auto w-11/12 border border-on-surface/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <h4 className="text-[#1e293b] font-bold text-headline-sm">Character Animation</h4>
-                  <p className="text-on-card-variant mt-1 text-xs">Classic cartoon recreations and concept art.</p>
+                  <p className="text-[#334155] font-medium mt-1 text-xs">Classic cartoon recreations and concept art.</p>
                 </div>
               </div>
             </div>
@@ -316,7 +311,7 @@ export default function Portfolio() {
                 <img alt="Business Card Mockups" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-110 transition-transform duration-1000" src="/branding_mockup.webp" loading="lazy"/>
                 <div className="z-10 text-center p-6 bg-background/50 backdrop-blur-sm rounded-2xl m-4 mt-auto w-11/12 border border-on-surface/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <h4 className="text-[#1e293b] font-bold text-headline-sm">Business Card Designs</h4>
-                  <p className="text-on-card-variant mt-1 text-xs">Print media and brand identity mockups.</p>
+                  <p className="text-[#334155] font-medium mt-1 text-xs">Print media and brand identity mockups.</p>
                 </div>
               </div>
             </div>
@@ -325,7 +320,7 @@ export default function Portfolio() {
                 <img alt="Lumina Branding Design" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-110 transition-transform duration-1000" src="/branding_lumina.jpeg" loading="lazy"/>
                 <div className="z-10 text-center p-6 bg-background/50 backdrop-blur-sm rounded-2xl m-4 mt-auto w-11/12 border border-on-surface/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <h4 className="text-[#1e293b] font-bold text-headline-sm">Lumina Creative</h4>
-                  <p className="text-on-card-variant mt-1 text-xs">Complete brand identity and visual language.</p>
+                  <p className="text-[#334155] font-medium mt-1 text-xs">Complete brand identity and visual language.</p>
                 </div>
               </div>
             </div>
@@ -375,7 +370,7 @@ export default function Portfolio() {
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent opacity-90"></div>
                 <div className="absolute bottom-0 left-0 p-8 w-full z-10">
                   <h4 className="text-[#1e293b] font-bold text-headline-sm mb-2">Social Media Ad Creatives</h4>
-                  <p className="text-on-card-variant text-sm">High-converting product and lifestyle campaigns.</p>
+                  <p className="text-[#334155] font-medium text-sm">High-converting product and lifestyle campaigns.</p>
                 </div>
               </div>
             </div>
@@ -406,7 +401,7 @@ export default function Portfolio() {
                 <img alt="Fantasy Landscape Matte Painting" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-105 transition-transform duration-1000" src="/matte_painting.webp" loading="lazy"/>
                 <div className="z-10 text-center p-8 bg-background/50 backdrop-blur-sm rounded-2xl m-4 md:m-8 mt-auto w-11/12 md:w-3/4 border border-on-surface/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <h4 className="text-[#1e293b] font-bold text-headline-sm mb-2">Fantasy Landscape</h4>
-                  <p className="text-on-card-variant text-sm">Digital matte painting, photo manipulation, and compositing.</p>
+                  <p className="text-[#334155] font-medium text-sm">Digital matte painting, photo manipulation, and compositing.</p>
                 </div>
               </div>
             </div>

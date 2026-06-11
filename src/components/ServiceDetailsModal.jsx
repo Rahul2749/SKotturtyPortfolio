@@ -53,7 +53,7 @@ export default function ServiceDetailsModal({ isOpen, onClose, onGetStarted, ser
           <div className="space-y-10">
             {/* Intro */}
             <div>
-              <p className="text-xl md:text-2xl font-light text-[#0f172a] leading-relaxed mb-4">
+              <p className="text-xl md:text-2xl font-normal text-[#0f172a] leading-relaxed mb-4">
                 {service.subtitle}
               </p>
               <p className="text-[#64748b] leading-relaxed">

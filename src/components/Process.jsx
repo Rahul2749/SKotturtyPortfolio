@@ -32,7 +32,7 @@ export default function Process() {
         <div className="process-header text-center mb-16 md:mb-20">
           <span className="text-primary font-bold tracking-[0.5em] uppercase text-label-sm">Process</span>
           <h2 className="font-headline-lg text-[32px] md:text-headline-lg text-on-surface mt-4 leading-tight">
-            Launch Your <span className="italic font-light text-gradient">Success</span>
+            Launch Your <span className="italic font-normal text-gradient">Success</span>
           </h2>
           <p className="text-[#64748b] mt-4 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
             A streamlined creative and marketing process designed to transform ideas into impactful digital results.

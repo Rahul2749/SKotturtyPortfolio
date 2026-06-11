@@ -31,7 +31,7 @@ export default function Faq() {
       <div className="max-w-4xl mx-auto">
         <div className="faq-header text-center mb-16">
           <span className="text-primary font-bold tracking-[0.5em] uppercase text-label-sm">Got Questions?</span>
-          <h2 className="font-headline-lg text-headline-lg text-on-surface mt-4">Frequently Asked <span className="italic font-light text-gradient">Questions</span></h2>
+          <h2 className="font-headline-lg text-headline-lg text-on-surface mt-4">Frequently Asked <span className="italic font-normal text-gradient">Questions</span></h2>
         </div>
         
         <div className="flex flex-col gap-4">

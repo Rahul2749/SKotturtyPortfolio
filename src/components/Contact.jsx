@@ -11,7 +11,7 @@ export default function Contact() {
             <span className="w-12 h-px bg-primary"></span> Next Steps
           </p>
           <h2 className="font-display-md text-[40px] md:text-[64px] text-on-surface leading-[1.1] mb-8">
-            Let's build <br className="hidden md:block"/> something <br/> <span className="italic font-light text-gradient">extraordinary.</span>
+            Let's build <br className="hidden md:block"/> something <br/> <span className="italic font-normal text-gradient">extraordinary.</span>
           </h2>
           <p className="font-body-lg text-on-surface-variant max-w-lg md:text-lg">
             Helping brands grow with modern design, creative storytelling, SEO optimization, and high-converting ad campaigns.

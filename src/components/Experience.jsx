@@ -25,7 +25,7 @@ export default function Experience() {
       <div className="max-w-5xl mx-auto">
         <div className="experience-header text-center mb-12 md:mb-16">
           <span className="text-primary font-bold tracking-[0.5em] uppercase text-label-sm">My Journey</span>
-          <h2 className="font-headline-lg text-headline-lg text-on-surface mt-4">Professional <span className="italic font-light text-gradient">Experience</span></h2>
+          <h2 className="font-headline-lg text-headline-lg text-on-surface mt-4">Professional <span className="italic font-normal text-gradient">Experience</span></h2>
         </div>
         
         <div className="relative">
@@ -46,8 +46,8 @@ export default function Experience() {
                       {exp.year}
                     </span>
                     <h3 className="text-2xl text-[#1e293b] font-headline-md font-bold mb-1">{exp.role}</h3>
-                    <h4 className="text-on-card-variant font-medium text-sm uppercase tracking-widest mb-4">{exp.company}</h4>
-                    <p className="text-body-md text-on-card-variant leading-relaxed">
+                    <h4 className="text-[#334155] font-medium font-medium text-sm uppercase tracking-widest mb-4">{exp.company}</h4>
+                    <p className="text-body-md text-[#334155] font-medium leading-relaxed">
                       {exp.description}
                     </p>
                   </div>

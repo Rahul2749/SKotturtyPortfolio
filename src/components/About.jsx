@@ -4,7 +4,7 @@ export default function About() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
           <div className="space-y-6">
-            <h2 className="about-heading font-headline-lg text-[26px] md:text-headline-lg text-on-surface leading-tight">The <span className="italic font-light">Mind</span> Behind</h2>
+            <h2 className="about-heading font-headline-lg text-[26px] md:text-headline-lg text-on-surface leading-tight">The <span className="italic font-normal">Mind</span> Behind</h2>
             <div className="about-bar w-20 h-1 bg-primary"></div>
             <p className="about-text text-body-lg text-on-surface-variant leading-relaxed">
               I am Sahiti, a designer who lives at the intersection of aesthetics and functionality. With a background spanning across UI/UX, branding, and digital marketing, I help businesses transform complex ideas into intuitive visual narratives.
