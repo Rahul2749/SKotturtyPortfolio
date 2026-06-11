@@ -3,7 +3,7 @@ export default function Experience() {
     {
       year: "2024 - Present",
       role: "UI/UX Designer",
-      company: "Creative Studio Agency",
+      company: "Freelance",
       description: "Designing exceptional user experiences, building modern websites, and delivering marketing strategies that generate measurable results."
     },
     {
