@@ -4,13 +4,13 @@ export default function Experience() {
       year: "2024 - Present",
       role: "UI/UX Designer",
       company: "Creative Studio Agency",
-      description: "Leading the design team in creating scalable digital products for global tech startups. Driving UX strategy and maintaining comprehensive design systems."
+      description: "Designing exceptional user experiences, building modern websites, and delivering marketing strategies that generate measurable results."
     },
     {
       year: "2024 - Present",
       role: "Freelance Multidisciplinary Designer",
       company: "Self-Employed",
-      description: "Collaborated directly with over 30+ clients across e-commerce, real estate, and healthcare to deliver comprehensive branding and web design solutions."
+      description: "Delivering end-to-end digital solutions that combine design, strategy, and marketing to help brands stand out, attract customers, and grow online."
     },
     {
       year: "2025 - Present",
