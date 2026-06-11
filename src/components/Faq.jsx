@@ -31,7 +31,7 @@ export default function Faq() {
       <div className="max-w-4xl mx-auto">
         <div className="faq-header text-center mb-16">
           <span className="text-primary font-bold tracking-[0.5em] uppercase text-label-sm">Got Questions?</span>
-          <h2 className="font-headline-lg text-headline-lg text-white mt-4">Frequently Asked <span className="italic font-light text-gradient">Questions</span></h2>
+          <h2 className="font-headline-lg text-headline-lg text-on-surface mt-4">Frequently Asked <span className="italic font-light text-gradient">Questions</span></h2>
         </div>
         
         <div className="flex flex-col gap-4">
@@ -40,7 +40,7 @@ export default function Faq() {
             return (
               <div 
                 key={index} 
-                className={`faq-item glass rounded-3xl overflow-hidden transition-all duration-500 border ${isOpen ? 'border-primary/30 bg-primary/5' : 'border-white/5 cursor-pointer hover:bg-white/[0.02]'}`}
+                className={`faq-item glass rounded-3xl overflow-hidden transition-all duration-500 border ${isOpen ? 'border-primary/30 bg-primary/5' : 'border-on-surface/10 cursor-pointer hover:bg-white/[0.02]'}`}
               >
                 <div 
                   className="p-6 md:p-8 flex justify-between items-center gap-4"
@@ -55,10 +55,10 @@ export default function Faq() {
                     }
                   }}
                 >
-                  <h3 className={`font-headline-md text-lg md:text-xl font-bold ${isOpen ? 'text-white' : 'text-on-surface-variant'}`}>
+                  <h3 className={`font-headline-md text-lg md:text-xl font-bold ${isOpen ? 'text-on-surface' : 'text-on-card-variant'}`}>
                     {faq.question}
                   </h3>
-                  <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-transform duration-500 ${isOpen ? 'bg-primary text-on-primary rotate-180' : 'bg-white/5 text-white'}`}>
+                  <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-transform duration-500 ${isOpen ? 'bg-primary text-on-primary rotate-180' : 'bg-white/10 text-white'}`}>
                     <span className="material-symbols-outlined text-sm font-bold">keyboard_arrow_down</span>
                   </div>
                 </div>
@@ -67,7 +67,7 @@ export default function Faq() {
                   role="region"
                   aria-hidden={!isOpen}
                 >
-                  <p className="text-body-lg text-on-surface-variant leading-relaxed">
+                  <p className={`text-body-lg leading-relaxed ${isOpen ? 'text-on-surface-variant' : 'text-on-card-variant'}`}>
                     {faq.answer}
                   </p>
                 </div>

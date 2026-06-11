@@ -65,7 +65,7 @@ export default function AdsStats() {
   return (
     <section ref={sectionRef} className="min-h-[90vh] flex flex-col justify-center py-16 md:py-20 px-6 md:px-12 max-w-7xl mx-auto relative z-10" id="ads-stats">
       <div className="text-center mb-10 md:mb-14 ads-header">
-        <h2 className="text-headline-sm md:text-headline-lg font-display-md text-white mb-3">
+        <h2 className="text-headline-sm md:text-headline-lg font-display-md text-on-surface mb-3">
           Marketing <span className="text-primary italic">Performance</span>
         </h2>
         <p className="text-body-lg text-on-surface-variant max-w-2xl mx-auto">

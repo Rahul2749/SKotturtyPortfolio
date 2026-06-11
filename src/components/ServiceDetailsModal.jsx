@@ -26,13 +26,13 @@ export default function ServiceDetailsModal({ isOpen, onClose, onGetStarted, ser
       ></div>
 
       {/* Modal */}
-      <div className="relative w-full max-w-2xl md:max-w-4xl bg-[#1a1f2f] rounded-[2rem] shadow-2xl border border-white/10 flex flex-col max-h-[90vh] overflow-hidden">
+      <div className="relative w-full max-w-2xl md:max-w-4xl bg-surface-container rounded-[2rem] shadow-2xl border border-white/10 flex flex-col max-h-[90vh] overflow-hidden">
         
         {/* Fixed Header */}
         <div className="p-6 md:p-8 flex-shrink-0 relative border-b border-white/5 bg-gradient-to-r from-primary/10 to-transparent">
           <button 
             onClick={onClose}
-            className="absolute top-6 right-6 md:top-8 md:right-8 text-on-surface-variant hover:text-white transition-colors bg-white/5 p-2 rounded-full hover:bg-white/10 flex items-center justify-center z-10"
+            className="absolute top-6 right-6 md:top-8 md:right-8 text-on-card-variant hover:text-white transition-colors bg-white/5 p-2 rounded-full hover:bg-white/10 flex items-center justify-center z-10"
           >
             <span className="material-symbols-outlined text-[20px]">close</span>
           </button>
@@ -56,7 +56,7 @@ export default function ServiceDetailsModal({ isOpen, onClose, onGetStarted, ser
               <p className="text-xl md:text-2xl font-light text-white/90 leading-relaxed mb-4">
                 {service.subtitle}
               </p>
-              <p className="text-on-surface-variant leading-relaxed">
+              <p className="text-on-card-variant leading-relaxed">
                 {service.introDesc}
               </p>
             </div>
@@ -73,7 +73,7 @@ export default function ServiceDetailsModal({ isOpen, onClose, onGetStarted, ser
                 {section.paragraphs && (
                   <div className="space-y-4">
                     {section.paragraphs.map((para, i) => (
-                      <p key={i} className="text-on-surface-variant leading-relaxed">{para}</p>
+                      <p key={i} className="text-on-card-variant leading-relaxed">{para}</p>
                     ))}
                   </div>
                 )}
@@ -86,7 +86,7 @@ export default function ServiceDetailsModal({ isOpen, onClose, onGetStarted, ser
                         <span className="text-primary font-black text-2xl opacity-50">{step.num}</span>
                         <div>
                           <h4 className="text-white font-bold mb-1">{step.title}</h4>
-                          <p className="text-on-surface-variant text-sm">{step.desc}</p>
+                          <p className="text-on-card-variant text-sm">{step.desc}</p>
                         </div>
                       </div>
                     ))}
@@ -97,7 +97,7 @@ export default function ServiceDetailsModal({ isOpen, onClose, onGetStarted, ser
                 {section.listItems && (
                   <ul className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-3">
                     {section.listItems.map((item, i) => (
-                      <li key={i} className="flex items-start gap-3 text-on-surface-variant">
+                      <li key={i} className="flex items-start gap-3 text-on-card-variant">
                         <span className="material-symbols-outlined text-primary text-xl flex-shrink-0">
                           {section.listIcon || "check_circle"}
                         </span>
@@ -140,7 +140,7 @@ export default function ServiceDetailsModal({ isOpen, onClose, onGetStarted, ser
         <div className="p-6 md:p-8 flex-shrink-0 border-t border-white/5 bg-surface-container/50 backdrop-blur-md flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="text-center sm:text-left">
             <h4 className="text-white font-bold text-lg">Ready to elevate your {service.title}?</h4>
-            <p className="text-on-surface-variant text-sm mt-1">Let's discuss how we can achieve your goals.</p>
+            <p className="text-on-card-variant text-sm mt-1">Let's discuss how we can achieve your goals.</p>
           </div>
           <button 
             onClick={() => onGetStarted(service.title)}

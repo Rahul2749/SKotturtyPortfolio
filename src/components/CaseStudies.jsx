@@ -7,7 +7,7 @@ export default function CaseStudies() {
       <div className="max-w-7xl mx-auto px-container-margin relative z-10">
         <div className="case-header mb-16 flex flex-col items-center text-center md:items-start md:text-left">
           <span className="text-primary font-bold tracking-[0.5em] uppercase text-label-sm">Deep Dives</span>
-          <h2 className="font-headline-lg text-[40px] md:text-[64px] text-white mt-2 leading-[1.1]">Project <span className="italic font-light">Strategies</span></h2>
+          <h2 className="font-headline-lg text-[40px] md:text-[64px] text-on-surface mt-2 leading-[1.1]">Project <span className="italic font-light">Strategies</span></h2>
         </div>
         
         {/* BENTO GRID CONTAINER */}
@@ -28,7 +28,7 @@ export default function CaseStudies() {
                   <span className="text-outline text-label-sm font-semibold tracking-wide border border-white/10 px-4 py-1 rounded-full glass">Premium UX</span>
                 </div>
                 <h3 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight max-w-lg">Shape2Real: Immersive Architecture</h3>
-                <p className="text-on-surface-variant leading-relaxed mb-10 text-lg md:text-xl font-light max-w-xl">
+                <p className="text-on-card-variant leading-relaxed mb-10 text-lg md:text-xl font-light max-w-xl">
                   A minimalist architectural portfolio powered by immersive, scroll-driven interactions to bring 3D concepts to life on the web.
                 </p>
               </div>
@@ -64,7 +64,7 @@ export default function CaseStudies() {
             <div className="relative z-10 flex-1 flex flex-col h-full">
               <span className="text-tertiary font-bold text-[10px] tracking-widest uppercase mb-6 inline-block w-fit border border-tertiary/20 bg-tertiary/5 px-4 py-1.5 rounded-full">Brand & Marketing</span>
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">Omnichannel Brand Growth</h3>
-              <p className="text-on-surface-variant leading-relaxed mb-8 text-base font-light">
+              <p className="text-on-card-variant leading-relaxed mb-8 text-base font-light">
                 A comprehensive 360° strategy integrating brand identity, targeted social media ads, and performance marketing.
               </p>
               
@@ -94,7 +94,7 @@ export default function CaseStudies() {
                 <span className="text-secondary font-bold text-[10px] tracking-widest uppercase border border-secondary/20 bg-secondary/5 px-4 py-1.5 rounded-full">E-Commerce</span>
               </div>
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">Adenium Heaven: Botanical Sales</h3>
-              <p className="text-on-surface-variant leading-relaxed mb-8 text-base font-light">
+              <p className="text-on-card-variant leading-relaxed mb-8 text-base font-light">
                 A highly optimized e-commerce experience tailored for rare botanical collections.
               </p>
               
@@ -130,7 +130,7 @@ export default function CaseStudies() {
                   <span className="text-outline text-label-sm font-semibold tracking-wide border border-white/10 px-4 py-1 rounded-full glass">Wealth Management</span>
                 </div>
                 <h3 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight max-w-lg">Future Investment Planner</h3>
-                <p className="text-on-surface-variant leading-relaxed mb-10 text-lg font-light max-w-xl">
+                <p className="text-on-card-variant leading-relaxed mb-10 text-lg font-light max-w-xl">
                   Modernizing wealth management for the next generation with interactive data visualization and gamified financial planning.
                 </p>
               </div>

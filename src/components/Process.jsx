@@ -31,10 +31,10 @@ export default function Process() {
       <div className="max-w-7xl mx-auto">
         <div className="process-header text-center mb-16 md:mb-20">
           <span className="text-primary font-bold tracking-[0.5em] uppercase text-label-sm">Process</span>
-          <h2 className="font-headline-lg text-[32px] md:text-headline-lg text-white mt-4 leading-tight">
+          <h2 className="font-headline-lg text-[32px] md:text-headline-lg text-on-surface mt-4 leading-tight">
             Launch Your <span className="italic font-light text-gradient">Success</span>
           </h2>
-          <p className="text-on-surface-variant mt-4 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
+          <p className="text-on-card-variant mt-4 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
             A streamlined creative and marketing process designed to transform ideas into impactful digital results.
           </p>
         </div>
@@ -45,7 +45,7 @@ export default function Process() {
                 {step.num}
               </span>
               <h3 className="text-white font-bold text-headline-sm mb-4 leading-tight">{step.title}</h3>
-              <p className="text-on-surface-variant text-sm leading-relaxed">{step.desc}</p>
+              <p className="text-on-card-variant text-sm leading-relaxed">{step.desc}</p>
             </div>
           ))}
         </div>

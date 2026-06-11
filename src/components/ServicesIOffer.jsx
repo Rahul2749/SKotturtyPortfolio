@@ -151,10 +151,10 @@ export default function ServicesIOffer() {
         {/* Header */}
         <div className="services-header text-center mb-12 md:mb-16">
           <span className="text-primary font-bold tracking-[0.2em] uppercase text-label-sm">Services I Offer</span>
-          <h2 className="font-headline-lg text-4xl md:text-6xl lg:text-7xl font-black text-white mt-6 mb-6 leading-tight">
+          <h2 className="font-headline-lg text-4xl md:text-6xl lg:text-7xl font-black text-on-surface mt-6 mb-6 leading-tight">
             Services I <span className="text-primary">Offer.</span>
           </h2>
-          <p className="text-outline text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
+          <p className="text-on-surface-variant text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
             From visual branding to performance marketing, I create digital experiences that attract, engage, and convert.
           </p>
         </div>
@@ -171,7 +171,7 @@ export default function ServicesIOffer() {
                 <span className="material-symbols-outlined text-3xl text-primary">{service.icon}</span>
               </div>
               <h3 className="text-2xl font-bold text-white mb-4">{service.title}</h3>
-              <p className="text-outline leading-relaxed flex-grow">{service.desc}</p>
+              <p className="text-on-card-variant leading-relaxed flex-grow">{service.desc}</p>
             </div>
           ))}
         </div>

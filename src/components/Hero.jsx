@@ -15,10 +15,10 @@ export default function Hero() {
             <span className="font-black text-gradient">Kotturty</span>
           </h1>
           <p className="hero-desc font-body-lg text-body-md md:text-body-lg text-on-surface-variant max-w-xl leading-relaxed">
-            Bridging the gap between <span className="text-white font-semibold">human intuition</span> and <span className="text-primary font-semibold">technical precision</span>. Designing digital ecosystems that scale and visual identities that resonate.
+            Bridging the gap between <span className="text-on-surface font-semibold">human intuition</span> and <span className="text-primary font-semibold">technical precision</span>. Designing digital ecosystems that scale and visual identities that resonate.
           </p>
           <div className="hero-buttons flex flex-col md:flex-row gap-3 pt-4 w-full md:w-auto">
-            <a className="w-full md:w-auto md:flex-1 bg-white text-black py-4 md:py-5 px-6 md:px-10 rounded-full text-[14px] md:text-label-lg font-bold shadow-2xl flex items-center justify-center gap-2 hover:translate-y-[-4px] transition-all" href="#works">
+            <a className="w-full md:w-auto md:flex-1 bg-surface-container text-white py-4 md:py-5 px-6 md:px-10 rounded-full text-[14px] md:text-label-lg font-bold shadow-2xl flex items-center justify-center gap-2 hover:translate-y-[-4px] transition-all" href="#works">
               View Portfolio <span className="material-symbols-outlined text-[20px] md:text-[24px]">arrow_outward</span>
             </a>
             <a className="w-full md:w-auto md:flex-1 bg-primary/10 py-4 md:py-5 px-6 md:px-10 rounded-full text-[14px] md:text-label-lg text-primary font-bold hover:bg-primary/20 transition-all border border-primary/30 shadow-[0_0_15px_rgba(165,231,255,0.1)] hover:shadow-[0_0_20px_rgba(165,231,255,0.2)] flex items-center justify-center text-center" href="#services-i-offer">
@@ -27,7 +27,7 @@ export default function Hero() {
           </div>
         </div>
         <div className="hero-portrait md:col-span-4 relative mt-4 md:mt-0 max-w-[220px] sm:max-w-xs mx-auto md:max-w-none">
-          <div className="aspect-[4/5] glass rounded-[3rem] overflow-hidden relative group shadow-2xl border border-white/10">
+          <div className="aspect-[4/5] glass rounded-[3rem] overflow-hidden relative group shadow-2xl border border-on-surface/10">
             <img alt="Sahiti Kotturty portrait" className="w-full h-full object-cover group-hover:scale-105 transition-all duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVKpv9lx7C71-MCDyce9AfUKHjWJJB_Z1qE9IvloUszipwJ9zaEuxSRsTshqHH9q86zBj0jEQ6MhO-Fv6Qs7jSDusYmbuNAnlKbOPW-voDW8M7kDcD5ZZrndJ98nf-5e8JEFcTtpxgl76KY5rvcuLFeN437tput-utx99rau2XBqFoSbBMp-9nA1MdYPJpU1jcPNpdM4qcxdDxfQevh_qBGAHjetPbd4OW9AqvniOoNUfIGbwOCIf5FwmzlQFWNLtNz1hD2D3Gm0L_Odg"/>
             <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-80"></div>
           </div>

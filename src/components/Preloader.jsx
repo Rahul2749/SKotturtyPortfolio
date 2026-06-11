@@ -87,13 +87,13 @@ export default function Preloader({ onComplete }) {
         <img
           src="/skotturty_logo.png"
           alt="SK Logo"
-          className="h-20 md:h-28 mix-blend-screen contrast-200 object-contain drop-shadow-[0_0_30px_rgba(165,231,255,0.4)]"
+          className="h-20 md:h-28 object-contain drop-shadow-[0_10px_20px_rgba(79,140,255,0.3)]"
         />
       </div>
 
       {/* Name */}
       <div ref={textRef} className="mb-8 text-center">
-        <h1 className="text-2xl md:text-3xl font-black tracking-tight text-white">
+        <h1 className="text-2xl md:text-3xl font-black tracking-tight text-on-surface">
           SAHITI<span className="text-primary">.K</span>
         </h1>
         <p className="text-xs md:text-sm text-on-surface-variant tracking-[0.3em] uppercase mt-1 font-body-lg">
@@ -103,13 +103,13 @@ export default function Preloader({ onComplete }) {
 
       {/* Progress bar */}
       <div ref={progressRef} className="w-48 md:w-64 relative">
-        <div className="w-full h-[2px] bg-white/10 rounded-full overflow-hidden">
+        <div className="w-full h-[2px] bg-on-surface/10 rounded-full overflow-hidden">
           <div
             ref={progressBarRef}
             className="h-full rounded-full origin-left"
             style={{
               transform: 'scaleX(0)',
-              background: 'linear-gradient(90deg, #a5e7ff, #ecd4ff)',
+              background: 'linear-gradient(90deg, #4F8CFF, #0055FF)',
             }}
           />
         </div>

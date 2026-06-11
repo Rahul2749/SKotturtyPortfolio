@@ -42,13 +42,13 @@
     font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
   }
   .glass {
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba(26, 26, 26, 0.9);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
   }
   .text-gradient {
-    background: linear-gradient(to right, #a5e7ff, #ecd4ff);
+    background: linear-gradient(to right, #4F8CFF, #0055FF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -60,8 +60,8 @@
   }
   .project-card:hover {
     transform: translateY(-10px) scale(1.02) translateZ(0);
-    border-color: rgba(165, 231, 255, 0.4);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(165, 231, 255, 0.1);
+    border-color: rgba(79, 140, 255, 0.4);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15), 0 0 20px rgba(79, 140, 255, 0.2);
   }
 }
 

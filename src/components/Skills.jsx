@@ -25,7 +25,7 @@ export default function Skills() {
           {/* Header Section */}
           <div className="flex flex-col items-center text-center">
             <span className="text-secondary font-bold tracking-[0.4em] uppercase text-[11px] mb-4 border border-secondary/20 bg-secondary/5 px-4 py-1.5 rounded-full inline-block">Arsenal</span>
-            <h2 className="font-headline-lg text-[40px] md:text-[56px] text-white leading-[1.1] mb-6">
+            <h2 className="font-headline-lg text-[40px] md:text-[56px] text-on-surface leading-[1.1] mb-6">
               The <span className="italic font-light text-gradient">Creative Suite</span>
             </h2>
             <p className="text-on-surface-variant text-base md:text-lg font-light leading-relaxed mb-10 max-w-2xl mx-auto">
@@ -35,7 +35,7 @@ export default function Skills() {
             {/* Tool Pills */}
             <div className="flex flex-wrap gap-3 justify-center max-w-4xl mx-auto">
               {tools.map((tool, idx) => (
-                <div key={idx} className="flex items-center gap-2 px-5 py-2.5 bg-[#131620] border border-white/10 rounded-full text-xs font-semibold text-white/80 hover:text-white hover:border-white/30 hover:bg-white/5 transition-all cursor-default group">
+                <div key={idx} className="flex items-center gap-2 px-5 py-2.5 bg-surface-container border border-on-surface/10 rounded-full text-xs font-semibold text-white/80 hover:text-white hover:border-white/30 hover:bg-white/10 transition-all cursor-default group">
                   <span className="material-symbols-outlined text-[16px] text-white/40 group-hover:text-white transition-colors">{tool.icon}</span>
                   {tool.name}
                 </div>
