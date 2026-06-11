@@ -21,7 +21,7 @@ export default function Hero() {
             <a className="w-full md:w-auto md:flex-1 bg-white text-black py-4 md:py-5 px-6 md:px-10 rounded-full text-[14px] md:text-label-lg font-bold shadow-2xl flex items-center justify-center gap-2 hover:translate-y-[-4px] transition-all" href="#works">
               View Portfolio <span className="material-symbols-outlined text-[20px] md:text-[24px]">arrow_outward</span>
             </a>
-            <a className="w-full md:w-auto md:flex-1 bg-primary/10 py-4 md:py-5 px-6 md:px-10 rounded-full text-[14px] md:text-label-lg text-primary font-bold hover:bg-primary/20 transition-all border border-primary/30 shadow-[0_0_15px_rgba(165,231,255,0.1)] hover:shadow-[0_0_20px_rgba(165,231,255,0.2)] flex items-center justify-center text-center" href="#services">
+            <a className="w-full md:w-auto md:flex-1 bg-primary/10 py-4 md:py-5 px-6 md:px-10 rounded-full text-[14px] md:text-label-lg text-primary font-bold hover:bg-primary/20 transition-all border border-primary/30 shadow-[0_0_15px_rgba(165,231,255,0.1)] hover:shadow-[0_0_20px_rgba(165,231,255,0.2)] flex items-center justify-center text-center" href="#services-i-offer">
               View Services
             </a>
           </div>

@@ -123,7 +123,7 @@ export default function ServiceDetailsModal({ isOpen, onClose, onGetStarted, ser
             {service.explorePortfolio && (
               <div className="flex justify-center mt-10">
                 <a 
-                  href="#portfolio" 
+                  href="#web" 
                   onClick={onClose}
                   className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-white/5 hover:bg-primary/20 border border-white/10 hover:border-primary/50 text-white hover:text-primary transition-all font-bold text-base md:text-lg group"
                 >
