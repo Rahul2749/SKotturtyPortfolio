@@ -30,14 +30,14 @@ export default function Experience() {
         
         <div className="relative">
           {/* Vertical Line */}
-          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-primary/50 via-white/10 to-transparent transform md:-translate-x-1/2"></div>
+          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-primary/50 via-[#d1d9e6] to-transparent transform md:-translate-x-1/2"></div>
           
           <div className="space-y-8 md:space-y-12">
             {experiences.map((exp, index) => (
               <div key={index} className={`experience-card relative flex flex-col md:flex-row items-start md:items-center justify-between gap-8 md:gap-16 w-full ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
                 
                 {/* Timeline Dot */}
-                <div className="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-primary transform -translate-x-[7px] md:-translate-x-1/2 mt-6 md:mt-0 shadow-[0_0_15px_rgba(165,231,255,0.6)] z-10"></div>
+                <div className="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-primary transform -translate-x-[7px] md:-translate-x-1/2 mt-6 md:mt-0 shadow-[0_0_15px_rgba(79,140,255,0.12)] z-10"></div>
                 
                 {/* Content */}
                 <div className="w-full md:w-[45%] pl-12 md:pl-0">
@@ -45,7 +45,7 @@ export default function Experience() {
                     <span className="inline-block px-4 py-1.5 rounded-full bg-on-surface/5 text-primary text-xs font-bold tracking-widest uppercase mb-4 border border-on-surface/10">
                       {exp.year}
                     </span>
-                    <h3 className="text-2xl text-white font-headline-md font-bold mb-1">{exp.role}</h3>
+                    <h3 className="text-2xl text-[#1e293b] font-headline-md font-bold mb-1">{exp.role}</h3>
                     <h4 className="text-on-card-variant font-medium text-sm uppercase tracking-widest mb-4">{exp.company}</h4>
                     <p className="text-body-md text-on-card-variant leading-relaxed opacity-80">
                       {exp.description}

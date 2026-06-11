@@ -35,8 +35,8 @@ export default function Skills() {
             {/* Tool Pills */}
             <div className="flex flex-wrap gap-3 justify-center max-w-4xl mx-auto">
               {tools.map((tool, idx) => (
-                <div key={idx} className="flex items-center gap-2 px-5 py-2.5 bg-surface-container border border-on-surface/10 rounded-full text-xs font-semibold text-white/80 hover:text-white hover:border-white/30 hover:bg-white/10 transition-all cursor-default group">
-                  <span className="material-symbols-outlined text-[16px] text-white/40 group-hover:text-white transition-colors">{tool.icon}</span>
+                <div key={idx} className="flex items-center gap-2 px-5 py-2.5 bg-surface-container border border-on-surface/10 rounded-full text-xs font-semibold text-[#475569] hover:text-[#1e293b] hover:border-[#93c5fd] hover:bg-[#e2e8f0] transition-all cursor-default group">
+                  <span className="material-symbols-outlined text-[16px] text-[#94a3b8] group-hover:text-[#1e293b] transition-colors">{tool.icon}</span>
                   {tool.name}
                 </div>
               ))}

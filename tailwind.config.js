@@ -10,7 +10,7 @@ export default {
       colors: {
         "tertiary": "#80B3FF",
         "outline": "#CCCCCC",
-        "outline-variant": "#333333",
+        "outline-variant": "#CBD5E1",
         "primary": "#4F8CFF",
         "on-primary": "#FFFFFF",
         "on-primary-fixed-variant": "#003380",
@@ -27,8 +27,8 @@ export default {
         "surface-container-high": "#E8E8E8",
         "surface-container-highest": "#E0E0E0",
         "secondary": "#0055FF",
-        "on-card": "#FFFFFF",
-        "on-card-variant": "#BBBBBB"
+        "on-card": "#1e293b",
+        "on-card-variant": "#64748b"
       },
       borderRadius: {
         "DEFAULT": "0.25rem",

@@ -79,28 +79,28 @@ export default function GetStartedModal({ isOpen, onClose, initialService = "" }
       ></div>
 
       {/* Modal */}
-      <div className="relative w-full max-w-md md:max-w-lg bg-[#1a1f2f] rounded-2xl shadow-2xl border border-white/10 flex flex-col max-h-full">
+      <div className="relative w-full max-w-md md:max-w-lg bg-[#ffffff] rounded-2xl shadow-2xl border border-[#d1d9e6] flex flex-col max-h-full">
         
         {/* Fixed Header */}
-        <div className="p-5 md:p-6 pb-3 md:pb-4 flex-shrink-0 relative border-b border-white/5">
+        <div className="p-5 md:p-6 pb-3 md:pb-4 flex-shrink-0 relative border-b border-[#d1d9e6]">
           <button 
             onClick={onClose}
-            className="absolute top-5 md:top-6 right-5 md:right-6 text-on-surface-variant hover:text-white transition-colors bg-white/5 p-1.5 rounded-full hover:bg-white/10 flex items-center justify-center"
+            className="absolute top-5 md:top-6 right-5 md:right-6 text-on-surface-variant hover:text-[#1e293b] transition-colors bg-[#f4f6f9] p-1.5 rounded-full hover:bg-[#e2e8f0] flex items-center justify-center"
           >
             <span className="material-symbols-outlined text-[18px]">close</span>
           </button>
-          <h3 id="modal-title" className="text-xl md:text-2xl font-bold text-white pr-10">Get Started</h3>
+          <h3 id="modal-title" className="text-xl md:text-2xl font-bold text-[#1e293b] pr-10">Get Started</h3>
         </div>
 
         {/* Scrollable Form Body */}
         <div className="p-5 md:p-6 pt-4 overflow-y-auto flex-1 min-h-0">
           <form className="space-y-3.5" onSubmit={handleSubmit}>
             <div className="space-y-1">
-              <label htmlFor="gs-fullname" className="text-[10px] font-bold text-outline uppercase tracking-wider ml-1">Full Name</label>
+              <label htmlFor="gs-fullname" className="text-[10px] font-bold text-[#64748b] uppercase tracking-wider ml-1">Full Name</label>
               <input 
                 id="gs-fullname"
                 type="text" 
-                className="w-full bg-[#25293a] border border-white/5 rounded-lg px-3 py-2.5 text-sm text-white placeholder:text-outline-variant focus:outline-none focus:border-primary/50 transition-colors"
+                className="w-full bg-[#f4f6f9] border border-[#d1d9e6] rounded-lg px-3 py-2.5 text-sm text-[#1e293b] placeholder:text-[#94a3b8] focus:outline-none focus:border-primary/50 transition-colors"
                 required
                 value={formData.fullName}
                 onChange={(e) => setFormData({...formData, fullName: e.target.value})}
@@ -108,11 +108,11 @@ export default function GetStartedModal({ isOpen, onClose, initialService = "" }
             </div>
 
             <div className="space-y-1">
-              <label htmlFor="gs-email" className="text-[10px] font-bold text-outline uppercase tracking-wider ml-1">Email</label>
+              <label htmlFor="gs-email" className="text-[10px] font-bold text-[#64748b] uppercase tracking-wider ml-1">Email</label>
               <input 
                 id="gs-email"
                 type="email" 
-                className="w-full bg-[#25293a] border border-white/5 rounded-lg px-3 py-2.5 text-sm text-white placeholder:text-outline-variant focus:outline-none focus:border-primary/50 transition-colors"
+                className="w-full bg-[#f4f6f9] border border-[#d1d9e6] rounded-lg px-3 py-2.5 text-sm text-[#1e293b] placeholder:text-[#94a3b8] focus:outline-none focus:border-primary/50 transition-colors"
                 required
                 value={formData.email}
                 onChange={(e) => setFormData({...formData, email: e.target.value})}
@@ -120,22 +120,22 @@ export default function GetStartedModal({ isOpen, onClose, initialService = "" }
             </div>
 
             <div className="space-y-1">
-              <label htmlFor="gs-mobile" className="text-[10px] font-bold text-outline uppercase tracking-wider ml-1">Mobile</label>
+              <label htmlFor="gs-mobile" className="text-[10px] font-bold text-[#64748b] uppercase tracking-wider ml-1">Mobile</label>
               <input 
                 id="gs-mobile"
                 type="tel" 
-                className="w-full bg-[#25293a] border border-white/5 rounded-lg px-3 py-2.5 text-sm text-white placeholder:text-outline-variant focus:outline-none focus:border-primary/50 transition-colors"
+                className="w-full bg-[#f4f6f9] border border-[#d1d9e6] rounded-lg px-3 py-2.5 text-sm text-[#1e293b] placeholder:text-[#94a3b8] focus:outline-none focus:border-primary/50 transition-colors"
                 value={formData.mobile}
                 onChange={(e) => setFormData({...formData, mobile: e.target.value})}
               />
             </div>
 
             <div className="space-y-1">
-              <label htmlFor="gs-service" className="text-[10px] font-bold text-outline uppercase tracking-wider ml-1">Service</label>
+              <label htmlFor="gs-service" className="text-[10px] font-bold text-[#64748b] uppercase tracking-wider ml-1">Service</label>
               <div className="relative">
                 <select 
                   id="gs-service"
-                  className="w-full bg-[#25293a] border border-white/5 rounded-lg px-3 py-2.5 text-sm text-white placeholder:text-outline-variant focus:outline-none focus:border-primary/50 transition-colors appearance-none"
+                  className="w-full bg-[#f4f6f9] border border-[#d1d9e6] rounded-lg px-3 py-2.5 text-sm text-[#1e293b] placeholder:text-[#94a3b8] focus:outline-none focus:border-primary/50 transition-colors appearance-none"
                   required
                   value={formData.service}
                   onChange={(e) => setFormData({...formData, service: e.target.value})}
@@ -154,16 +154,16 @@ export default function GetStartedModal({ isOpen, onClose, initialService = "" }
                   <option value="Content Marketing">Content Marketing</option>
                   <option value="Brand Identity & Design">Brand Identity & Design</option>
                 </select>
-                <span className="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[18px]">expand_more</span>
+                <span className="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-[#64748b] pointer-events-none text-[18px]">expand_more</span>
               </div>
             </div>
 
             <div className="space-y-1">
-              <label htmlFor="gs-message" className="text-[10px] font-bold text-outline uppercase tracking-wider ml-1">Message</label>
+              <label htmlFor="gs-message" className="text-[10px] font-bold text-[#64748b] uppercase tracking-wider ml-1">Message</label>
               <textarea 
                 id="gs-message"
                 rows="2"
-                className="w-full bg-[#25293a] border border-white/5 rounded-lg px-3 py-2.5 text-sm text-white placeholder:text-outline-variant focus:outline-none focus:border-primary/50 transition-colors resize-none"
+                className="w-full bg-[#f4f6f9] border border-[#d1d9e6] rounded-lg px-3 py-2.5 text-sm text-[#1e293b] placeholder:text-[#94a3b8] focus:outline-none focus:border-primary/50 transition-colors resize-none"
                 required
                 value={formData.message}
                 onChange={(e) => setFormData({...formData, message: e.target.value})}
@@ -178,7 +178,7 @@ export default function GetStartedModal({ isOpen, onClose, initialService = "" }
                   ? "bg-green-500 text-white" 
                   : status === "error" 
                   ? "bg-red-500/80 text-white" 
-                  : "bg-primary text-white hover:scale-[1.02] shadow-[0_0_15px_rgba(165,231,255,0.15)]"
+                  : "bg-primary text-white hover:scale-[1.02] shadow-[0_0_15px_rgba(79,140,255,0.15)]"
               } ${status === "loading" ? "opacity-70 cursor-not-allowed" : ""}`}
             >
               {status === "loading" && (

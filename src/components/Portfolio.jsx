@@ -123,7 +123,7 @@ export default function Portfolio() {
               <div className="bg-surface-container rounded-[2.4rem] aspect-video md:aspect-auto md:h-[340px] flex flex-col items-center justify-center relative overflow-hidden group">
                 <img alt="UI/UX Design 1" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-110 transition-transform duration-1000" src="/uiux_1.jpeg" loading="lazy"/>
                 <div className="z-10 text-center p-6 bg-background/50 backdrop-blur-sm rounded-2xl m-4 mt-auto w-11/12 border border-on-surface/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <h4 className="text-white font-bold text-headline-sm">FinTech Mobile App</h4>
+                  <h4 className="text-[#1e293b] font-bold text-headline-sm">FinTech Mobile App</h4>
                   <p className="text-on-card-variant mt-1 text-xs">Modern banking dashboard and user flows.</p>
                 </div>
               </div>
@@ -132,7 +132,7 @@ export default function Portfolio() {
               <div className="bg-surface-container rounded-[2.4rem] aspect-video md:aspect-auto md:h-[340px] flex flex-col items-center justify-center relative overflow-hidden group">
                 <img alt="UI/UX Design 2" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-110 transition-transform duration-1000" src="/uiux_2.jpeg" loading="lazy"/>
                 <div className="z-10 text-center p-6 bg-background/50 backdrop-blur-sm rounded-2xl m-4 mt-auto w-11/12 border border-on-surface/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <h4 className="text-white font-bold text-headline-sm">Crypto Platform UI</h4>
+                  <h4 className="text-[#1e293b] font-bold text-headline-sm">Crypto Platform UI</h4>
                   <p className="text-on-card-variant mt-1 text-xs">Modern Web3 website and app design.</p>
                 </div>
               </div>
@@ -150,11 +150,11 @@ export default function Portfolio() {
               <iframe src="https://shape2-real-web.vercel.app/" title="Shape2Real" loading="lazy" className="w-[200%] h-[200%] absolute top-0 left-0 origin-top-left scale-50 pointer-events-none border-none bg-white"></iframe>
             </div>
             <div className="p-8">
-              <h4 className="text-white font-bold text-headline-md mb-2">Shape2Real</h4>
+              <h4 className="text-[#1e293b] font-bold text-headline-md mb-2">Shape2Real</h4>
               <p className="text-on-card-variant text-body-sm mb-4">A minimalist architectural portfolio with scroll-driven interactions.</p>
               <div className="flex justify-between items-center mt-auto">
                 <span className="text-secondary font-bold text-label-sm uppercase">Premium UX</span>
-                <a href="https://shape2-real-web.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-white text-xs px-4 py-2 border border-white/20 rounded-full hover:bg-white/10 transition-colors cursor-pointer">Live Website</a>
+                <a href="https://shape2-real-web.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-[#1e293b] text-xs px-4 py-2 border border-[#d1d9e6] rounded-full hover:bg-[#e2e8f0] transition-colors cursor-pointer">Live Website</a>
               </div>
             </div>
           </div>
@@ -164,11 +164,11 @@ export default function Portfolio() {
               <iframe src="https://adeniumheaven.in/" title="Adenium Heaven" loading="lazy" className="w-[200%] h-[200%] absolute top-0 left-0 origin-top-left scale-50 pointer-events-none border-none bg-white"></iframe>
             </div>
             <div className="p-8">
-              <h4 className="text-white font-bold text-headline-md mb-2">Adenium Heaven</h4>
+              <h4 className="text-[#1e293b] font-bold text-headline-md mb-2">Adenium Heaven</h4>
               <p className="text-on-card-variant text-body-sm mb-4">E-commerce experience for rare botanical collections.</p>
               <div className="flex justify-between items-center mt-auto">
                 <span className="text-tertiary font-bold text-label-sm uppercase">Botanical Store</span>
-                <a href="https://adeniumheaven.in/" target="_blank" rel="noopener noreferrer" className="text-white text-xs px-4 py-2 border border-white/20 rounded-full hover:bg-white/10 transition-colors cursor-pointer">Live Website</a>
+                <a href="https://adeniumheaven.in/" target="_blank" rel="noopener noreferrer" className="text-[#1e293b] text-xs px-4 py-2 border border-[#d1d9e6] rounded-full hover:bg-[#e2e8f0] transition-colors cursor-pointer">Live Website</a>
               </div>
             </div>
           </div>
@@ -178,11 +178,11 @@ export default function Portfolio() {
               <iframe src="https://future-investment-planner-iink.vercel.app/" title="Future Investment Planner" loading="lazy" className="w-[200%] h-[200%] absolute top-0 left-0 origin-top-left scale-50 pointer-events-none border-none bg-white"></iframe>
             </div>
             <div className="p-8">
-              <h4 className="text-white font-bold text-headline-md mb-2">Future Investment Planner</h4>
+              <h4 className="text-[#1e293b] font-bold text-headline-md mb-2">Future Investment Planner</h4>
               <p className="text-on-card-variant text-body-sm mb-4">Goal: Modernize wealth management for Gen Z with interactive data viz.</p>
               <div className="flex justify-between items-center mt-auto">
                 <span className="text-primary font-bold text-label-sm uppercase">Desktop/Mobile</span>
-                <a href="https://future-investment-planner-iink.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-white text-xs px-4 py-2 border border-white/20 rounded-full hover:bg-white/10 transition-colors cursor-pointer">Live Website</a>
+                <a href="https://future-investment-planner-iink.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-[#1e293b] text-xs px-4 py-2 border border-[#d1d9e6] rounded-full hover:bg-[#e2e8f0] transition-colors cursor-pointer">Live Website</a>
               </div>
             </div>
           </div>
@@ -215,7 +215,7 @@ export default function Portfolio() {
           <div className="portfolio-section scroll-mt-48" id="brochure">
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 px-2 gap-4">
               <h3 className="text-headline-lg font-display-md text-on-surface">Brochure Design</h3>
-              <a href="/colorful_jewelry_catalog_brochure.pdf" target="_blank" rel="noopener noreferrer" className="bg-primary text-white px-6 py-3 rounded-full text-sm font-bold hover:scale-105 transition-transform flex items-center gap-2 shadow-[0_0_20px_rgba(165,231,255,0.3)] project-card">
+              <a href="/colorful_jewelry_catalog_brochure.pdf" target="_blank" rel="noopener noreferrer" className="bg-primary text-white px-6 py-3 rounded-full text-sm font-bold hover:scale-105 transition-transform flex items-center gap-2 shadow-[0_4px_16px_rgba(79,140,255,0.12)] project-card">
                 View PDF Catalog <span className="material-symbols-outlined text-lg">picture_as_pdf</span>
               </a>
             </div>
@@ -290,7 +290,7 @@ export default function Portfolio() {
               <div className="bg-surface-container rounded-[2.4rem] aspect-video md:aspect-auto md:h-[340px] flex flex-col items-center justify-center relative overflow-hidden group">
                 <img alt="Kids Animation" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-110 transition-transform duration-1000" src="/animation_2.webp" loading="lazy"/>
                 <div className="z-10 text-center p-6 bg-background/50 backdrop-blur-sm rounded-2xl m-4 mt-auto w-11/12 border border-on-surface/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <h4 className="text-white font-bold text-headline-sm">Kids Animation</h4>
+                  <h4 className="text-[#1e293b] font-bold text-headline-sm">Kids Animation</h4>
                   <p className="text-on-card-variant mt-1 text-xs">Vibrant environments and character storytelling.</p>
                 </div>
               </div>
@@ -299,7 +299,7 @@ export default function Portfolio() {
               <div className="bg-surface-container rounded-[2.4rem] aspect-video md:aspect-auto md:h-[340px] flex flex-col items-center justify-center relative overflow-hidden group">
                 <img alt="Character Animation" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-110 transition-transform duration-1000" src="/animation_1.webp" loading="lazy"/>
                 <div className="z-10 text-center p-6 bg-background/50 backdrop-blur-sm rounded-2xl m-4 mt-auto w-11/12 border border-on-surface/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <h4 className="text-white font-bold text-headline-sm">Character Animation</h4>
+                  <h4 className="text-[#1e293b] font-bold text-headline-sm">Character Animation</h4>
                   <p className="text-on-card-variant mt-1 text-xs">Classic cartoon recreations and concept art.</p>
                 </div>
               </div>
@@ -315,7 +315,7 @@ export default function Portfolio() {
               <div className="bg-surface-container rounded-[2.4rem] aspect-video md:aspect-auto md:h-[340px] flex flex-col items-center justify-center relative overflow-hidden group">
                 <img alt="Business Card Mockups" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-110 transition-transform duration-1000" src="/branding_mockup.webp" loading="lazy"/>
                 <div className="z-10 text-center p-6 bg-background/50 backdrop-blur-sm rounded-2xl m-4 mt-auto w-11/12 border border-on-surface/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <h4 className="text-white font-bold text-headline-sm">Business Card Designs</h4>
+                  <h4 className="text-[#1e293b] font-bold text-headline-sm">Business Card Designs</h4>
                   <p className="text-on-card-variant mt-1 text-xs">Print media and brand identity mockups.</p>
                 </div>
               </div>
@@ -324,7 +324,7 @@ export default function Portfolio() {
               <div className="bg-surface-container rounded-[2.4rem] aspect-video md:aspect-auto md:h-[340px] flex flex-col items-center justify-center relative overflow-hidden group">
                 <img alt="Lumina Branding Design" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-110 transition-transform duration-1000" src="/branding_lumina.jpeg" loading="lazy"/>
                 <div className="z-10 text-center p-6 bg-background/50 backdrop-blur-sm rounded-2xl m-4 mt-auto w-11/12 border border-on-surface/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <h4 className="text-white font-bold text-headline-sm">Lumina Creative</h4>
+                  <h4 className="text-[#1e293b] font-bold text-headline-sm">Lumina Creative</h4>
                   <p className="text-on-card-variant mt-1 text-xs">Complete brand identity and visual language.</p>
                 </div>
               </div>
@@ -337,15 +337,15 @@ export default function Portfolio() {
             <h3 className="text-headline-lg font-display-md text-on-surface mb-6 px-2">Marketing</h3>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
             <div className="lg:col-span-5 glass rounded-[2.5rem] p-8 space-y-6 project-card">
-              <h4 className="text-headline-md text-white">Campaign Analytics</h4>
+              <h4 className="text-headline-md text-[#1e293b]">Campaign Analytics</h4>
               <div className="space-y-4">
                 <div className="space-y-2">
                   <div className="flex justify-between items-end">
                     <span className="text-label-sm text-outline uppercase">Instagram Engagement</span>
                     <span className="text-primary font-bold">+65%</span>
                   </div>
-                  <div className="w-full h-2 bg-white/5 rounded-full overflow-hidden">
-                    <div className="w-[65%] h-full bg-primary shadow-[0_0_15px_#a5e7ff]"></div>
+                  <div className="w-full h-2 bg-[#e2e8f0] rounded-full overflow-hidden">
+                    <div className="w-[65%] h-full bg-primary shadow-[0_4px_16px_rgba(79,140,255,0.12)]"></div>
                   </div>
                 </div>
                 <div className="space-y-2">
@@ -353,18 +353,18 @@ export default function Portfolio() {
                     <span className="text-label-sm text-outline uppercase">ROI for Ad Creatives</span>
                     <span className="text-secondary font-bold">3.5x</span>
                   </div>
-                  <div className="w-full h-2 bg-white/5 rounded-full overflow-hidden">
-                    <div className="w-[42%] h-full bg-secondary shadow-[0_0_15px_#ffb3ae]"></div>
+                  <div className="w-full h-2 bg-[#e2e8f0] rounded-full overflow-hidden">
+                    <div className="w-[42%] h-full bg-secondary shadow-[0_4px_16px_rgba(255,100,100,0.12)]"></div>
                   </div>
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-4 pt-2">
-                <div className="bg-white/5 p-4 rounded-2xl text-center">
-                  <span className="text-xl font-bold text-white">12k+</span>
+                <div className="bg-[#e2e8f0] p-4 rounded-2xl text-center">
+                  <span className="text-xl font-bold text-[#1e293b]">12k+</span>
                   <p className="text-[10px] text-outline uppercase mt-1">Leads</p>
                 </div>
-                <div className="bg-white/5 p-4 rounded-2xl text-center">
-                  <span className="text-xl font-bold text-white">400%</span>
+                <div className="bg-[#e2e8f0] p-4 rounded-2xl text-center">
+                  <span className="text-xl font-bold text-[#1e293b]">400%</span>
                   <p className="text-[10px] text-outline uppercase mt-1">Traffic</p>
                 </div>
               </div>
@@ -374,7 +374,7 @@ export default function Portfolio() {
                 <img src="/marketing_mockup.webp" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-105 transition-all duration-700" alt="Social Media Ad Creatives" loading="lazy" />
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent opacity-90"></div>
                 <div className="absolute bottom-0 left-0 p-8 w-full z-10">
-                  <h4 className="text-white font-bold text-headline-sm mb-2">Social Media Ad Creatives</h4>
+                  <h4 className="text-[#1e293b] font-bold text-headline-sm mb-2">Social Media Ad Creatives</h4>
                   <p className="text-on-card-variant text-sm">High-converting product and lifestyle campaigns.</p>
                 </div>
               </div>
@@ -392,7 +392,7 @@ export default function Portfolio() {
               <div className="glass rounded-[2.5rem] p-4 flex items-center justify-center project-card bg-white overflow-hidden">
                 <img alt="Grow Your Business Meta Ads Graphic" className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500 rounded-[1.5rem] shadow-xl" src="/social_2.webp" loading="lazy"/>
               </div>
-              <div className="glass rounded-[2.5rem] p-4 flex items-center justify-center project-card bg-[#0f172a] overflow-hidden">
+              <div className="glass rounded-[2.5rem] p-4 flex items-center justify-center project-card bg-[#f4f6f9] overflow-hidden">
                 <img alt="Website Services Digital Ad" className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500 rounded-[1.5rem] shadow-xl" src="/social_3.webp" loading="lazy"/>
               </div>
             </div>
@@ -405,7 +405,7 @@ export default function Portfolio() {
               <div className="bg-surface-container rounded-[2.4rem] aspect-video flex flex-col items-center justify-center relative overflow-hidden group">
                 <img alt="Fantasy Landscape Matte Painting" className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-105 transition-transform duration-1000" src="/matte_painting.webp" loading="lazy"/>
                 <div className="z-10 text-center p-8 bg-background/50 backdrop-blur-sm rounded-2xl m-4 md:m-8 mt-auto w-11/12 md:w-3/4 border border-on-surface/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <h4 className="text-white font-bold text-headline-sm mb-2">Fantasy Landscape</h4>
+                  <h4 className="text-[#1e293b] font-bold text-headline-sm mb-2">Fantasy Landscape</h4>
                   <p className="text-on-card-variant text-sm">Digital matte painting, photo manipulation, and compositing.</p>
                 </div>
               </div>
