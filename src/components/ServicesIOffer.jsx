@@ -152,7 +152,7 @@ export default function ServicesIOffer() {
   };
 
   return (
-    <section className="py-section-gap bg-[#f8f9fb]" id="services-i-offer">
+    <section className="py-section-gap bg-[#edf0f6]" id="services-i-offer">
       <div className="max-w-7xl mx-auto px-container-margin">
         {/* Header */}
         <div className="services-header text-center mb-12 md:mb-16">
@@ -171,14 +171,14 @@ export default function ServicesIOffer() {
             <div 
               key={idx} 
               onClick={() => handleCardClick(service.title)}
-              className="service-card bg-[#f4f6f9] p-8 md:p-10 rounded-[2rem] project-card relative overflow-hidden group flex flex-col h-full border border-[#d1d9e6] hover:border-[#3b82f6] transition-all hover:shadow-[0_4px_24px_rgba(59,130,246,0.08)] cursor-pointer"
+              className="service-card bg-[#eaeff5] p-8 md:p-10 rounded-[2rem] project-card relative overflow-hidden group flex flex-col h-full border border-[#c4cdd9] hover:border-[#3b82f6] transition-all hover:shadow-[0_4px_24px_rgba(59,130,246,0.08)] cursor-pointer"
             >
-              <div className="w-16 h-16 rounded-2xl bg-[#dbeafe] flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500">
+              <div className="w-16 h-16 rounded-2xl bg-[#c7d7f2] flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500">
                 <span className="material-symbols-outlined text-3xl text-[#3b82f6]">{service.icon}</span>
               </div>
               <h3 className="text-2xl font-bold text-[#0f172a] mb-4">{service.title}</h3>
               <p className="text-[#64748b] leading-relaxed flex-grow">{service.desc}</p>
-              <span className="inline-block mt-4 text-[11px] font-medium tracking-[0.05em] text-[#3b82f6] bg-[#dbeafe] px-3 py-1 rounded-full self-start">{service.tag}</span>
+              <span className="inline-block mt-4 text-[11px] font-medium tracking-[0.05em] text-[#3b82f6] bg-[#c7d7f2] px-3 py-1 rounded-full self-start">{service.tag}</span>
             </div>
           ))}
         </div>

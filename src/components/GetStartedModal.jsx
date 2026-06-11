@@ -79,13 +79,13 @@ export default function GetStartedModal({ isOpen, onClose, initialService = "" }
       ></div>
 
       {/* Modal */}
-      <div className="relative w-full max-w-md md:max-w-lg bg-[#ffffff] rounded-2xl shadow-2xl border border-[#d1d9e6] flex flex-col max-h-full">
+      <div className="relative w-full max-w-md md:max-w-lg bg-[#ffffff] rounded-2xl shadow-2xl border border-[#c4cdd9] flex flex-col max-h-full">
         
         {/* Fixed Header */}
-        <div className="p-5 md:p-6 pb-3 md:pb-4 flex-shrink-0 relative border-b border-[#d1d9e6]">
+        <div className="p-5 md:p-6 pb-3 md:pb-4 flex-shrink-0 relative border-b border-[#c4cdd9]">
           <button 
             onClick={onClose}
-            className="absolute top-5 md:top-6 right-5 md:right-6 text-on-surface-variant hover:text-[#1e293b] transition-colors bg-[#f4f6f9] p-1.5 rounded-full hover:bg-[#e2e8f0] flex items-center justify-center"
+            className="absolute top-5 md:top-6 right-5 md:right-6 text-on-surface-variant hover:text-[#1e293b] transition-colors bg-[#eaeff5] p-1.5 rounded-full hover:bg-[#d5dce6] flex items-center justify-center"
           >
             <span className="material-symbols-outlined text-[18px]">close</span>
           </button>
@@ -100,7 +100,7 @@ export default function GetStartedModal({ isOpen, onClose, initialService = "" }
               <input 
                 id="gs-fullname"
                 type="text" 
-                className="w-full bg-[#f4f6f9] border border-[#d1d9e6] rounded-lg px-3 py-2.5 text-sm text-[#1e293b] placeholder:text-[#94a3b8] focus:outline-none focus:border-primary/50 transition-colors"
+                className="w-full bg-[#eaeff5] border border-[#c4cdd9] rounded-lg px-3 py-2.5 text-sm text-[#1e293b] placeholder:text-[#94a3b8] focus:outline-none focus:border-primary/50 transition-colors"
                 required
                 value={formData.fullName}
                 onChange={(e) => setFormData({...formData, fullName: e.target.value})}
@@ -112,7 +112,7 @@ export default function GetStartedModal({ isOpen, onClose, initialService = "" }
               <input 
                 id="gs-email"
                 type="email" 
-                className="w-full bg-[#f4f6f9] border border-[#d1d9e6] rounded-lg px-3 py-2.5 text-sm text-[#1e293b] placeholder:text-[#94a3b8] focus:outline-none focus:border-primary/50 transition-colors"
+                className="w-full bg-[#eaeff5] border border-[#c4cdd9] rounded-lg px-3 py-2.5 text-sm text-[#1e293b] placeholder:text-[#94a3b8] focus:outline-none focus:border-primary/50 transition-colors"
                 required
                 value={formData.email}
                 onChange={(e) => setFormData({...formData, email: e.target.value})}
@@ -124,7 +124,7 @@ export default function GetStartedModal({ isOpen, onClose, initialService = "" }
               <input 
                 id="gs-mobile"
                 type="tel" 
-                className="w-full bg-[#f4f6f9] border border-[#d1d9e6] rounded-lg px-3 py-2.5 text-sm text-[#1e293b] placeholder:text-[#94a3b8] focus:outline-none focus:border-primary/50 transition-colors"
+                className="w-full bg-[#eaeff5] border border-[#c4cdd9] rounded-lg px-3 py-2.5 text-sm text-[#1e293b] placeholder:text-[#94a3b8] focus:outline-none focus:border-primary/50 transition-colors"
                 value={formData.mobile}
                 onChange={(e) => setFormData({...formData, mobile: e.target.value})}
               />
@@ -135,7 +135,7 @@ export default function GetStartedModal({ isOpen, onClose, initialService = "" }
               <div className="relative">
                 <select 
                   id="gs-service"
-                  className="w-full bg-[#f4f6f9] border border-[#d1d9e6] rounded-lg px-3 py-2.5 text-sm text-[#1e293b] placeholder:text-[#94a3b8] focus:outline-none focus:border-primary/50 transition-colors appearance-none"
+                  className="w-full bg-[#eaeff5] border border-[#c4cdd9] rounded-lg px-3 py-2.5 text-sm text-[#1e293b] placeholder:text-[#94a3b8] focus:outline-none focus:border-primary/50 transition-colors appearance-none"
                   required
                   value={formData.service}
                   onChange={(e) => setFormData({...formData, service: e.target.value})}
@@ -163,7 +163,7 @@ export default function GetStartedModal({ isOpen, onClose, initialService = "" }
               <textarea 
                 id="gs-message"
                 rows="2"
-                className="w-full bg-[#f4f6f9] border border-[#d1d9e6] rounded-lg px-3 py-2.5 text-sm text-[#1e293b] placeholder:text-[#94a3b8] focus:outline-none focus:border-primary/50 transition-colors resize-none"
+                className="w-full bg-[#eaeff5] border border-[#c4cdd9] rounded-lg px-3 py-2.5 text-sm text-[#1e293b] placeholder:text-[#94a3b8] focus:outline-none focus:border-primary/50 transition-colors resize-none"
                 required
                 value={formData.message}
                 onChange={(e) => setFormData({...formData, message: e.target.value})}

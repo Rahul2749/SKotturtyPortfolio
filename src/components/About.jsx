@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section className="py-section-gap px-container-margin" id="about">
+    <section className="py-section-gap px-container-margin bg-[#edf0f6]" id="about">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
           <div className="space-y-6">

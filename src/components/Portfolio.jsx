@@ -67,7 +67,7 @@ export default function Portfolio() {
   }, []);
 
   return (
-    <section className="py-section-gap px-container-margin relative" id="works">
+    <section className="bg-[#edf0f6] py-section-gap px-container-margin relative" id="works">
       <div className="max-w-7xl mx-auto">
         <div className="sticky top-[72px] md:top-[80px] z-30 bg-background/80 backdrop-blur-xl py-4 md:py-6 px-6 md:px-8 mb-16 flex flex-col xl:flex-row justify-between items-start xl:items-center gap-6 border border-on-surface/10 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)] rounded-[2rem] mt-8 w-full">
           <div className="portfolio-header">
@@ -154,7 +154,7 @@ export default function Portfolio() {
               <p className="text-on-card-variant text-body-sm mb-4">A minimalist architectural portfolio with scroll-driven interactions.</p>
               <div className="flex justify-between items-center mt-auto">
                 <span className="text-secondary font-bold text-label-sm uppercase">Premium UX</span>
-                <a href="https://shape2-real-web.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-[#1e293b] text-xs px-4 py-2 border border-[#d1d9e6] rounded-full hover:bg-[#e2e8f0] transition-colors cursor-pointer">Live Website</a>
+                <a href="https://shape2-real-web.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-[#1e293b] text-xs px-4 py-2 border border-[#c4cdd9] rounded-full hover:bg-[#d5dce6] transition-colors cursor-pointer">Live Website</a>
               </div>
             </div>
           </div>
@@ -168,7 +168,7 @@ export default function Portfolio() {
               <p className="text-on-card-variant text-body-sm mb-4">E-commerce experience for rare botanical collections.</p>
               <div className="flex justify-between items-center mt-auto">
                 <span className="text-tertiary font-bold text-label-sm uppercase">Botanical Store</span>
-                <a href="https://adeniumheaven.in/" target="_blank" rel="noopener noreferrer" className="text-[#1e293b] text-xs px-4 py-2 border border-[#d1d9e6] rounded-full hover:bg-[#e2e8f0] transition-colors cursor-pointer">Live Website</a>
+                <a href="https://adeniumheaven.in/" target="_blank" rel="noopener noreferrer" className="text-[#1e293b] text-xs px-4 py-2 border border-[#c4cdd9] rounded-full hover:bg-[#d5dce6] transition-colors cursor-pointer">Live Website</a>
               </div>
             </div>
           </div>
@@ -182,7 +182,7 @@ export default function Portfolio() {
               <p className="text-on-card-variant text-body-sm mb-4">Goal: Modernize wealth management for Gen Z with interactive data viz.</p>
               <div className="flex justify-between items-center mt-auto">
                 <span className="text-primary font-bold text-label-sm uppercase">Desktop/Mobile</span>
-                <a href="https://future-investment-planner-iink.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-[#1e293b] text-xs px-4 py-2 border border-[#d1d9e6] rounded-full hover:bg-[#e2e8f0] transition-colors cursor-pointer">Live Website</a>
+                <a href="https://future-investment-planner-iink.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-[#1e293b] text-xs px-4 py-2 border border-[#c4cdd9] rounded-full hover:bg-[#d5dce6] transition-colors cursor-pointer">Live Website</a>
               </div>
             </div>
           </div>
@@ -344,7 +344,7 @@ export default function Portfolio() {
                     <span className="text-label-sm text-outline uppercase">Instagram Engagement</span>
                     <span className="text-primary font-bold">+65%</span>
                   </div>
-                  <div className="w-full h-2 bg-[#e2e8f0] rounded-full overflow-hidden">
+                  <div className="w-full h-2 bg-[#d5dce6] rounded-full overflow-hidden">
                     <div className="w-[65%] h-full bg-primary shadow-[0_4px_16px_rgba(79,140,255,0.12)]"></div>
                   </div>
                 </div>
@@ -353,17 +353,17 @@ export default function Portfolio() {
                     <span className="text-label-sm text-outline uppercase">ROI for Ad Creatives</span>
                     <span className="text-secondary font-bold">3.5x</span>
                   </div>
-                  <div className="w-full h-2 bg-[#e2e8f0] rounded-full overflow-hidden">
+                  <div className="w-full h-2 bg-[#d5dce6] rounded-full overflow-hidden">
                     <div className="w-[42%] h-full bg-secondary shadow-[0_4px_16px_rgba(255,100,100,0.12)]"></div>
                   </div>
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-4 pt-2">
-                <div className="bg-[#e2e8f0] p-4 rounded-2xl text-center">
+                <div className="bg-[#d5dce6] p-4 rounded-2xl text-center">
                   <span className="text-xl font-bold text-[#1e293b]">12k+</span>
                   <p className="text-[10px] text-outline uppercase mt-1">Leads</p>
                 </div>
-                <div className="bg-[#e2e8f0] p-4 rounded-2xl text-center">
+                <div className="bg-[#d5dce6] p-4 rounded-2xl text-center">
                   <span className="text-xl font-bold text-[#1e293b]">400%</span>
                   <p className="text-[10px] text-outline uppercase mt-1">Traffic</p>
                 </div>
@@ -392,7 +392,7 @@ export default function Portfolio() {
               <div className="glass rounded-[2.5rem] p-4 flex items-center justify-center project-card bg-white overflow-hidden">
                 <img alt="Grow Your Business Meta Ads Graphic" className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500 rounded-[1.5rem] shadow-xl" src="/social_2.webp" loading="lazy"/>
               </div>
-              <div className="glass rounded-[2.5rem] p-4 flex items-center justify-center project-card bg-[#f4f6f9] overflow-hidden">
+              <div className="glass rounded-[2.5rem] p-4 flex items-center justify-center project-card bg-[#eaeff5] overflow-hidden">
                 <img alt="Website Services Digital Ad" className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500 rounded-[1.5rem] shadow-xl" src="/social_3.webp" loading="lazy"/>
               </div>
             </div>

@@ -21,7 +21,7 @@ export default function Experience() {
   ];
 
   return (
-    <section className="py-section-gap px-container-margin" id="experience">
+    <section className="py-section-gap px-container-margin bg-[#f8f9fb]" id="experience">
       <div className="max-w-5xl mx-auto">
         <div className="experience-header text-center mb-12 md:mb-16">
           <span className="text-primary font-bold tracking-[0.5em] uppercase text-label-sm">My Journey</span>

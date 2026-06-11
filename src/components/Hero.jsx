@@ -6,14 +6,22 @@ export default function Hero() {
       <HeroBackground3D />
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
         <div className="md:col-span-8 space-y-8">
-          <div className="hero-badge flex items-center gap-2 md:gap-4">
-            <span className="w-8 md:w-12 h-px bg-primary"></span>
-            <span className="font-label-lg text-[10px] md:text-label-lg text-primary tracking-[0.2em] md:tracking-[0.4em] uppercase">Multidisciplinary Designer & Artist</span>
+          <div className="flex flex-col gap-3 mb-6 mt-4">
+            <div className="flex items-center gap-2 md:gap-4">
+              <span className="w-8 md:w-12 h-px bg-[#4F8CFF]"></span>
+              <span className="font-label-lg text-[10px] md:text-label-lg text-[#4F8CFF] tracking-[0.2em] md:tracking-[0.4em] uppercase font-bold">Multidisciplinary Designer</span>
+            </div>
           </div>
-          <h1 className="hero-title font-display-lg text-[42px] sm:text-display-lg md:text-[110px] leading-[0.9] tracking-tighter">
-            <span className="font-light italic text-on-surface-variant opacity-50">Sahiti</span><br/>
-            <span className="font-black text-gradient">Kotturty</span>
-          </h1>
+          
+          <div className="relative">
+            {/* Oversized Lettermark */}
+            <span className="absolute -z-10 text-[200px] md:text-[300px] font-display-lg text-[#4F8CFF]/10 select-none top-[-80px] md:top-[-120px] left-[-10px] md:left-[-20px] leading-none pointer-events-none">K</span>
+            
+            <h1 className="hero-title font-display-lg flex flex-col tracking-tighter">
+              <span className="font-serif italic font-medium tracking-normal text-[40px] sm:text-[55px] md:text-[75px] lg:text-[90px] text-[#1e3a8a] leading-[1] ml-1 md:ml-2 mb-0 md:mb-[-10px]">Sahiti</span>
+              <span className="font-black text-[55px] sm:text-[75px] md:text-[100px] lg:text-[120px] leading-[0.9] bg-gradient-to-r from-[#4F8CFF] via-[#4F8CFF] to-[#28467a] text-transparent bg-clip-text pb-2 pr-4">Kotturty</span>
+            </h1>
+          </div>
           <p className="hero-desc font-body-lg text-body-md md:text-body-lg text-on-surface-variant max-w-xl leading-relaxed">
             Bridging the gap between <span className="text-on-surface font-semibold">human intuition</span> and <span className="text-primary font-semibold">technical precision</span>. Designing digital ecosystems that scale and visual identities that resonate.
           </p>
@@ -28,7 +36,7 @@ export default function Hero() {
         </div>
         <div className="hero-portrait md:col-span-4 relative mt-4 md:mt-0 max-w-[220px] sm:max-w-xs mx-auto md:max-w-none">
           <div className="aspect-[4/5] glass rounded-[3rem] overflow-hidden relative group shadow-2xl border border-on-surface/10">
-            <img alt="Sahiti Kotturty portrait" className="w-full h-full object-cover group-hover:scale-105 transition-all duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVKpv9lx7C71-MCDyce9AfUKHjWJJB_Z1qE9IvloUszipwJ9zaEuxSRsTshqHH9q86zBj0jEQ6MhO-Fv6Qs7jSDusYmbuNAnlKbOPW-voDW8M7kDcD5ZZrndJ98nf-5e8JEFcTtpxgl76KY5rvcuLFeN437tput-utx99rau2XBqFoSbBMp-9nA1MdYPJpU1jcPNpdM4qcxdDxfQevh_qBGAHjetPbd4OW9AqvniOoNUfIGbwOCIf5FwmzlQFWNLtNz1hD2D3Gm0L_Odg"/>
+            <img alt="Sahiti Kotturty portrait" className="w-full h-full object-cover group-hover:scale-105 transition-all duration-1000" src="/sahiti-portrait.jpeg"/>
             <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-80"></div>
           </div>
         </div>

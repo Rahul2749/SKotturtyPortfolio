@@ -27,7 +27,7 @@ export default function Faq() {
   };
 
   return (
-    <section className="py-section-gap px-container-margin" id="faq">
+    <section className="py-section-gap px-container-margin bg-[#f8f9fb]" id="faq">
       <div className="max-w-4xl mx-auto">
         <div className="faq-header text-center mb-16">
           <span className="text-primary font-bold tracking-[0.5em] uppercase text-label-sm">Got Questions?</span>

@@ -75,7 +75,7 @@ export default function Preloader({ onComplete }) {
   return (
     <div
       ref={preloaderRef}
-      className="fixed inset-0 z-[200] flex flex-col items-center justify-center bg-background"
+      className="fixed inset-0 z-[200] flex flex-col items-center justify-center bg-[#e4e8ef]"
       style={{ clipPath: 'circle(150% at 50% 50%)' }}
     >
       {/* Ambient glow blobs */}

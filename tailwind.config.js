@@ -9,7 +9,7 @@ export default {
     extend: {
       colors: {
         "tertiary": "#80B3FF",
-        "outline": "#CCCCCC",
+        "outline": "#94a3b8",
         "outline-variant": "#CBD5E1",
         "primary": "#4F8CFF",
         "on-primary": "#FFFFFF",
@@ -55,7 +55,8 @@ export default {
         "display-md": ["Syne"],
         "body-sm": ["Hanken Grotesk"],
         "body": ["Hanken Grotesk"],
-        "display": ["Syne"]
+        "display": ["Syne"],
+        "serif": ["Playfair Display", "serif"]
       },
       fontSize: {
         "display-lg": ["72px", {"lineHeight": "1.2", "letterSpacing": "-0.04em", "fontWeight": "800"}],

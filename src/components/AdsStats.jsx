@@ -63,7 +63,7 @@ export default function AdsStats() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="min-h-[90vh] flex flex-col justify-center py-16 md:py-20 px-6 md:px-12 max-w-7xl mx-auto relative z-10" id="ads-stats">
+    <section ref={sectionRef} className="bg-[#f8f9fb] min-h-[90vh] flex flex-col justify-center py-16 md:py-20 px-6 md:px-12 max-w-7xl mx-auto relative z-10" id="ads-stats">
       <div className="text-center mb-10 md:mb-14 ads-header">
         <h2 className="text-headline-sm md:text-headline-lg font-display-md text-on-surface mb-3">
           Marketing <span className="text-primary italic">Performance</span>
@@ -77,7 +77,7 @@ export default function AdsStats() {
 
         
         {/* Meta Ads Card */}
-        <div className="glass rounded-[2.5rem] p-6 md:p-8 relative overflow-hidden ads-card border-t border-[#d1d9e6] group">
+        <div className="glass rounded-[2.5rem] p-6 md:p-8 relative overflow-hidden ads-card border-t border-[#c4cdd9] group">
           <div className="absolute top-[-50%] left-[-20%] w-[150%] h-[150%] bg-gradient-to-br from-[#f09433]/10 via-[#e6683c]/10 to-[#bc1888]/20 blur-3xl rounded-full z-0 pointer-events-none group-hover:opacity-100 opacity-70 transition-opacity duration-700"></div>
           
           <div className="relative z-10">
@@ -92,22 +92,22 @@ export default function AdsStats() {
             </div>
 
             <div className="grid grid-cols-2 gap-4">
-              <div className="glass-panel rounded-2xl p-5 bg-[#f4f6f9] border border-[#d1d9e6]">
+              <div className="glass-panel rounded-2xl p-5 bg-[#eaeff5] border border-[#c4cdd9]">
                 <p className="text-xs text-on-surface-variant mb-1">Avg. ROAS</p>
                 <div className="text-3xl md:text-4xl font-display-md text-[#1e293b] count-up" data-value="450" data-suffix="%">0%</div>
                 <p className="text-[10px] md:text-xs text-primary mt-1 flex items-center gap-1"><span className="material-symbols-outlined text-[12px]">trending_up</span> Top 10% Industry</p>
               </div>
-              <div className="glass-panel rounded-2xl p-5 bg-[#f4f6f9] border border-[#d1d9e6]">
+              <div className="glass-panel rounded-2xl p-5 bg-[#eaeff5] border border-[#c4cdd9]">
                 <p className="text-xs text-on-surface-variant mb-1">Impressions</p>
                 <div className="text-3xl md:text-4xl font-display-md text-[#1e293b] count-up" data-value="12.5" data-suffix="M+">0M+</div>
                 <p className="text-[10px] md:text-xs text-primary mt-1 flex items-center gap-1"><span className="material-symbols-outlined text-[12px]">visibility</span> High Reach</p>
               </div>
-              <div className="glass-panel rounded-2xl p-5 bg-[#f4f6f9] border border-[#d1d9e6]">
+              <div className="glass-panel rounded-2xl p-5 bg-[#eaeff5] border border-[#c4cdd9]">
                 <p className="text-xs text-on-surface-variant mb-1">Avg. CTR</p>
                 <div className="text-3xl md:text-4xl font-display-md text-[#1e293b] count-up" data-value="3.8" data-suffix="%">0%</div>
                 <p className="text-[10px] md:text-xs text-on-surface-variant mt-1">Highly Engaging</p>
               </div>
-              <div className="glass-panel rounded-2xl p-5 bg-[#f4f6f9] border border-[#d1d9e6]">
+              <div className="glass-panel rounded-2xl p-5 bg-[#eaeff5] border border-[#c4cdd9]">
                 <p className="text-xs text-on-surface-variant mb-1">Conversions</p>
                 <div className="text-3xl md:text-4xl font-display-md text-[#1e293b] count-up" data-value="85" data-suffix="K+">0K+</div>
                 <p className="text-[10px] md:text-xs text-on-surface-variant mt-1">Direct Actions</p>
@@ -117,7 +117,7 @@ export default function AdsStats() {
         </div>
 
         {/* Google Ads Card */}
-        <div className="glass rounded-[2.5rem] p-6 md:p-8 relative overflow-hidden ads-card border-t border-[#d1d9e6] group">
+        <div className="glass rounded-[2.5rem] p-6 md:p-8 relative overflow-hidden ads-card border-t border-[#c4cdd9] group">
           <div className="absolute top-[-50%] right-[-20%] w-[150%] h-[150%] bg-gradient-to-bl from-[#4285F4]/20 via-[#34A853]/10 to-[#FBBC05]/10 blur-3xl rounded-full z-0 pointer-events-none group-hover:opacity-100 opacity-70 transition-opacity duration-700"></div>
           
           <div className="relative z-10">
@@ -132,22 +132,22 @@ export default function AdsStats() {
             </div>
 
             <div className="grid grid-cols-2 gap-4">
-              <div className="glass-panel rounded-2xl p-5 bg-[#f4f6f9] border border-[#d1d9e6]">
+              <div className="glass-panel rounded-2xl p-5 bg-[#eaeff5] border border-[#c4cdd9]">
                 <p className="text-xs text-on-surface-variant mb-1">Conversion Rate</p>
                 <div className="text-3xl md:text-4xl font-display-md text-[#1e293b] count-up" data-value="12.4" data-suffix="%">0%</div>
                 <p className="text-[10px] md:text-xs text-primary mt-1 flex items-center gap-1"><span className="material-symbols-outlined text-[12px]">trending_up</span> Optimized Funnel</p>
               </div>
-              <div className="glass-panel rounded-2xl p-5 bg-[#f4f6f9] border border-[#d1d9e6]">
+              <div className="glass-panel rounded-2xl p-5 bg-[#eaeff5] border border-[#c4cdd9]">
                 <p className="text-xs text-on-surface-variant mb-1">CPA Reduction</p>
                 <div className="text-3xl md:text-4xl font-display-md text-[#1e293b] count-up" data-value="40" data-prefix="-" data-suffix="%">0%</div>
                 <p className="text-[10px] md:text-xs text-primary mt-1 flex items-center gap-1"><span className="material-symbols-outlined text-[12px]">savings</span> Cost Efficient</p>
               </div>
-              <div className="glass-panel rounded-2xl p-5 bg-[#f4f6f9] border border-[#d1d9e6]">
+              <div className="glass-panel rounded-2xl p-5 bg-[#eaeff5] border border-[#c4cdd9]">
                 <p className="text-xs text-on-surface-variant mb-1">Search Volume</p>
                 <div className="text-3xl md:text-4xl font-display-md text-[#1e293b] count-up" data-value="5.2" data-suffix="M+">0M+</div>
                 <p className="text-[10px] md:text-xs text-on-surface-variant mt-1">Targeted Traffic</p>
               </div>
-              <div className="glass-panel rounded-2xl p-5 bg-[#f4f6f9] border border-[#d1d9e6]">
+              <div className="glass-panel rounded-2xl p-5 bg-[#eaeff5] border border-[#c4cdd9]">
                 <p className="text-xs text-on-surface-variant mb-1">ROI Growth</p>
                 <div className="text-3xl md:text-4xl font-display-md text-[#1e293b] count-up" data-value="320" data-suffix="%">0%</div>
                 <p className="text-[10px] md:text-xs text-on-surface-variant mt-1">Year over Year</p>

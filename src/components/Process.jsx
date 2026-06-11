@@ -27,20 +27,20 @@ export default function Process() {
   ];
 
   return (
-    <section className="py-section-gap px-container-margin" id="process">
+    <section className="py-section-gap px-container-margin bg-[#f8f9fb]" id="process">
       <div className="max-w-7xl mx-auto">
         <div className="process-header text-center mb-16 md:mb-20">
           <span className="text-primary font-bold tracking-[0.5em] uppercase text-label-sm">Process</span>
           <h2 className="font-headline-lg text-[32px] md:text-headline-lg text-on-surface mt-4 leading-tight">
             Launch Your <span className="italic font-light text-gradient">Success</span>
           </h2>
-          <p className="text-on-card-variant mt-4 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
+          <p className="text-[#64748b] mt-4 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
             A streamlined creative and marketing process designed to transform ideas into impactful digital results.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {steps.map((step, idx) => (
-            <div key={idx} className="process-step bg-[#f4f6f9] border border-[#d1d9e6] p-8 md:p-10 rounded-[2.5rem] project-card w-full flex flex-col relative overflow-hidden group">
+            <div key={idx} className="process-step bg-[#eaeff5] border border-[#c4cdd9] p-8 md:p-10 rounded-[2.5rem] project-card w-full flex flex-col relative overflow-hidden group">
               <span className={`${step.color} font-black text-5xl md:text-6xl mb-6 block opacity-30 group-hover:opacity-100 transition-opacity duration-500`}>
                 {step.num}
               </span>

@@ -1,9 +1,9 @@
 export default function Testimonials() {
   return (
-    <section className="py-section-gap bg-surface-container-lowest">
+    <section className="py-section-gap bg-[#f8f9fb]">
       <div className="max-w-7xl mx-auto px-container-margin">
         <div className="testimonial-header text-center mb-16">
-          <h2 className="font-headline-lg text-headline-lg text-[#1e293b]">Client <span className="italic font-light">Praise</span></h2>
+          <h2 className="font-headline-lg text-headline-lg text-on-surface">Client <span className="italic font-light text-gradient">Praise</span></h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="testimonial-card glass p-12 rounded-[2.5rem] relative">
