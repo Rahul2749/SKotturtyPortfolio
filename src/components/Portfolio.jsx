@@ -215,7 +215,7 @@ export default function Portfolio() {
           <div className="portfolio-section scroll-mt-48" id="brochure">
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 px-2 gap-4">
               <h3 className="text-headline-lg font-display-md text-on-surface">Brochure Design</h3>
-              <a href="/colorful_jewelry_catalog_brochure.pdf" target="_blank" rel="noopener noreferrer" className="bg-primary text-black px-6 py-3 rounded-full text-sm font-bold hover:scale-105 transition-transform flex items-center gap-2 shadow-[0_0_20px_rgba(165,231,255,0.3)] project-card">
+              <a href="/colorful_jewelry_catalog_brochure.pdf" target="_blank" rel="noopener noreferrer" className="bg-primary text-white px-6 py-3 rounded-full text-sm font-bold hover:scale-105 transition-transform flex items-center gap-2 shadow-[0_0_20px_rgba(165,231,255,0.3)] project-card">
                 View PDF Catalog <span className="material-symbols-outlined text-lg">picture_as_pdf</span>
               </a>
             </div>

@@ -144,7 +144,7 @@ export default function ServiceDetailsModal({ isOpen, onClose, onGetStarted, ser
           </div>
           <button 
             onClick={() => onGetStarted(service.title)}
-            className="w-full sm:w-auto bg-primary text-on-primary-fixed-variant font-bold text-base px-8 py-4 rounded-full flex items-center justify-center gap-2 hover:scale-[1.02] transition-transform shadow-[0_0_20px_rgba(165,231,255,0.2)]"
+            className="w-full sm:w-auto bg-primary text-white font-bold text-base px-8 py-4 rounded-full flex items-center justify-center gap-2 hover:scale-[1.02] transition-transform shadow-[0_0_20px_rgba(165,231,255,0.2)]"
           >
             Get Started <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
           </button>

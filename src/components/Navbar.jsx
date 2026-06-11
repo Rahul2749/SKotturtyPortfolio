@@ -23,7 +23,7 @@ export default function Navbar() {
           <a className="font-label-lg text-label-lg uppercase tracking-[0.2em] text-on-surface-variant hover:text-primary transition-colors" href="#contact">Contact</a>
           <button 
             onClick={() => setIsModalOpen(true)}
-            className="ml-4 bg-primary text-on-primary-fixed-variant font-bold text-xs uppercase tracking-widest px-6 py-2.5 rounded-full hover:scale-105 transition-transform shadow-[0_0_15px_rgba(165,231,255,0.15)]"
+            className="ml-4 bg-primary text-white font-bold text-xs uppercase tracking-widest px-6 py-2.5 rounded-full hover:scale-105 transition-transform shadow-[0_0_15px_rgba(165,231,255,0.15)]"
           >
             Get Started
           </button>
@@ -53,7 +53,7 @@ export default function Navbar() {
             <a onClick={() => setIsMobileMenuOpen(false)} className="font-label-lg text-label-lg uppercase tracking-[0.2em] text-on-surface hover:text-primary transition-colors" href="#contact">Contact</a>
             <button 
               onClick={() => { setIsMobileMenuOpen(false); setIsModalOpen(true); }}
-              className="mt-2 bg-primary text-on-primary-fixed-variant font-bold text-sm uppercase tracking-widest px-6 py-3.5 rounded-full text-center shadow-[0_0_15px_rgba(165,231,255,0.15)]"
+              className="mt-2 bg-primary text-white font-bold text-sm uppercase tracking-widest px-6 py-3.5 rounded-full text-center shadow-[0_0_15px_rgba(165,231,255,0.15)]"
             >
               Get Started
             </button>

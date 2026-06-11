@@ -178,7 +178,7 @@ export default function GetStartedModal({ isOpen, onClose, initialService = "" }
                   ? "bg-green-500 text-white" 
                   : status === "error" 
                   ? "bg-red-500/80 text-white" 
-                  : "bg-primary text-on-primary-fixed-variant hover:scale-[1.02] shadow-[0_0_15px_rgba(165,231,255,0.15)]"
+                  : "bg-primary text-white hover:scale-[1.02] shadow-[0_0_15px_rgba(165,231,255,0.15)]"
               } ${status === "loading" ? "opacity-70 cursor-not-allowed" : ""}`}
             >
               {status === "loading" && (
