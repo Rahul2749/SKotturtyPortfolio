@@ -11,6 +11,7 @@ export default function ServicesIOffer() {
   const serviceDetailsData = {
     "UI/UX Design": {
       title: "UI/UX Design",
+      tag: "Design",
       icon: "design_services",
       desc: "Designing seamless experiences that users love.",
       subtitle: "Designing seamless experiences that users love.",
@@ -31,6 +32,7 @@ export default function ServicesIOffer() {
     },
     "Graphic Design": {
       title: "Graphic Design",
+      tag: "Creative",
       icon: "palette",
       desc: "Creating visuals that make your brand stand out.",
       subtitle: "Creating visuals that make your brand stand out.",
@@ -51,6 +53,7 @@ export default function ServicesIOffer() {
     },
     "SEO Optimization": {
       title: "SEO Optimization",
+      tag: "Growth",
       icon: "troubleshoot",
       desc: "Helping your business get found where it matters most.",
       subtitle: "Helping your business get found where it matters most.",
@@ -71,6 +74,7 @@ export default function ServicesIOffer() {
     },
     "Meta Ads": {
       title: "Meta Ads",
+      tag: "Marketing",
       icon: "campaign",
       desc: "Turning attention into action through strategic advertising.",
       subtitle: "Turning attention into action through strategic advertising.",
@@ -91,6 +95,7 @@ export default function ServicesIOffer() {
     },
     "Google Ads": {
       title: "Google Ads",
+      tag: "Advertising",
       icon: "ads_click",
       desc: "Reach customers exactly when they're searching for your services.",
       subtitle: "Reach customers exactly when they're searching for your services.",
@@ -111,6 +116,7 @@ export default function ServicesIOffer() {
     },
     "Website Design": {
       title: "Website Design",
+      tag: "Development",
       icon: "devices",
       desc: "Building websites that turn visitors into customers.",
       subtitle: "Building websites that turn visitors into customers.",
@@ -146,15 +152,15 @@ export default function ServicesIOffer() {
   };
 
   return (
-    <section className="py-section-gap bg-surface-container-lowest/50" id="services-i-offer">
+    <section className="py-section-gap bg-[#f8f9fb]" id="services-i-offer">
       <div className="max-w-7xl mx-auto px-container-margin">
         {/* Header */}
         <div className="services-header text-center mb-12 md:mb-16">
-          <span className="text-primary font-bold tracking-[0.2em] uppercase text-label-sm">Services I Offer</span>
-          <h2 className="font-headline-lg text-4xl md:text-6xl lg:text-7xl font-black text-on-surface mt-6 mb-6 leading-tight">
-            Services I <span className="text-primary">Offer.</span>
+          <span className="text-[#3b82f6] font-bold tracking-[0.2em] uppercase text-label-sm">Services I Offer</span>
+          <h2 className="font-headline-lg text-4xl md:text-6xl lg:text-7xl font-black text-[#0f172a] mt-6 mb-6 leading-tight">
+            Services I <span className="italic font-light text-[#3b82f6]">Offer.</span>
           </h2>
-          <p className="text-on-surface-variant text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
+          <p className="text-[#64748b] text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
             From visual branding to performance marketing, I create digital experiences that attract, engage, and convert.
           </p>
         </div>
@@ -165,13 +171,14 @@ export default function ServicesIOffer() {
             <div 
               key={idx} 
               onClick={() => handleCardClick(service.title)}
-              className="service-card glass p-8 md:p-10 rounded-[2rem] project-card relative overflow-hidden group flex flex-col h-full border border-white/5 hover:border-primary/30 transition-colors cursor-pointer"
+              className="service-card bg-[#f4f6f9] p-8 md:p-10 rounded-[2rem] project-card relative overflow-hidden group flex flex-col h-full border border-[#d1d9e6] hover:border-[#3b82f6] transition-all hover:shadow-[0_4px_24px_rgba(59,130,246,0.08)] cursor-pointer"
             >
-              <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500">
-                <span className="material-symbols-outlined text-3xl text-primary">{service.icon}</span>
+              <div className="w-16 h-16 rounded-2xl bg-[#dbeafe] flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500">
+                <span className="material-symbols-outlined text-3xl text-[#3b82f6]">{service.icon}</span>
               </div>
-              <h3 className="text-2xl font-bold text-white mb-4">{service.title}</h3>
-              <p className="text-on-card-variant leading-relaxed flex-grow">{service.desc}</p>
+              <h3 className="text-2xl font-bold text-[#0f172a] mb-4">{service.title}</h3>
+              <p className="text-[#64748b] leading-relaxed flex-grow">{service.desc}</p>
+              <span className="inline-block mt-4 text-[11px] font-medium tracking-[0.05em] text-[#3b82f6] bg-[#dbeafe] px-3 py-1 rounded-full self-start">{service.tag}</span>
             </div>
           ))}
         </div>

@@ -26,23 +26,23 @@ export default function ServiceDetailsModal({ isOpen, onClose, onGetStarted, ser
       ></div>
 
       {/* Modal */}
-      <div className="relative w-full max-w-2xl md:max-w-4xl bg-surface-container rounded-[2rem] shadow-2xl border border-white/10 flex flex-col max-h-[90vh] overflow-hidden">
+      <div className="relative w-full max-w-2xl md:max-w-4xl bg-[#ffffff] rounded-[2rem] shadow-2xl border border-[#e2e8f0] flex flex-col max-h-[90vh] overflow-hidden">
         
         {/* Fixed Header */}
-        <div className="p-6 md:p-8 flex-shrink-0 relative border-b border-white/5 bg-gradient-to-r from-primary/10 to-transparent">
+        <div className="p-6 md:p-8 flex-shrink-0 relative border-b border-[#e2e8f0] bg-gradient-to-r from-primary/10 to-transparent">
           <button 
             onClick={onClose}
-            className="absolute top-6 right-6 md:top-8 md:right-8 text-on-card-variant hover:text-white transition-colors bg-white/5 p-2 rounded-full hover:bg-white/10 flex items-center justify-center z-10"
+            className="absolute top-6 right-6 md:top-8 md:right-8 text-[#64748b] hover:text-[#0f172a] transition-colors bg-[#f1f5f9] p-2 rounded-full flex items-center justify-center z-10"
           >
             <span className="material-symbols-outlined text-[20px]">close</span>
           </button>
           
           <div className="flex items-center gap-4">
-            <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center flex-shrink-0">
+            <div className="w-12 h-12 rounded-xl bg-[#eff6ff] flex items-center justify-center flex-shrink-0">
               <span className="material-symbols-outlined text-2xl text-primary">{service.icon}</span>
             </div>
             <div>
-              <h2 id="service-modal-title" className="text-2xl md:text-4xl font-black text-white">{service.title}</h2>
+              <h2 id="service-modal-title" className="text-2xl md:text-4xl font-black text-[#0f172a]">{service.title}</h2>
             </div>
           </div>
         </div>
@@ -53,17 +53,17 @@ export default function ServiceDetailsModal({ isOpen, onClose, onGetStarted, ser
           <div className="space-y-10">
             {/* Intro */}
             <div>
-              <p className="text-xl md:text-2xl font-light text-white/90 leading-relaxed mb-4">
+              <p className="text-xl md:text-2xl font-light text-[#0f172a] leading-relaxed mb-4">
                 {service.subtitle}
               </p>
-              <p className="text-on-card-variant leading-relaxed">
+              <p className="text-[#64748b] leading-relaxed">
                 {service.introDesc}
               </p>
             </div>
 
             {/* Sections Loop */}
             {service.sections && service.sections.map((section, idx) => (
-              <div key={idx} className="glass rounded-[1.5rem] p-6 md:p-8 border border-white/5">
+              <div key={idx} className="bg-[#f8fafc] rounded-[1.5rem] p-6 md:p-8 border border-[#e2e8f0]">
                 <h3 className="text-xl font-bold text-primary mb-4 flex items-center gap-3">
                   <span className="w-8 h-px bg-primary/50"></span>
                   {section.heading}
@@ -73,7 +73,7 @@ export default function ServiceDetailsModal({ isOpen, onClose, onGetStarted, ser
                 {section.paragraphs && (
                   <div className="space-y-4">
                     {section.paragraphs.map((para, i) => (
-                      <p key={i} className="text-on-card-variant leading-relaxed">{para}</p>
+                      <p key={i} className="text-[#64748b] leading-relaxed">{para}</p>
                     ))}
                   </div>
                 )}
@@ -85,8 +85,8 @@ export default function ServiceDetailsModal({ isOpen, onClose, onGetStarted, ser
                       <div key={i} className="flex gap-4">
                         <span className="text-primary font-black text-2xl opacity-50">{step.num}</span>
                         <div>
-                          <h4 className="text-white font-bold mb-1">{step.title}</h4>
-                          <p className="text-on-card-variant text-sm">{step.desc}</p>
+                          <h4 className="text-[#0f172a] font-bold mb-1">{step.title}</h4>
+                          <p className="text-[#64748b] text-sm">{step.desc}</p>
                         </div>
                       </div>
                     ))}
@@ -97,7 +97,7 @@ export default function ServiceDetailsModal({ isOpen, onClose, onGetStarted, ser
                 {section.listItems && (
                   <ul className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-3">
                     {section.listItems.map((item, i) => (
-                      <li key={i} className="flex items-start gap-3 text-on-card-variant">
+                      <li key={i} className="flex items-start gap-3 text-[#334155]">
                         <span className="material-symbols-outlined text-primary text-xl flex-shrink-0">
                           {section.listIcon || "check_circle"}
                         </span>
@@ -111,7 +111,7 @@ export default function ServiceDetailsModal({ isOpen, onClose, onGetStarted, ser
                 {section.tools && (
                   <div className="mt-6 flex flex-wrap gap-3">
                     {section.tools.map((tool, i) => (
-                      <span key={i} className="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white text-sm">
+                      <span key={i} className="px-4 py-2 rounded-full bg-[#f8fafc] border border-[#e2e8f0] text-[#64748b] text-sm">
                         {tool}
                       </span>
                     ))}
@@ -125,7 +125,7 @@ export default function ServiceDetailsModal({ isOpen, onClose, onGetStarted, ser
                 <a 
                   href="#web" 
                   onClick={onClose}
-                  className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-white/5 hover:bg-primary/20 border border-white/10 hover:border-primary/50 text-white hover:text-primary transition-all font-bold text-base md:text-lg group"
+                  className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[#f8fafc] hover:bg-primary/10 border border-[#e2e8f0] hover:border-primary/50 text-[#0f172a] hover:text-primary transition-all font-bold text-base md:text-lg group"
                 >
                   <span className="material-symbols-outlined group-hover:scale-110 transition-transform">web</span>
                   Explore Website Design Projects
@@ -137,10 +137,10 @@ export default function ServiceDetailsModal({ isOpen, onClose, onGetStarted, ser
         </div>
 
         {/* Fixed Footer with Get Started Button */}
-        <div className="p-6 md:p-8 flex-shrink-0 border-t border-white/5 bg-surface-container/50 backdrop-blur-md flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div className="p-6 md:p-8 flex-shrink-0 border-t border-[#e2e8f0] bg-[#ffffff] backdrop-blur-md flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="text-center sm:text-left">
-            <h4 className="text-white font-bold text-lg">Ready to elevate your {service.title}?</h4>
-            <p className="text-on-card-variant text-sm mt-1">Let's discuss how we can achieve your goals.</p>
+            <h4 className="text-[#0f172a] font-bold text-lg">Ready to elevate your {service.title}?</h4>
+            <p className="text-[#94a3b8] text-sm mt-1">Let's discuss how we can achieve your goals.</p>
           </div>
           <button 
             onClick={() => onGetStarted(service.title)}
