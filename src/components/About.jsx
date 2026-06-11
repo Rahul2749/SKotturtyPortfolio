@@ -15,19 +15,19 @@ export default function About() {
           </div>
           <div className="grid grid-cols-2 gap-6">
             <div className="stat-card glass p-8 rounded-3xl border-l-4 border-primary">
-              <h4 className="text-display-md text-on-surface font-bold">3+</h4>
+              <h4 className="text-display-md text-on-surface font-bold">2+</h4>
               <p className="text-label-sm uppercase tracking-widest text-outline">Years Experience</p>
             </div>
             <div className="stat-card glass p-8 rounded-3xl border-l-4 border-secondary">
-              <h4 className="text-display-md text-on-surface font-bold">120+</h4>
+              <h4 className="text-display-md text-on-surface font-bold">25+</h4>
               <p className="text-label-sm uppercase tracking-widest text-outline">Projects Delivered</p>
             </div>
             <div className="stat-card glass p-8 rounded-3xl border-l-4 border-tertiary">
-              <h4 className="text-display-md text-on-surface font-bold">40+</h4>
+              <h4 className="text-display-md text-on-surface font-bold">15+</h4>
               <p className="text-label-sm uppercase tracking-widest text-outline">Happy Clients</p>
             </div>
             <div className="stat-card glass p-8 rounded-3xl border-l-4 border-primary">
-              <h4 className="text-display-md text-on-surface font-bold">98%</h4>
+              <h4 className="text-display-md text-on-surface font-bold">99%</h4>
               <p className="text-label-sm uppercase tracking-widest text-outline">Success Rate</p>
             </div>
           </div>
