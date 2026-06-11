@@ -18,7 +18,7 @@ export default {
         "on-background": "#111111",
         "background": "#F8F8F8",
         "on-surface": "#111111",
-        "on-surface-variant": "#555555",
+        "on-surface-variant": "#334155",
         "surface": "#F8F8F8",
         "surface-variant": "#E0E0E0",
         "surface-container-lowest": "#FFFFFF",
@@ -27,8 +27,8 @@ export default {
         "surface-container-high": "#E8E8E8",
         "surface-container-highest": "#E0E0E0",
         "secondary": "#0055FF",
-        "on-card": "#1e293b",
-        "on-card-variant": "#64748b"
+        "on-card": "#0f172a",
+        "on-card-variant": "#1e293b"
       },
       borderRadius: {
         "DEFAULT": "0.25rem",

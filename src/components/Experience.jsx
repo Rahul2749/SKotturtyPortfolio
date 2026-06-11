@@ -47,7 +47,7 @@ export default function Experience() {
                     </span>
                     <h3 className="text-2xl text-[#1e293b] font-headline-md font-bold mb-1">{exp.role}</h3>
                     <h4 className="text-on-card-variant font-medium text-sm uppercase tracking-widest mb-4">{exp.company}</h4>
-                    <p className="text-body-md text-on-card-variant leading-relaxed opacity-80">
+                    <p className="text-body-md text-on-card-variant leading-relaxed">
                       {exp.description}
                     </p>
                   </div>

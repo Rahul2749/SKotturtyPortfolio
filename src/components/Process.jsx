@@ -4,25 +4,25 @@ export default function Process() {
       num: "01",
       title: "Discovery & Strategy",
       desc: "Understanding your brand, audience, goals, and market positioning to build the right growth strategy.",
-      color: "text-[#93c5fd]",
+      color: "text-primary",
     },
     {
       num: "02",
       title: "Design & Branding",
       desc: "Crafting visually striking UI/UX designs, branding assets, and creative experiences aligned with your identity.",
-      color: "text-[#93c5fd]",
+      color: "text-primary",
     },
     {
       num: "03",
       title: "Marketing & Optimization",
       desc: "Launching SEO strategies, Meta Ads, Google Ads, and performance campaigns optimized for engagement and conversions.",
-      color: "text-[#93c5fd]",
+      color: "text-primary",
     },
     {
       num: "04",
       title: "Growth & Scaling",
       desc: "Analyzing performance, improving user experience, and scaling campaigns for long-term business growth.",
-      color: "text-[#93c5fd]",
+      color: "text-primary",
     },
   ];
 
@@ -41,7 +41,7 @@ export default function Process() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {steps.map((step, idx) => (
             <div key={idx} className="process-step bg-[#eaeff5] border border-[#c4cdd9] p-8 md:p-10 rounded-[2.5rem] project-card w-full flex flex-col relative overflow-hidden group">
-              <span className={`${step.color} font-black text-5xl md:text-6xl mb-6 block opacity-30 group-hover:opacity-100 transition-opacity duration-500`}>
+              <span className={`${step.color} font-black text-5xl md:text-6xl mb-6 block opacity-70 group-hover:opacity-100 transition-opacity duration-500`}>
                 {step.num}
               </span>
               <h3 className="text-[#1e293b] font-bold text-headline-sm mb-4 leading-tight">{step.title}</h3>
