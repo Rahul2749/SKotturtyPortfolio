@@ -22,14 +22,14 @@ export default function Testimonials() {
           </div>
           <div className="testimonial-card glass p-12 rounded-[2.5rem] relative">
             <span className="material-symbols-outlined text-secondary text-6xl opacity-20 absolute top-8 left-8">format_quote</span>
-            <p className="text-body-lg text-[#475569] italic mb-8 relative z-10">"Our website now looks premium and converts much better. She understood our vision perfectly and created a design system our team loves using."</p>
+            <p className="text-body-lg text-[#475569] italic mb-8 relative z-10">"The ad campaigns generated high-quality leads for our real estate projects. The strategy was spot on, significantly reducing our cost per acquisition and driving real sales."</p>
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center">
                 <span className="material-symbols-outlined text-secondary text-xl">person</span>
               </div>
               <div>
-                <h5 className="text-[#1e293b] font-bold">Elena Rodriguez</h5>
-                <p className="text-label-sm text-outline uppercase">CMO, Lumina FinTech</p>
+                <h5 className="text-[#1e293b] font-bold">Bharani Kothalanka</h5>
+                <p className="text-label-sm text-outline uppercase">Founder, Real Estate</p>
               </div>
             </div>
           </div>
