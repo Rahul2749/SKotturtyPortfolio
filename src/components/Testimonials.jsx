@@ -15,8 +15,8 @@ export default function Testimonials() {
                 <span className="material-symbols-outlined text-primary text-xl">person</span>
               </div>
               <div>
-                <h5 className="text-[#1e293b] font-bold">Marcus Chen</h5>
-                <p className="text-label-sm text-outline uppercase">Founder, TechStack</p>
+                <h5 className="text-[#1e293b] font-bold">Aman Shrisundar</h5>
+                <p className="text-label-sm text-outline uppercase">GRE & GMAT Coach</p>
               </div>
             </div>
           </div>
