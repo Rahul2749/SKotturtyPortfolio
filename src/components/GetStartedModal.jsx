@@ -42,7 +42,7 @@ export default function GetStartedModal({ isOpen, onClose, initialService = "" }
           "Accept": "application/json"
         },
         body: JSON.stringify({
-          access_key: "4ac0d40e-c895-4afb-b2dd-359b1fc36d75",
+          access_key: "2a37e64d-864f-44f3-817e-9513d5358e64",
           subject: `New Inquiry from ${formData.fullName} — ${formData.service}`,
           from_name: formData.fullName,
           name: formData.fullName,
