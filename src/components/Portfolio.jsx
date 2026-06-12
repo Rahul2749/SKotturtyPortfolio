@@ -100,7 +100,7 @@ export default function Portfolio() {
               Logo
             </a>
             <a href="#animation" className="tab-btn shrink-0 px-4 md:px-6 py-1.5 md:py-2 rounded-full text-[11px] md:text-label-sm transition-all whitespace-nowrap border-transparent bg-on-surface/[0.03] text-on-surface-variant hover:bg-on-surface/5 hover:text-on-surface">
-              2D Animation
+              2D
             </a>
             <a href="#branding" className="tab-btn shrink-0 px-4 md:px-6 py-1.5 md:py-2 rounded-full text-[11px] md:text-label-sm transition-all whitespace-nowrap border-transparent bg-on-surface/[0.03] text-on-surface-variant hover:bg-on-surface/5 hover:text-on-surface">
               Branding
@@ -297,9 +297,9 @@ export default function Portfolio() {
             </div>
           </div>
 
-          {/* Section: 2D Animation */}
+          {/* Section: 2D */}
           <div className="portfolio-section scroll-mt-48" id="animation">
-            <h3 className="text-headline-lg font-display-md text-on-surface mb-6 px-2">2D Animation</h3>
+            <h3 className="text-headline-lg font-display-md text-on-surface mb-6 px-2">2D</h3>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="glass rounded-[2.5rem] p-1 overflow-hidden project-card">
               <div className="bg-surface-container rounded-[2.4rem] aspect-video md:aspect-auto md:h-[340px] flex flex-col items-center justify-center relative overflow-hidden group">
