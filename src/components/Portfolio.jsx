@@ -404,17 +404,17 @@ export default function Portfolio() {
               <div className="glass rounded-[2.5rem] p-4 flex items-center justify-center project-card bg-[#8ebae4] overflow-hidden">
                 <img alt="GRE & GMAT Coaching Ad" className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500 rounded-[1.5rem] shadow-xl" src="/social_1.webp" loading="lazy"/>
               </div>
-              <div className="glass rounded-[2.5rem] p-4 flex items-center justify-center project-card bg-white overflow-hidden">
-                <img alt="Grow Your Business Meta Ads Graphic" className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500 rounded-[1.5rem] shadow-xl" src="/social_2.webp" loading="lazy"/>
-              </div>
-              <div className="glass rounded-[2.5rem] p-4 flex items-center justify-center project-card bg-[#eaeff5] overflow-hidden">
-                <img alt="Website Services Digital Ad" className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500 rounded-[1.5rem] shadow-xl" src="/social_3.webp" loading="lazy"/>
-              </div>
               <div className="glass rounded-[2.5rem] p-4 flex items-center justify-center project-card bg-[#f1f5f9] overflow-hidden">
                 <img alt="Social Media Creative 4" className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500 rounded-[1.5rem] shadow-xl" src="/sm_4.jpeg" loading="lazy"/>
               </div>
+              <div className="glass rounded-[2.5rem] p-4 flex items-center justify-center project-card bg-white overflow-hidden">
+                <img alt="Grow Your Business Meta Ads Graphic" className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500 rounded-[1.5rem] shadow-xl" src="/social_2.webp" loading="lazy"/>
+              </div>
               <div className="glass rounded-[2.5rem] p-4 flex items-center justify-center project-card bg-[#f8fafc] overflow-hidden">
                 <img alt="Social Media Creative 5" className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500 rounded-[1.5rem] shadow-xl" src="/sm_5.jpeg" loading="lazy"/>
+              </div>
+              <div className="glass rounded-[2.5rem] p-4 flex items-center justify-center project-card bg-[#eaeff5] overflow-hidden">
+                <img alt="Website Services Digital Ad" className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500 rounded-[1.5rem] shadow-xl" src="/social_3.webp" loading="lazy"/>
               </div>
               <div className="glass rounded-[2.5rem] p-4 flex items-center justify-center project-card bg-[#e2e8f0] overflow-hidden">
                 <img alt="Social Media Creative 6" className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500 rounded-[1.5rem] shadow-xl" src="/sm_6.jpeg" loading="lazy"/>
