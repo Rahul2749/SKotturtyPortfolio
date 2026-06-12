@@ -1,11 +1,11 @@
 export default function Skills() {
   const tools = [
-    { name: "Figma", icon: "draw" },
-    { name: "Adobe Photoshop", icon: "photo_camera" },
-    { name: "Illustrator", icon: "brush" },
-    { name: "After Effects", icon: "movie_edit" },
-    { name: "Canva Pro", icon: "design_services" },
-    { name: "Meta Ads Manager", icon: "campaign" },
+    { name: "Figma", brandUrl: "https://cdn.simpleicons.org/figma" },
+    { name: "Adobe Photoshop", brandUrl: "https://cdn.simpleicons.org/adobephotoshop" },
+    { name: "Illustrator", brandUrl: "https://cdn.simpleicons.org/adobeillustrator" },
+    { name: "After Effects", brandUrl: "https://cdn.simpleicons.org/adobeaftereffects" },
+    { name: "Canva Pro", brandUrl: "https://cdn.simpleicons.org/canva" },
+    { name: "Meta Ads Manager", brandUrl: "https://cdn.simpleicons.org/meta" },
     { name: "UI/UX Strategy", icon: "psychology" },
     { name: "Branding Design", icon: "branding_watermark" },
     { name: "Social Media Design", icon: "share" },
@@ -35,8 +35,12 @@ export default function Skills() {
             {/* Tool Pills */}
             <div className="flex flex-wrap gap-3 justify-center max-w-4xl mx-auto">
               {tools.map((tool, idx) => (
-                <div key={idx} className="flex items-center gap-2 px-5 py-2.5 bg-[#eaeff5] border border-[#c4cdd9] rounded-full text-xs font-semibold text-[#475569] hover:text-[#1e293b] hover:border-[#93c5fd] hover:bg-[#e2e8f0] transition-all cursor-default group">
-                  <span className="material-symbols-outlined text-[16px] text-[#94a3b8] group-hover:text-[#1e293b] transition-colors">{tool.icon}</span>
+                <div key={idx} className="flex items-center gap-2 px-5 py-2.5 bg-[#eaeff5] border border-[#c4cdd9] rounded-full text-xs font-semibold text-[#475569] hover:text-[#1e293b] hover:border-[#93c5fd] hover:bg-[#e2e8f0] hover:-translate-y-1 hover:shadow-lg transition-all duration-300 cursor-default group">
+                  {tool.brandUrl ? (
+                    <img src={tool.brandUrl} alt={tool.name} className="w-4 h-4 grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300" />
+                  ) : (
+                    <span className="material-symbols-outlined text-[16px] text-[#94a3b8] group-hover:text-primary transition-colors">{tool.icon}</span>
+                  )}
                   {tool.name}
                 </div>
               ))}
