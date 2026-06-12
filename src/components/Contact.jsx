@@ -1,21 +1,33 @@
+import { useState } from "react";
+import GetStartedModal from "./GetStartedModal";
+
 export default function Contact() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
+    <>
     <section className="py-24 md:py-40 px-container-margin relative overflow-hidden bg-[#edf0f6]" id="contact">
       {/* Subtle Top Divider */}
       <div className="max-w-7xl mx-auto h-px bg-gradient-to-r from-transparent via-black/10 to-transparent mb-12 md:mb-16"></div>
       
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8 items-end relative z-10">
         {/* Left Side: Typography */}
-        <div className="md:col-span-7">
+        <div className="md:col-span-7 contact-cta">
           <p className="font-label-lg text-primary tracking-[0.3em] uppercase mb-6 flex items-center gap-4">
-            <span className="w-12 h-px bg-primary"></span> Next Steps
+            <span className="w-12 h-px bg-primary"></span> Let's Talk
           </p>
           <h2 className="font-display-md text-[40px] md:text-[64px] text-on-surface leading-[1.1] mb-8">
-            Let's build <br className="hidden md:block"/> something <br/> <span className="italic font-normal text-gradient">extraordinary.</span>
+            Ready To Grow Your <br className="hidden md:block"/> Business <br/> <span className="italic font-normal text-gradient">Online?</span>
           </h2>
-          <p className="font-body-lg text-on-surface-variant max-w-lg md:text-lg">
-            Helping brands grow with modern design, creative storytelling, SEO optimization, and high-converting ad campaigns.
+          <p className="font-body-lg text-on-surface-variant max-w-lg md:text-lg mb-8">
+            Whether you need a high-converting website, better SEO rankings, or profitable ad campaigns, I'm here to help.
           </p>
+          <button 
+            onClick={() => setIsModalOpen(true)}
+            className="group bg-on-surface text-background py-4 md:py-5 px-8 md:px-12 rounded-full text-[14px] md:text-label-lg font-bold shadow-2xl flex items-center justify-center gap-2 hover:-translate-y-1 hover:shadow-3xl transition-all duration-300"
+          >
+            Start Your Project <span className="material-symbols-outlined text-[20px] md:text-[24px] group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300">arrow_outward</span>
+          </button>
         </div>
 
         {/* Right Side: Action Cards */}
@@ -50,5 +62,7 @@ export default function Contact() {
         SAHITI
       </div>
     </section>
+    <GetStartedModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+    </>
   );
 }

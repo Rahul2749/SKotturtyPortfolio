@@ -6,6 +6,7 @@ import Preloader from './components/Preloader';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
+import WhyChooseMe from './components/WhyChooseMe';
 import ServicesIOffer from './components/ServicesIOffer';
 import Portfolio from './components/Portfolio';
 import AdsStats from './components/AdsStats';
@@ -103,6 +104,10 @@ export default function App() {
       animateIn('.about-text', { from: { y: 25 }, to: { stagger: 0.15 } });
       animateIn('.stat-card', { from: { y: 40, scale: 0.92 }, to: { scale: 1, stagger: 0.1, ease: 'back.out(1.4)' } });
 
+      // ── Why Choose Me ──
+      animateIn('.why-header', { from: { y: 30 }, to: {} });
+      animateIn('.why-card', { from: { y: 40, scale: 0.92 }, to: { scale: 1, stagger: 0.1, ease: 'back.out(1.4)' } });
+
       // ── Services ──
       animateIn('.services-header', { from: { y: 30 }, to: {} });
       animateIn('.service-card', { from: { y: 50 }, to: { stagger: 0.12 } });
@@ -146,6 +151,10 @@ export default function App() {
           });
         }
       });
+
+      // ── Achievements (replaces AdsStats) ──
+      animateIn('.achieve-header', { from: { y: 30 }, to: {} });
+      animateIn('.achieve-card', { from: { y: 50, scale: 0.92 }, to: { scale: 1, stagger: 0.12 } });
 
       // ── Case Studies ──
       animateIn('.case-header', { from: { y: 30 }, to: {} });
@@ -192,6 +201,7 @@ export default function App() {
         <main>
           <Hero />
           <About />
+          <WhyChooseMe />
           <Experience />
           <ServicesIOffer />
           <Process />

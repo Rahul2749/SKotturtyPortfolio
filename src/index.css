@@ -64,6 +64,36 @@
     border-color: rgba(79, 140, 255, 0.3);
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08), 0 0 12px rgba(79, 140, 255, 0.08);
   }
+
+  /* Smooth Button Animations */
+  button, a.group, a.bg-primary, a.bg-on-surface, a.bg-\[\#eaeff5\] {
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), background-color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  }
+  button:active, a.group:active, a.bg-primary:active, a.bg-on-surface:active, a.bg-\[\#eaeff5\]:active {
+    transform: scale(0.97) translateZ(0) !important;
+  }
+
+  /* Cursor Glow Effect Base (can be paired with JS for tracking, or static on hover) */
+  .glow-card {
+    position: relative;
+    overflow: hidden;
+  }
+  .glow-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 50% 0%, rgba(79, 140, 255, 0.15), transparent 60%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .glow-card:hover::before {
+    opacity: 1;
+  }
 }
 
 .hide-scrollbar::-webkit-scrollbar {

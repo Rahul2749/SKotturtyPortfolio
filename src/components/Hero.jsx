@@ -6,31 +6,29 @@ export default function Hero() {
       <HeroBackground3D />
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
         <div className="md:col-span-8 space-y-8">
-          <div className="flex flex-col gap-3 mb-6 mt-4">
+          <div className="hero-badge flex flex-col gap-3 mb-6 mt-4">
             <div className="flex items-center gap-2 md:gap-4">
               <span className="w-8 md:w-12 h-px bg-[#4F8CFF]"></span>
-              <span className="font-label-lg text-[10px] md:text-label-lg text-[#4F8CFF] tracking-[0.2em] md:tracking-[0.4em] uppercase font-bold">Multidisciplinary Designer</span>
+              <span className="font-label-lg text-[10px] md:text-label-lg text-[#4F8CFF] tracking-[0.2em] md:tracking-[0.4em] uppercase font-bold">UI/UX Designer & Digital Marketing Specialist</span>
             </div>
           </div>
-          
           <div className="relative">
-            {/* Oversized Lettermark */}
-            <span className="absolute -z-10 text-[200px] md:text-[300px] font-display-lg text-[#4F8CFF]/10 select-none top-[-80px] md:top-[-120px] left-[-10px] md:left-[-20px] leading-none pointer-events-none">K</span>
-            
-            <h1 className="hero-title font-display-lg flex flex-col tracking-tighter">
-              <span className="font-body italic font-medium tracking-normal text-[40px] sm:text-[55px] md:text-[75px] lg:text-[90px] text-[#1e3a8a] leading-[1] ml-1 md:ml-2 mb-0 md:mb-[-10px]">Sahiti</span>
-              <span className="font-black text-[55px] sm:text-[75px] md:text-[100px] lg:text-[120px] leading-[0.9] bg-gradient-to-r from-[#4F8CFF] via-[#4F8CFF] to-[#28467a] text-transparent bg-clip-text pb-2 pr-4">Kotturty</span>
+            <h1 className="hero-title font-display-lg font-black tracking-tighter text-[40px] sm:text-[55px] md:text-[72px] lg:text-[90px] leading-[1] text-[#1e293b]">
+              Designing Websites That{' '}
+              <span className="bg-gradient-to-r from-[#4F8CFF] via-[#4F8CFF] to-[#28467a] text-transparent bg-clip-text">Convert Visitors</span>{' '}
+              Into{' '}
+              <span className="bg-gradient-to-r from-[#0055FF] to-[#4F8CFF] text-transparent bg-clip-text">Customers</span>
             </h1>
           </div>
           <p className="hero-desc font-body-lg text-body-md md:text-body-lg text-on-surface-variant max-w-xl leading-relaxed">
-            Bridging the gap between <span className="text-on-surface font-semibold">human intuition</span> and <span className="text-primary font-semibold">technical precision</span>. Designing digital ecosystems that scale and visual identities that resonate.
+            <span className="text-on-surface font-semibold">UI/UX Designer</span>, <span className="text-on-surface font-semibold">Website Developer</span> & <span className="text-primary font-semibold">Digital Marketing Specialist</span> helping brands grow through design, SEO, and paid advertising.
           </p>
           <div className="hero-buttons flex flex-col md:flex-row gap-3 pt-4 w-full md:w-auto">
             <a className="group w-full md:w-auto md:flex-1 bg-on-surface text-background py-4 md:py-5 px-6 md:px-10 rounded-full text-[14px] md:text-label-lg font-bold shadow-2xl flex items-center justify-center gap-2 hover:-translate-y-1 hover:shadow-3xl transition-all duration-300" href="#works">
-              View Portfolio <span className="material-symbols-outlined text-[20px] md:text-[24px] group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300">arrow_outward</span>
+              View My Work <span className="material-symbols-outlined text-[20px] md:text-[24px] group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300">arrow_outward</span>
             </a>
-            <a className="w-full md:w-auto md:flex-1 bg-primary/[0.05] backdrop-blur-sm py-4 md:py-5 px-6 md:px-10 rounded-full text-[14px] md:text-label-lg text-primary font-bold hover:bg-primary hover:text-white transition-all duration-300 border border-primary/30 shadow-[0_0_15px_rgba(79,140,255,0.08)] flex items-center justify-center text-center" href="#services-i-offer">
-              View Services
+            <a className="w-full md:w-auto md:flex-1 bg-primary/[0.05] backdrop-blur-sm py-4 md:py-5 px-6 md:px-10 rounded-full text-[14px] md:text-label-lg text-primary font-bold hover:bg-primary hover:text-white transition-all duration-300 border border-primary/30 shadow-[0_0_15px_rgba(79,140,255,0.08)] flex items-center justify-center text-center" href="https://calendly.com/sahitikotturty" target="_blank" rel="noopener noreferrer">
+              Book a Free Consultation
             </a>
           </div>
         </div>
