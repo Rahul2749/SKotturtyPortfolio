@@ -22,8 +22,11 @@ export default function Hero() {
               <span className="font-black text-[55px] sm:text-[75px] md:text-[100px] lg:text-[120px] leading-[0.9] bg-gradient-to-r from-[#4F8CFF] via-[#4F8CFF] to-[#28467a] text-transparent bg-clip-text pb-2 pr-4">Kotturty</span>
             </h1>
           </div>
-          <p className="hero-desc font-body-lg text-[18px] md:text-[22px] text-[#1e293b] font-medium max-w-xl leading-relaxed mt-2">
+          <p className="hero-desc font-syne text-[18px] md:text-[22px] text-[#1e293b] font-bold max-w-xl leading-snug mt-2 mb-4">
             Designing Websites That Convert Visitors Into Customers
+          </p>
+          <p className="hero-desc font-body-lg text-body-md md:text-body-lg text-on-surface-variant max-w-xl leading-relaxed">
+            Bridging the gap between <span className="text-on-surface font-semibold">human intuition</span> and <span className="text-primary font-semibold">technical precision</span>. Designing digital ecosystems that scale and visual identities that resonate.
           </p>
           <div className="hero-buttons flex flex-col md:flex-row gap-3 pt-4 w-full md:w-auto">
             <a className="group w-full md:w-auto md:flex-1 bg-on-surface text-background py-4 md:py-5 px-6 md:px-10 rounded-full text-[14px] md:text-label-lg font-bold shadow-2xl flex items-center justify-center gap-2 hover:-translate-y-1 hover:shadow-3xl transition-all duration-300" href="#works">
