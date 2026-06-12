@@ -9,7 +9,7 @@ export default function Portfolio() {
 
   useEffect(() => {
     // Setup ScrollTrigger for scroll spy on tabs
-    const sections = ['uiux', 'web', 'templates', 'brochure', 'flyer', 'magazine', 'logo', 'animation', 'branding', 'marketing', 'social', 'matte'];
+    const sections = ['uiux', 'web', 'templates', 'apptemplates', 'brochure', 'flyer', 'magazine', 'logo', 'animation', 'branding', 'marketing', 'social', 'matte'];
     
     sections.forEach((id) => {
       ScrollTrigger.create({
@@ -84,6 +84,9 @@ export default function Portfolio() {
             <a href="#templates" className="tab-btn shrink-0 px-4 md:px-6 py-1.5 md:py-2 rounded-full text-[11px] md:text-label-sm transition-all whitespace-nowrap border-transparent bg-on-surface/[0.03] text-on-surface-variant hover:bg-on-surface/5 hover:text-on-surface">
               Website Templates
             </a>
+            <a href="#apptemplates" className="tab-btn shrink-0 px-4 md:px-6 py-1.5 md:py-2 rounded-full text-[11px] md:text-label-sm transition-all whitespace-nowrap border-transparent bg-on-surface/[0.03] text-on-surface-variant hover:bg-on-surface/5 hover:text-on-surface">
+              App Templates
+            </a>
             <a href="#brochure" className="tab-btn shrink-0 px-4 md:px-6 py-1.5 md:py-2 rounded-full text-[11px] md:text-label-sm transition-all whitespace-nowrap border-transparent bg-on-surface/[0.03] text-on-surface-variant hover:bg-on-surface/5 hover:text-on-surface">
               Brochure
             </a>
@@ -97,7 +100,7 @@ export default function Portfolio() {
               Logo
             </a>
             <a href="#animation" className="tab-btn shrink-0 px-4 md:px-6 py-1.5 md:py-2 rounded-full text-[11px] md:text-label-sm transition-all whitespace-nowrap border-transparent bg-on-surface/[0.03] text-on-surface-variant hover:bg-on-surface/5 hover:text-on-surface">
-              Animation
+              2D Animation
             </a>
             <a href="#branding" className="tab-btn shrink-0 px-4 md:px-6 py-1.5 md:py-2 rounded-full text-[11px] md:text-label-sm transition-all whitespace-nowrap border-transparent bg-on-surface/[0.03] text-on-surface-variant hover:bg-on-surface/5 hover:text-on-surface">
               Branding
@@ -193,10 +196,27 @@ export default function Portfolio() {
           <div className="portfolio-section scroll-mt-48" id="templates">
             <h3 className="text-headline-lg font-display-md text-on-surface mb-6 px-2">Website Templates</h3>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
-              {[1, 2, 3, 4, 5].map((num) => (
-                <div key={num} onClick={() => setSelectedImage(`/template_part_${num}.webp`)} className="glass rounded-[1.5rem] p-1 project-card overflow-hidden cursor-pointer group">
+              {['web_temp1.png', 'web_temp2.jpeg', 'web_temp3.png', 'web_temp4.png', 'web_temp5.jpeg'].map((img, idx) => (
+                <div key={idx} onClick={() => setSelectedImage(`/${img}`)} className="glass rounded-[1.5rem] p-1 project-card overflow-hidden cursor-pointer group">
                   <div className="relative w-full h-full rounded-[1.3rem] overflow-hidden bg-surface-container flex items-center justify-center">
-                    <img src={`/template_part_${num}.webp`} className="w-full h-auto transition-transform duration-700 group-hover:scale-105" alt={`Template Part ${num}`} loading="lazy"/>
+                    <img src={`/${img}`} className="w-full h-auto transition-transform duration-700 group-hover:scale-105" alt={`Website Template ${idx + 1}`} loading="lazy"/>
+                    <div className="absolute inset-0 bg-background/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
+                      <span className="material-symbols-outlined text-white text-4xl transform translate-y-4 group-hover:translate-y-0 transition-all duration-500 delay-100">open_in_new</span>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Section: App Templates */}
+          <div className="portfolio-section scroll-mt-48" id="apptemplates">
+            <h3 className="text-headline-lg font-display-md text-on-surface mb-6 px-2">App Templates</h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4 md:gap-6">
+              {['app_temp1.png', 'app_temp2.jpeg', 'app_temp3.jpeg', 'app_temp4.png'].map((img, idx) => (
+                <div key={idx} onClick={() => setSelectedImage(`/${img}`)} className="glass rounded-[1.5rem] p-1 project-card overflow-hidden cursor-pointer group">
+                  <div className="relative w-full h-full rounded-[1.3rem] overflow-hidden bg-surface-container flex items-center justify-center">
+                    <img src={`/${img}`} className="w-full h-auto transition-transform duration-700 group-hover:scale-105" alt={`App Template ${idx + 1}`} loading="lazy"/>
                     <div className="absolute inset-0 bg-background/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
                       <span className="material-symbols-outlined text-white text-4xl transform translate-y-4 group-hover:translate-y-0 transition-all duration-500 delay-100">open_in_new</span>
                     </div>
@@ -277,9 +297,9 @@ export default function Portfolio() {
             </div>
           </div>
 
-          {/* Section: Animation */}
+          {/* Section: 2D Animation */}
           <div className="portfolio-section scroll-mt-48" id="animation">
-            <h3 className="text-headline-lg font-display-md text-on-surface mb-6 px-2">Animation</h3>
+            <h3 className="text-headline-lg font-display-md text-on-surface mb-6 px-2">2D Animation</h3>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="glass rounded-[2.5rem] p-1 overflow-hidden project-card">
               <div className="bg-surface-container rounded-[2.4rem] aspect-video md:aspect-auto md:h-[340px] flex flex-col items-center justify-center relative overflow-hidden group">
