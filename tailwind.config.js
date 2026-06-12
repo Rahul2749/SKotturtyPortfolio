@@ -56,6 +56,8 @@ export default {
         "body-sm": ["Inter", "sans-serif"],
         "body": ["Inter", "sans-serif"],
         "display": ["Sora", "sans-serif"],
+        "syne": ["Syne", "sans-serif"],
+        "serif": ["Playfair Display", "serif"]
       },
       fontSize: {
         "display-lg": ["72px", {"lineHeight": "1.2", "letterSpacing": "-0.04em", "fontWeight": "800"}],
