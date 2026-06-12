@@ -18,7 +18,7 @@ export default function Hero() {
             <span className="absolute -z-10 text-[200px] md:text-[300px] font-syne font-[800] tracking-[-0.04em] text-[#4F8CFF]/10 select-none top-[-80px] md:top-[-120px] left-[-10px] md:left-[-20px] leading-none pointer-events-none">K</span>
             
             <h1 className="hero-title font-syne font-[800] flex flex-col tracking-tighter">
-              <span className="font-serif italic font-medium tracking-normal text-[40px] sm:text-[55px] md:text-[75px] lg:text-[90px] text-[#1e3a8a] leading-[1] ml-1 md:ml-2 mb-0 md:mb-[-10px]">Sahiti</span>
+              <span className="font-body italic font-medium tracking-normal text-[40px] sm:text-[55px] md:text-[75px] lg:text-[90px] text-[#1e3a8a] leading-[1] ml-1 md:ml-2 mb-0 md:mb-[-10px]">Sahiti</span>
               <span className="font-black text-[55px] sm:text-[75px] md:text-[100px] lg:text-[120px] leading-[0.9] bg-gradient-to-r from-[#4F8CFF] via-[#4F8CFF] to-[#28467a] text-transparent bg-clip-text pb-2 pr-4">Kotturty</span>
             </h1>
           </div>
