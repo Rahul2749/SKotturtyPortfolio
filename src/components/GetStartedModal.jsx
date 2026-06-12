@@ -30,42 +30,22 @@ export default function GetStartedModal({ isOpen, onClose, initialService = "" }
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [isOpen, onClose]);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setStatus("loading");
 
-    try {
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          access_key: "4ac0d40e-c895-4afb-b2dd-359b1fc36d75",
-          subject: `New Inquiry from ${formData.fullName} — ${formData.service}`,
-          from_name: formData.fullName,
-          name: formData.fullName,
-          email: formData.email,
-          mobile: formData.mobile,
-          service: formData.service,
-          message: formData.message
-        })
-      });
-
-      const result = await response.json();
-      if (result.success) {
-        setStatus("success");
-        setFormData({ fullName: "", email: "", mobile: "", service: "", message: "" });
-        setTimeout(() => {
-          setStatus("idle");
-          onClose();
-        }, 2500);
-      } else {
-        setStatus("error");
-        setTimeout(() => setStatus("idle"), 3000);
-      }
-    } catch {
-      setStatus("error");
-      setTimeout(() => setStatus("idle"), 3000);
-    }
+    const subject = encodeURIComponent(`New Inquiry from ${formData.fullName} — ${formData.service}`);
+    const body = encodeURIComponent(`Name: ${formData.fullName}\nEmail: ${formData.email}\nMobile: ${formData.mobile}\nService: ${formData.service}\n\nMessage:\n${formData.message}`);
+    
+    // Use mailto link to open default email client
+    window.location.href = `mailto:sahitikotturty@gmail.com?subject=${subject}&body=${body}`;
+    
+    setStatus("success");
+    setFormData({ fullName: "", email: "", mobile: "", service: "", message: "" });
+    setTimeout(() => {
+      setStatus("idle");
+      onClose();
+    }, 2000);
   };
 
   if (!isOpen) return null;
