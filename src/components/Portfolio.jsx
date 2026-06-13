@@ -240,7 +240,11 @@ export default function Portfolio() {
                 <div onClick={() => setSelectedImage(`/${brochure}`)} key={idx} className="glass rounded-[2.5rem] p-1 project-card overflow-hidden w-full aspect-[4/3] flex flex-col group cursor-pointer">
                   <div className="w-full h-full rounded-[2.4rem] overflow-hidden relative bg-surface-container flex items-center justify-center">
                     <img src={`/${brochure}`} alt={`Brochure Page ${idx + 1}`} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
-                    <div className="absolute inset-0 bg-background/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
+                    
+                    {/* Watermark Overlay */}
+                    <img src="/watermark.png" alt="Watermark" className="absolute inset-0 w-full h-full object-contain p-4 opacity-70 pointer-events-none z-10" loading="lazy" />
+                    
+                    <div className="absolute inset-0 bg-background/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center z-20">
                       <span className="material-symbols-outlined text-white text-4xl transform translate-y-4 group-hover:translate-y-0 transition-all duration-500 delay-100">open_in_new</span>
                     </div>
                   </div>
