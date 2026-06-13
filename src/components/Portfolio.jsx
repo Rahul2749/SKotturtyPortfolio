@@ -450,6 +450,9 @@ export default function Portfolio() {
           </button>
           <div className="relative max-w-5xl w-full max-h-[90vh] flex items-center justify-center" onClick={(e) => e.stopPropagation()}>
             <img src={selectedImage} alt="Fullscreen view" className="max-w-full max-h-[90vh] object-contain rounded-2xl shadow-2xl" loading="lazy" />
+            {selectedImage.includes('boucher') && (
+              <img src="/watermark.png" alt="Watermark" className="absolute inset-0 w-full h-full object-contain p-4 md:p-8 opacity-70 pointer-events-none z-10" loading="lazy" />
+            )}
           </div>
         </div>
       )}
